@@ -1,6 +1,0 @@
-@media only screen and (max-width: 700px) { .telefone-wrap { text-align: center; } }
-
-.telefone { font-family: "GothamProBold", arial, sans-serif; color: #2f4b5b; font-size: 23px; line-height: 1.3; padding: 2px 0 2px 30px; margin-bottom: 15px; display: block; background: url(../img/telefone_ic.png) 0 2px no-repeat; }
-@media only screen and (max-width: 700px) { .telefone { margin-bottom: 0; color: #fff; display: inline-block; }
-  .telefone_header { font-size: 17px; padding: 2px 0 2 25px; background: url(../../img/telefone_ic-mini.png) 0 0 no-repeat; }
-  .telefone_footer { font-size: 23px; } }

@@ -1,5 +1,0 @@
-.link { display: inline-block; text-decoration: none; }
-.link span, .link i { font-family: "GothamProRegular", arial, sans-serif; color: #f2b600; font-size: 14px; padding-bottom: 3px; border-bottom: 1px solid #f2b600; display: block; font-style: normal; line-height: 1.3; }
-.link i { display: none; }
-@media only screen and (max-width: 700px) { .link_header i { display: block; }
-  .link_header span { display: none; } }
