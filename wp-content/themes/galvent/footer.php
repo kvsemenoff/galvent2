@@ -72,7 +72,7 @@
 			<p class="footer-bottom__copyright">&copy;2017 ГАЛВЕНТ - Все права защищены</p>
 		</div>				
 		<div class="col-md-6 col-sm-12 col-xs-12">
-			<p class="footer-bottom__site"><a href="#" class="footer-bottom__link"><span>Разработка сайта "ЮТЕКС Проект"</span></a><a href="#"><img src="img/db-ex.png" alt="img"></a></p>
+			<p class="footer-bottom__site"><a href="#" class="footer-bottom__link"><span>Разработка сайта "ЮТЕКС Проект"</span></a><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/db-ex.png" alt="img"></a></p>
 		</div>
 	</div>
 </div>
