@@ -1,6 +1,5 @@
 
 <?php get_header(); ?>
-
 <?php require_once('includes/equipment.php'); ?>
 <?php require_once('includes/product.php'); ?>
 <?php require_once('includes/about.php'); ?>
