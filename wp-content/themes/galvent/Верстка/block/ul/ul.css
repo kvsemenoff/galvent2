@@ -1,0 +1,8 @@
+.ul__point { color: #4f5355; font-size: 16px; list-style: none; line-height: 20px; padding: 0 0 20px 33px; position: relative; }
+.ul__point::before { content: ""; position: absolute; left: 0; top: 2px; background: url(../../img/ul-ic.png) 0 0 no-repeat; width: 25px; height: 25px; display: block; z-index: 100; }
+.ul__point:nth-child(2)::before { background-position: 0 -28px; }
+.ul__point:nth-child(3)::before { background-position: 0 -61px; }
+.ul__point:nth-child(4)::before { background-position: 0 -88px; }
+.ul__point:nth-child(5)::before { background-position: 0 -116px; }
+.ul__point:nth-child(6)::before { background-position: 0 -145px; }
+.ul__point:nth-child(7)::before { background-position: 0 -168px; }

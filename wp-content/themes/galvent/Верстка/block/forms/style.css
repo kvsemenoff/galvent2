@@ -1,0 +1,155 @@
+.clear {
+  clear: both; }
+
+.input_theme_rosa {
+  display: inline-block;
+  width: 100%;
+  max-width: unset; }
+  @media only screen and (min-width: 580px) {
+    .input_theme_rosa {
+      max-width: 335px; } }
+
+.input_theme_main {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 19px; }
+  @media only screen and (min-width: 580px) {
+    .input_theme_main {
+      max-width: 287px; } }
+
+.for_input {
+  display: block;
+  font-size: 15px;
+  color: #3c3c3c;
+  line-height: 27px;
+  font-family: "GothamProRegular";
+  padding: 0 0 4px 5px; }
+  .for_input i {
+    color: #ff0000; }
+  @media only screen and (min-width: 580px) {
+    .for_input {
+      display: inline-block; } }
+
+.input__control {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 11px 23px;
+  outline: none;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  color: #b0b0b0;
+  font-family: "GothamProRegular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+  /* Firefox 19+ */
+  /* Firefox 18- */ }
+  .input__control::-webkit-input-placeholder {
+    color: #b0b0b0; }
+  .input__control::-moz-placeholder {
+    color: #b0b0b0; }
+  .input__control:-moz-placeholder {
+    color: #b0b0b0; }
+  .input__control:-ms-input-placeholder {
+    color: #b0b0b0; }
+
+.form_for_main_page {
+  max-width: 685px;
+  background-color: #eff3f4;
+  padding: 20px 20px 17px 20px;
+  border-radius: 8px;
+  background-image: url("../../img/formbgimg.png");
+  background-repeat: no-repeat;
+  background-position: bottom -5px right -35px; }
+  @media only screen and (min-width: 1024px) {
+    .form_for_main_page {
+      padding: 20px 30px 17px 30px; } }
+
+.form_for_main_page__left {
+  margin: 0 auto; }
+  @media only screen and (min-width: 580px) {
+    .form_for_main_page__left {
+      width: 45%;
+      float: left; } }
+  @media only screen and (min-width: 992px) {
+    .form_for_main_page__left {
+      max-width: 287px;
+      width: 100%; } }
+
+.form_for_main_page__right {
+  margin: 0 auto; }
+  @media only screen and (min-width: 580px) {
+    .form_for_main_page__right {
+      width: 45%;
+      float: right; } }
+  @media only screen and (min-width: 992px) {
+    .form_for_main_page__right {
+      max-width: 287px;
+      width: 100%;
+      float: right; } }
+
+.form_for_inner_page {
+  max-width: 1170px;
+  padding: 20px 40px;
+  background-color: #eff3f4;
+  padding: 20px 20px 17px 20px;
+  border-radius: 8px;
+  background-image: url("../../img/formbgimg.png");
+  background-repeat: no-repeat;
+  background-position: bottom 10px right 0px; }
+  @media only screen and (min-width: 1024px) {
+    .form_for_inner_page {
+      padding: 20px 40px; } }
+
+.form_for_inner_page_box {
+  display: inline-block;
+  width: 100%;
+  text-align: left; }
+  @media only screen and (min-width: 580px) {
+    .form_for_inner_page_box {
+      margin-right: 15px;
+      float: left;
+      width: 30%; } }
+  @media only screen and (min-width: 992px) {
+    .form_for_inner_page_box {
+      margin-right: 39px; } }
+  @media only screen and (min-width: 1200px) {
+    .form_for_inner_page_box {
+      max-width: 335px;
+      width: 100%; } }
+
+.last_box {
+  margin-right: 0;
+  float: right; }
+
+.for_input_margintop {
+  margin-top: 14px;
+  display: block;
+  text-align: left; }
+
+.form_for_popup {
+  max-width: 457px;
+  margin: 0 auto;
+  padding: 25px 15px;
+  background-color: white;
+  border-radius: 10px; }
+  @media only screen and (min-width: 480px) {
+    .form_for_popup {
+      padding: 25px 30px; } }
+
+.input_theme_popup {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 22px; }
+
+.form_popup__caption {
+  color: #313131;
+  font-family: "GothamProBold";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

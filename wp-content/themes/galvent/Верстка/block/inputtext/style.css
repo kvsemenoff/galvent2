@@ -1,0 +1,45 @@
+.input_theme_rosa {
+  display: inline-block;
+  max-width: 335px;
+  width: 100%; }
+
+.input_theme_main {
+  display: inline-block;
+  max-width: 287px;
+  width: 100%; }
+
+.for_input {
+  display: block;
+  font-size: 15px;
+  color: #3c3c3c;
+  line-height: 27px;
+  font-family: "GothamProRegular";
+  padding: 0 0 4px 5px; }
+  .for_input i {
+    color: #ff0000; }
+
+.input__control {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 11px 23px;
+  outline: none;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  color: #b0b0b0;
+  font-family: "GothamProRegular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 27px;
+  /* Firefox 19+ */
+  /* Firefox 18- */ }
+  .input__control::-webkit-input-placeholder {
+    color: #b0b0b0; }
+  .input__control::-moz-placeholder {
+    color: #b0b0b0; }
+  .input__control:-moz-placeholder {
+    color: #b0b0b0; }
+  .input__control:-ms-input-placeholder {
+    color: #b0b0b0; }
+
+/*# sourceMappingURL=style.css.map */

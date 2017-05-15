@@ -1,0 +1,3 @@
+.h1 { font-family: "GothamProRegular", arial, sans-serif; color: #fff; font-size: 46px; line-height: 1.3; font-weight: 400; }
+@media only screen and (max-width: 1000px) { .h1 { font-size: 41px; } }
+@media only screen and (max-width: 700px) { .h1 { font-size: 27px; text-align: center; line-height: 31px; } }
