@@ -1,4 +1,13 @@
 <?php get_header(); ?>
+<?php 
+
+$query = new WP_Query( array( 'category_name' => 'news' ) );
+while ( $query->have_posts() ) {
+	$query->the_post();
+
+	the_title(); // выведем заголовок поста
+}
+ ?>
 <div class="bread_menu bread_menu_bg_img conveyors_page">	
 	<div class="container pos-relative">
 		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' '); ?>	
