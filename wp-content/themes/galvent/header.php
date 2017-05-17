@@ -65,7 +65,7 @@
 
 			<div class="col-xs-3 col-sm-3 col-md-3">
 				<div class="menu_sm__item">
-					<img src="img/di-logo-t.png" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/di-logo-t.png" alt="">
 				</div>	
 			</div>
 
