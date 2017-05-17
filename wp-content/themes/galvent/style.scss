@@ -819,37 +819,39 @@ footer, header, hgroup, menu, nav, section {
 			}
 		}	
 	}
-	a:first-child{		
-		position: relative;
-		padding-left: 17px;
-		font-size: 0;
-		&:after{
-			content: "";
-			position: absolute;
-			background-image: url("./img/house.png");
-			background-repeat: no-repeat;
-			background-position: left top 2.5px;
+	span:first-child{
+		a{		
+			position: relative;
 			padding-left: 17px;
-			width: 20px;
-			height: 20px;
-			left:-5px;
-			top:0;
-			@media only screen and (min-width :480px) {
-				left:7px;
+			font-size: 0;
+			&:after{
+				content: "";
+				position: absolute;
+				background-image: url("./img/house.png");
+				background-repeat: no-repeat;
+				background-position: left top 2.5px;
+				padding-left: 17px;
+				width: 20px;
+				height: 20px;
+				left:-5px;
+				top:0;
+				@media only screen and (min-width :480px) {
+					left:7px;
+				}
 			}
-		}
-		span{
-			padding: 0 7px;
-			@media only screen and (min-width : 480px) {
-				padding: 0 15px;	
-			}
-		}
-
-		@media only screen and (min-width : 480px) {
-			padding-bottom: 0 ;
-			font-size: 16px;
 			span{
-				padding: 0 20px 0 17px;
+				padding: 0 7px;
+				@media only screen and (min-width : 480px) {
+					padding: 0 15px;	
+				}
+			}
+
+			@media only screen and (min-width : 480px) {
+				padding-bottom: 0 ;
+				font-size: 16px;
+				span{
+					padding: 0 20px 0 17px;
+				}
 			}
 		}
 	}
