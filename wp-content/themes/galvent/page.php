@@ -3,11 +3,7 @@
 
 <div class="bread_menu bread_menu_bg_img conveyors_page">	
 	<div class="container pos-relative">
-		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' '); ?>
-		<!-- <ul class="bread_menu__menu">
-			<li class="bread_menu__link "><a href="/" class="bread_menu__link_bg">Главная</a></li>
-			<li class="bread_menu__link"><span>Наше производство</span></li>
-		</ul> -->
+		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' '); ?>		
 		<a href="#modal__form_order" class="fancybox order_curcle_innerpage conveyors_page_circle">
 			<span class="order_curcle__text toppadding">On-line</span>
 			<span class="order_curcle__text">заявка</span>
@@ -18,7 +14,7 @@
 
 
 <div class="container container_padding_top">
-	<h2 class="h2 h2_dark ourindustry__caption">Наше производство</h2>
+	<h2 class="h2 h2_dark ourindustry__caption"><?php the_title(); ?></h2>
 
 	<p class="beltconveyors__text ourindustry__padding">Компания <strong>ПТО Галвент</strong> специализируется на проектировании, производстве и монтаже конвейерного оборудования любой сложности и для любых отраслей промышленности. На заводе компании <strong>«ПТО Галвент»</strong> производство конвейеров и конвейерных систем максимально отработано и автоматизировано, что позволяет держать невысокую стоимость конвейера. </p>
 	<p class="beltconveyors__text ourindustry__padding">Мы используем в производстве установку лазерного раскроя материалов, гибочные прессы и <strong>токарные станки с ЧПУ</strong>. Завод гарантирует качество выпускаемой продукции, благодаря обязательному техническому контролю выпуска как составных частей, так и готового оборудования. Результатом нашей работы является надежная в эксплуатации техника, в процессе монтажа которой не возникает сложностей. 
