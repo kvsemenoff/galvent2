@@ -1,10 +1,7 @@
 <?php get_header(); ?>
 <div class="bread_menu bread_menu_bg_img conveyors_page">	
 	<div class="container pos-relative">
-		<ul class="bread_menu__menu">
-			<li class="bread_menu__link "><a href="/" class="bread_menu__link_bg">Главная</a></li>
-			<li class="bread_menu__link"><span>Последние статьи</span></li>
-		</ul>
+		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' '); ?>	
 		<a href="#modal__form_order" class="fancybox order_curcle_innerpage conveyors_page_circle">
 			<span class="order_curcle__text toppadding">On-line</span>
 			<span class="order_curcle__text">заявка</span>
