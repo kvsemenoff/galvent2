@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <div class="bread_menu bread_menu_bg_img conveyors_page">	
 	<div class="container pos-relative">
 		<ul class="bread_menu__menu">
@@ -183,3 +184,4 @@
 		</div>
 	</div>
 </div>
+<?php get_footer(); ?>
