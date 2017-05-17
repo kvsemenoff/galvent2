@@ -7,11 +7,11 @@
 		<!-- <ul class="bread_menu__menu">
 			<li class="bread_menu__link "><a href="/" class="bread_menu__link_bg">Главная</a></li>
 			<li class="bread_menu__link"><span>Наше производство</span></li>
-		</ul>
+		</ul> -->
 		<a href="#modal__form_order" class="fancybox order_curcle_innerpage conveyors_page_circle">
 			<span class="order_curcle__text toppadding">On-line</span>
 			<span class="order_curcle__text">заявка</span>
-		</a> -->
+		</a>
 	</div>
 
 </div>

@@ -695,8 +695,11 @@ body {
     padding-left: 17px;
     width: 20px;
     height: 20px;
-    left: 7px;
+    left: -5px;
     top: 0; }
+    @media only screen and (min-width: 480px) {
+      .kama_breadcrumbs a:first-child:after {
+        left: 7px; } }
   .kama_breadcrumbs a:first-child span {
     padding: 0 7px; }
     @media only screen and (min-width: 480px) {
