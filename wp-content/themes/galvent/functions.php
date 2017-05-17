@@ -215,6 +215,8 @@ add_filter( 'post_row_actions', 'true_duplicate_post_link', 10, 2 );
 add_filter( 'page_row_actions', 'true_duplicate_post_link', 10, 2);
 
 register_nav_menu('menu','Main menu');
+
+
 /**
  * Хлебные крошки для WordPress (breadcrumbs)
  *
@@ -591,9 +593,8 @@ class Kama_Breadcrumbs {
 
         return $add_to;
     }
-      
-}
 
+}
 
 /**
  * Изменения:

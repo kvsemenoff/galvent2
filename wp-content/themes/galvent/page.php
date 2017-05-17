@@ -22,15 +22,7 @@
 	<p class="beltconveyors__text ourindustry__padding">Мы используем в производстве установку лазерного раскроя материалов, гибочные прессы и <strong>токарные станки с ЧПУ</strong>. Завод гарантирует качество выпускаемой продукции, благодаря обязательному техническому контролю выпуска как составных частей, так и готового оборудования. Результатом нашей работы является надежная в эксплуатации техника, в процессе монтажа которой не возникает сложностей. 
 	</p>	
 
-	<div class="ourindustry__img_box">
-		<a href="img/ourindustry1.jpg" class="ourindustry__link" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/ourindustry1.jpg" alt=""></a>
-		<a href="img/ourindustry2.jpg" class="ourindustry__link" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/ourindustry2.jpg" alt=""></a>
-		<a href="img/ourindustry3.jpg" class="ourindustry__link" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/ourindustry3.jpg" alt=""></a>
-		<a href="img/ourindustry4.jpg" class="ourindustry__link" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/ourindustry4.jpg" alt=""></a>
-		<a href="img/ourindustry5.jpg" class="ourindustry__link" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/ourindustry5.jpg" alt=""></a>
-		<a href="img/ourindustry6.jpg" class="ourindustry__link" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/ourindustry6.jpg" alt=""></a>
-	</div>
-
+	
 	
 </div>
 
