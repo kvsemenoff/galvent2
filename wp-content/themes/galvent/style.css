@@ -3062,6 +3062,19 @@ body, html {
     font-weight: 500;
     font-family: "GothamProMedium"; }
 
+.beltconveyors__txt p {
+  color: #393f41;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 16px 0 20px 0px; }
+  @media only screen and (min-width: 770px) {
+    .beltconveyors__txt p {
+      padding: 16px 0 37px 5px; } }
+  .beltconveyors__txt p strong {
+    font-weight: 500;
+    font-family: "GothamProMedium"; }
+
 .beltconveyors__img_box {
   text-align: center; }
 
@@ -3129,11 +3142,11 @@ body, html {
     .ourindustry__caption {
       padding-bottom: 33px; } }
 
-.ourindustry__padding {
+.beltconveyors__txt p {
   padding: 0px 0 15px 0px;
   line-height: 28px; }
   @media only screen and (min-width: 770px) {
-    .ourindustry__padding {
+    .beltconveyors__txt p {
       padding: 0px 0 37px 3px; } }
 
 .ourindustry__img_box {

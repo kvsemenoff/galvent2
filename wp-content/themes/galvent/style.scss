@@ -3598,8 +3598,9 @@ body, html{
 
 
 /*========beltconveyors======*/
-.beltconveyors__caption{
-}
+
+
+
 .beltconveyors__text{
 	color: #393f41;
 	font-size: 16px;
@@ -3614,6 +3615,23 @@ body, html{
 		font-family: "GothamProMedium";
 	}	
 }
+.beltconveyors__txt{
+	p{
+		color: #393f41;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 26px;
+		padding: 16px 0 20px 0px;
+		@media only screen and (min-width : 770px) {
+			padding: 16px 0 37px 5px;
+		}
+		strong{
+			font-weight: 500;
+			font-family: "GothamProMedium";
+		}	
+	}
+}
+
 .beltconveyors__img_box{
 	text-align: center;
 }
@@ -3684,7 +3702,7 @@ body, html{
 		padding-bottom: 33px;
 	}
 }
-.ourindustry__padding{
+.beltconveyors__txt p{
 	padding: 0px 0 15px 0px;
 	line-height: 28px;
 	@media only screen and (min-width : 770px) {

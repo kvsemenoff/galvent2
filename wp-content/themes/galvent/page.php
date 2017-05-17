@@ -13,7 +13,7 @@
 </div>
 
 
-<div class="container container_padding_top">
+<div class="container container_padding_top beltconveyors__txt">
 	<h1 class="h2 h2_dark ourindustry__caption"><?php the_title(); ?></h1>
 	
 
