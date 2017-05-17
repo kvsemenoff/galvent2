@@ -11,7 +11,7 @@
 			<div class="col-sm-4 col-md-4 ">
 				<div class="services services__view services__view_first">
 					<div class="services__item">
-						<img src="img/p1.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/p1.png" alt="">
 					</div>
 					<div class="services__item">
 						<p>Консультирование клиентов по<br class="br"/> выбору конвейера с выездом<br class="br"/> специалиста на территорию<br class="br"/> заказчика
@@ -23,7 +23,7 @@
 			<div class="col-sm-4 col-md-4 ">
 				<div class="services services__view services__view_first">
 					<div class="services__item">
-						<img src="img/p2.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/p2.png" alt="">
 					</div>
 					<div class="services__item">
 						<p>Составление технического задания <br/>и произведение необходимых замеров</p>
@@ -34,7 +34,7 @@
 			<div class="col-sm-4 col-md-4 ">
 				<div class="services services__view services__view_first">
 					<div class="services__item">
-						<img src="img/p3.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/p3.png" alt="">
 					</div>
 					<div class="services__item">
 						<p>Проведение всех необходимых подготовительных работ по установке транспортера
@@ -48,7 +48,7 @@
 			<div class="col-sm-4 col-md-4 ">
 				<div class="services services__view">
 					<div class="services__item">
-						<img src="img/p4.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/p4.png" alt="">
 					</div>
 					<div class="services__item">
 						<p>Планирование и проектирование будущего оборудования</p>
@@ -59,7 +59,7 @@
 			<div class="col-sm-4 col-md-4 ">
 				<div class="services services__view">
 					<div class="services__item">
-						<img src="img/p5.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/p5.png" alt="">
 					</div>
 					<div class="services__item">
 						<p>Гарантийное и постгарантийное обслуживание</p>
@@ -70,7 +70,7 @@
 			<div class="col-sm-4 col-md-4 ">
 				<div class="services services__view">
 					<div class="services__item">
-						<img src="img/p6.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/p6.png" alt="">
 					</div>
 					<div class="services__item">
 						<p>Установка и ввод в эксплуатацию</p>

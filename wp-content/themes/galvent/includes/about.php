@@ -24,7 +24,7 @@
 			<div class="col-sm-6 col-md-6  hidden-xs">
 				<div class="dd-about about__view about__view_3">
 					<div class="about__view_img">
-						<img src="img/m3.png" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/m3.png" alt="">
 					</div>
 					<p>Лучшие цены на конвейеры и комплектующие к ним среди конкурентов.</p>
 					<a href="#" class="button button__view"><span class="button__view_ico"></span><span class="button__view_txt">перейти в каталог</span></a>
@@ -32,8 +32,8 @@
 			</div>
 			<div class="col-sm-6 col-md-6 ">
 				<div class="dd-about about__view about__view_4">
-					<div class="str"><img src="img/strm.jpg" alt=""></div>
-					<div class="str str2"><img src="img/bn2.png" alt=""></div>
+					<div class="str"><img src="<?php echo get_template_directory_uri(); ?>/img/strm.jpg" alt=""></div>
+					<div class="str str2"><img src="<?php echo get_template_directory_uri(); ?>/img/bn2.png" alt=""></div>
 					<p class="about__view_p">ПТО Галвент — структурное подразделение "Фабрики Вентиляции ГалВент".</p>
 					<p class="about__view_txt">
 						Основная сфера деятельности нашего предприятия – выпуск конвейеров и рольгангов. Наличие высококвалифицированных специалистов  позволяет спроектировать и изготовить оборудование, которое будет максимально соответствовать Вашим требованиям. Мы специализируемся на изготовлении и продаже конвейерных систем различных видов, подходящих практически для всех отраслей промышленности.

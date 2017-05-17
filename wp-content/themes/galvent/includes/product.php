@@ -7,20 +7,20 @@
 					<a href="#" class="item__inner">
 						<span class="item__title item__title_first">Ленточные конвейеры</span>
 						<div class="item__image item__image_first">
-							<img class="item__img item__img-des" src="<?php template_directory_uri(); ?>/img/item__img-1.png" alt="">
-							<img class="item__img item__img-mob" src="<?php template_directory_uri(); ?>/img/item__img-1-mob.png" alt="">
+							<img class="item__img item__img-des" src="<?php echo get_template_directory_uri(); ?>/img/item__img-1.png" alt="">
+							<img class="item__img item__img-mob" src="<?php echo get_template_directory_uri(); ?>/img/item__img-1-mob.png" alt="">
 						</div>
-						<img class="item__bg" src="<?php template_directory_uri(); ?>/img/product__item-1.jpg" alt="">
+						<img class="item__bg" src="<?php echo get_template_directory_uri(); ?>/img/product__item-1.jpg" alt="">
 					</a>
 				</div>
 				<div class="product__item product__item_second">
 					<a href="#" class="item__inner">
 						<span class="item__title item__title_second">Комплектующие</span>
 						<div class="item__image item__image_second">
-							<img class="item__img item__img-des" src="<?php template_directory_uri(); ?>/img/item__img-2.png" alt="">
-							<img class="item__img item__img-mob" src="<?php template_directory_uri(); ?>/img/item__img-2-mob.png" alt="">
+							<img class="item__img item__img-des" src="<?php echo get_template_directory_uri(); ?>/img/item__img-2.png" alt="">
+							<img class="item__img item__img-mob" src="<?php echo get_template_directory_uri(); ?>/img/item__img-2-mob.png" alt="">
 						</div>
-						<img class="item__bg" src="<?php template_directory_uri(); ?>/img/product__item-2.jpg" alt="">
+						<img class="item__bg" src="<?php echo get_template_directory_uri(); ?>/img/product__item-2.jpg" alt="">
 					</a>
 				</div>
 			</div>
@@ -29,10 +29,10 @@
 					<a href="#" class="item__inner">
 						<span class="item__title item__title_third">Роликовые конвейеры — рольганги</span>
 						<div class="item__image item__image_third">
-							<img class="item__img item__img-des" src="<?php template_directory_uri(); ?>/img/item__img-3.png" alt="">
-							<img class="item__img item__img-mob" src="<?php template_directory_uri(); ?>/img/item__img-3-mob.png" alt="">
+							<img class="item__img item__img-des" src="<?php echo get_template_directory_uri(); ?>/img/item__img-3.png" alt="">
+							<img class="item__img item__img-mob" src="<?php echo get_template_directory_uri(); ?>/img/item__img-3-mob.png" alt="">
 						</div>
-						<img class="item__bg" src="<?php template_directory_uri(); ?>/img/product__item-3.jpg" alt="">
+						<img class="item__bg" src="<?php echo get_template_directory_uri(); ?>/img/product__item-3.jpg" alt="">
 					</a>
 				</div>
 			</div>
