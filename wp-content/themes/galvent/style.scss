@@ -16,219 +16,219 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+	display: block; }
 
-ul {
-  list-style: none; }
-  
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; 
-}
-
-@font-face {
-  font-family: "GothamProBlack";
-  src: url("./fonts/GothamProBlack/GothamProBlack.eot");
-  src: url("./fonts/GothamProBlack/GothamProBlack.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProBlack/GothamProBlack.woff") format("woff"), url("./fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "GothamProBlackItalic";
-  src: url("./fonts/GothamProBlackItalic/GothamProBlackItalic.eot");
-  src: url("./fonts/GothamProBlackItalic/GothamProBlackItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProBlackItalic/GothamProBlackItalic.woff") format("woff"), url("./fonts/GothamProBlackItalic/GothamProBlackItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "GothamProBold";
-  src: url("./fonts/GothamProBold/GothamProBold.eot");
-  src: url("./fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProBold/GothamProBold.woff") format("woff"), url("./fonts/GothamProBold/GothamProBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "GothamProBoldItalic";
-  src: url("./fonts/GothamProBoldItalic/GothamProBoldItalic.eot");
-  src: url("./fonts/GothamProBoldItalic/GothamProBoldItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProBoldItalic/GothamProBoldItalic.woff") format("woff"), url("./fonts/GothamProBoldItalic/GothamProBoldItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "GothamProItalic";
-  src: url("./fonts/GothamProItalic/GothamProItalic.eot");
-  src: url("./fonts/GothamProItalic/GothamProItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProItalic/GothamProItalic.woff") format("woff"), url("./fonts/GothamProItalic/GothamProItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "GothamProLight";
-  src: url("./fonts/GothamProLight/GothamProLight.eot");
-  src: url("./fonts/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProLight/GothamProLight.woff") format("woff"), url("./fonts/GothamProLight/GothamProLight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "GothamProLightItalic";
-  src: url("./fonts/GothamProLightItalic/GothamProLightItalic.eot");
-  src: url("./fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProLightItalic/GothamProLightItalic.woff") format("woff"), url("./fonts/GothamProLightItalic/GothamProLightItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "GothamProMedium";
-  src: url("./fonts/GothamProMedium/GothamProMedium.eot");
-  src: url("./fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("./fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-
-@font-face {
-  font-family: "GothamProMediumItalic";
-  src: url("./fonts/GothamProMediumItalic/GothamProMediumItalic.eot");
-  src: url("./fonts/GothamProMediumItalic/GothamProMediumItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProMediumItalic/GothamProMediumItalic.woff") format("woff"), url("./fonts/GothamProMediumItalic/GothamProMediumItalic.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
-  
-@font-face {
-  font-family: "GothamProRegular";
-  src: url("./fonts/GothamProRegular/GothamProRegular.eot");
-  src: url("./fonts/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProRegular/GothamProRegular.woff") format("woff"), url("./fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+	ul {
+		list-style: none; }
 
 
+		blockquote, q {
+			quotes: none; }
+
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none; 
+			}
+
+			@font-face {
+				font-family: "GothamProBlack";
+				src: url("./fonts/GothamProBlack/GothamProBlack.eot");
+				src: url("./fonts/GothamProBlack/GothamProBlack.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProBlack/GothamProBlack.woff") format("woff"), url("./fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+				font-style: normal;
+				font-weight: normal; }
+
+				@font-face {
+					font-family: "GothamProBlackItalic";
+					src: url("./fonts/GothamProBlackItalic/GothamProBlackItalic.eot");
+					src: url("./fonts/GothamProBlackItalic/GothamProBlackItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProBlackItalic/GothamProBlackItalic.woff") format("woff"), url("./fonts/GothamProBlackItalic/GothamProBlackItalic.ttf") format("truetype");
+					font-style: normal;
+					font-weight: normal; }
+
+					@font-face {
+						font-family: "GothamProBold";
+						src: url("./fonts/GothamProBold/GothamProBold.eot");
+						src: url("./fonts/GothamProBold/GothamProBold.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProBold/GothamProBold.woff") format("woff"), url("./fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+						font-style: normal;
+						font-weight: normal; }
+
+						@font-face {
+							font-family: "GothamProBoldItalic";
+							src: url("./fonts/GothamProBoldItalic/GothamProBoldItalic.eot");
+							src: url("./fonts/GothamProBoldItalic/GothamProBoldItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProBoldItalic/GothamProBoldItalic.woff") format("woff"), url("./fonts/GothamProBoldItalic/GothamProBoldItalic.ttf") format("truetype");
+							font-style: normal;
+							font-weight: normal; }
+
+							@font-face {
+								font-family: "GothamProItalic";
+								src: url("./fonts/GothamProItalic/GothamProItalic.eot");
+								src: url("./fonts/GothamProItalic/GothamProItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProItalic/GothamProItalic.woff") format("woff"), url("./fonts/GothamProItalic/GothamProItalic.ttf") format("truetype");
+								font-style: normal;
+								font-weight: normal; }
+
+								@font-face {
+									font-family: "GothamProLight";
+									src: url("./fonts/GothamProLight/GothamProLight.eot");
+									src: url("./fonts/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProLight/GothamProLight.woff") format("woff"), url("./fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+									font-style: normal;
+									font-weight: normal; }
+
+									@font-face {
+										font-family: "GothamProLightItalic";
+										src: url("./fonts/GothamProLightItalic/GothamProLightItalic.eot");
+										src: url("./fonts/GothamProLightItalic/GothamProLightItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProLightItalic/GothamProLightItalic.woff") format("woff"), url("./fonts/GothamProLightItalic/GothamProLightItalic.ttf") format("truetype");
+										font-style: normal;
+										font-weight: normal; }
+
+										@font-face {
+											font-family: "GothamProMedium";
+											src: url("./fonts/GothamProMedium/GothamProMedium.eot");
+											src: url("./fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("./fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+											font-style: normal;
+											font-weight: normal; }
+
+											@font-face {
+												font-family: "GothamProMediumItalic";
+												src: url("./fonts/GothamProMediumItalic/GothamProMediumItalic.eot");
+												src: url("./fonts/GothamProMediumItalic/GothamProMediumItalic.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProMediumItalic/GothamProMediumItalic.woff") format("woff"), url("./fonts/GothamProMediumItalic/GothamProMediumItalic.ttf") format("truetype");
+												font-style: normal;
+												font-weight: normal; }
+
+												@font-face {
+													font-family: "GothamProRegular";
+													src: url("./fonts/GothamProRegular/GothamProRegular.eot");
+													src: url("./fonts/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("./fonts/GothamProRegular/GothamProRegular.woff") format("woff"), url("./fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+													font-style: normal;
+													font-weight: normal; }
 
 
 
 
-@font-face {
-	font-family: "SegoeUIRegular";
-	src: url("./fonts/SegoeUIRegular/SegoeUIRegular.eot");
-	src: url("./fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
-	url("./fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
-	url("./fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-@font-face {
-  font-family: "SegoeUISemiBold";
-  src: url("./fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
-  src: url("./fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
-  url("./fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"),
-  url("./fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-	font-family: "SegoeUIBold";
-	src: url("./fonts/SegoeUIBold/SegoeUIBold.eot");
-	src: url("./fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
-	url("./fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
-	url("./fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
 
-@font-face {
-	font-family: "SegoeUIItalic";
-	src: url("./fonts/SegoeUIItalic/SegoeUIItalic.eot");
-	src: url("./fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
-	url("./fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
-	url("./fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
 
-@font-face {
-	font-family: "SegoeUILight";
-	src: url("./fonts/SegoeUILight/SegoeUILight.eot");
-	src: url("./fonts/SegoeUILight/SegoeUILight.eot?#iefix")format("embedded-opentype"),
-	url("./fonts/SegoeUILight/SegoeUILight.woff") format("woff"),
-	url("./fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
+													@font-face {
+														font-family: "SegoeUIRegular";
+														src: url("./fonts/SegoeUIRegular/SegoeUIRegular.eot");
+														src: url("./fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+														url("./fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+														url("./fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+														font-style: normal;
+														font-weight: normal;
+													}
+													@font-face {
+														font-family: "SegoeUISemiBold";
+														src: url("./fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
+														src: url("./fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
+														url("./fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"),
+														url("./fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
+														font-style: normal;
+														font-weight: normal;
+													}
+													@font-face {
+														font-family: "SegoeUIBold";
+														src: url("./fonts/SegoeUIBold/SegoeUIBold.eot");
+														src: url("./fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
+														url("./fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
+														url("./fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+														font-style: normal;
+														font-weight: normal;
+													}
 
-html, body{
-	height: auto!important;
-	min-height: 100%;
-}
-.clear{
-    clear: both;
-}
-.center{
-	text-align: center;
-}
-body {
-	font-family: "GothamProRegular";
-	font-size: 16px;
-	line-height: 29px;
-}
+													@font-face {
+														font-family: "SegoeUIItalic";
+														src: url("./fonts/SegoeUIItalic/SegoeUIItalic.eot");
+														src: url("./fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
+														url("./fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
+														url("./fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+														font-style: normal;
+														font-weight: normal;
+													}
 
-.container{
-	@media only screen and (min-width : 990px) {
-		padding-left:0 !important;
-		padding-right:0 !important;
-	}
-}	
-div[class^="col-md"]{
-	@media only screen and (min-width : 990px) {
-		padding: 0px;
-		margin: 0px;
-	}
-}
-.h1 {
-	font-family: "GothamProRegular", arial, sans-serif ;
-	color: #fff;
-	font-size: 46px;
-	line-height: 1.3;
-	font-weight: 400;
-	@media only screen and (max-width : 1000px) {
-		font-size: 41px;
-	}
-	@media only screen and (max-width : 700px) {
-		font-size: 27px;
-		text-align: center;
-		line-height: 31px;
-	}
-}
-.h2 {
-	font-family: "GothamProRegular", arial, sans-serif ;
-	color: #393f41;
-	font-size: 39px;
-	line-height: 1.3;
-	font-weight: 400;
-	padding: 0;
-	margin: 0;
-	@media only screen and (max-width : 1000px) {
-		font-size: 35px;
-	}
-	@media only screen and (max-width : 700px) {
-		font-size: 25px;
-	}
-	&_light{
-		span{
-			text-decoration: none;
-			display: inline-block;
-			font-size: 30px;
-			border-bottom: 1px solid #a2afc4;
-			color: #395e8e;
-			line-height: 1;
+													@font-face {
+														font-family: "SegoeUILight";
+														src: url("./fonts/SegoeUILight/SegoeUILight.eot");
+														src: url("./fonts/SegoeUILight/SegoeUILight.eot?#iefix")format("embedded-opentype"),
+														url("./fonts/SegoeUILight/SegoeUILight.woff") format("woff"),
+														url("./fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+														font-style: normal;
+														font-weight: normal;
+													}
+
+													html, body{
+														height: auto!important;
+														min-height: 100%;
+													}
+													.clear{
+														clear: both;
+													}
+													.center{
+														text-align: center;
+													}
+													body {
+														font-family: "GothamProRegular";
+														font-size: 16px;
+														line-height: 29px;
+													}
+
+													.container{
+														@media only screen and (min-width : 990px) {
+															padding-left:0 !important;
+															padding-right:0 !important;
+														}
+													}	
+													div[class^="col-md"]{
+														@media only screen and (min-width : 990px) {
+															padding: 0px;
+															margin: 0px;
+														}
+													}
+													.h1 {
+														font-family: "GothamProRegular", arial, sans-serif ;
+														color: #fff;
+														font-size: 46px;
+														line-height: 1.3;
+														font-weight: 400;
+														@media only screen and (max-width : 1000px) {
+															font-size: 41px;
+														}
+														@media only screen and (max-width : 700px) {
+															font-size: 27px;
+															text-align: center;
+															line-height: 31px;
+														}
+													}
+													.h2 {
+														font-family: "GothamProRegular", arial, sans-serif ;
+														color: #393f41;
+														font-size: 39px;
+														line-height: 1.3;
+														font-weight: 400;
+														padding: 0;
+														margin: 0;
+														@media only screen and (max-width : 1000px) {
+															font-size: 35px;
+														}
+														@media only screen and (max-width : 700px) {
+															font-size: 25px;
+														}
+														&_light{
+															span{
+																text-decoration: none;
+																display: inline-block;
+																font-size: 30px;
+																border-bottom: 1px solid #a2afc4;
+																color: #395e8e;
+																line-height: 1;
 			// &:hover{
 			// 	border-bottom: 0;
 			// }
@@ -343,7 +343,7 @@ div[class^="col-md"]{
 	@media only screen and (max-width : 700px) {
 		&_header{
 			i{
-			display: block;
+				display: block;
 			}
 			span{
 				display: none;
@@ -569,18 +569,18 @@ div[class^="col-md"]{
 	}
 }
 .input_theme_rosa {
-	  display: inline-block;     
-	  width: 100%;
-	  max-width: unset;
-	  @media only screen and (min-width : 580px) {	
+	display: inline-block;     
+	width: 100%;
+	max-width: unset;
+	@media only screen and (min-width : 580px) {	
 		max-width: 335px; 
-	  }
+	}
 }
 .input_theme_main{
 	display: inline-block;   
-  	width: 100%;
-  	margin-bottom: 19px;
-  	@media only screen and (min-width : 580px) {		
+	width: 100%;
+	margin-bottom: 19px;
+	@media only screen and (min-width : 580px) {		
 		max-width: 287px; 
 	}
 }
@@ -796,8 +796,79 @@ div[class^="col-md"]{
 
 
 
+.kama_breadcrumbs{
+	a{
+		display: inline-block;
+		color: white;
+		font-family: "GothamProRegular";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		padding-left: 7px;
+		vertical-align: middle;
+		span{
+			text-decoration: underline;
+			color: white;
+			background-image: url("./img/breadright.png");
+			background-repeat: no-repeat;
+			background-position: right center;
+			display: inline-block;
+			padding-right:20px;
+			&:hover{
+				text-decoration: none;
+			}
+		}	
+	}
+	a:first-child{		
+		position: relative;
+		padding-left: 17px;
+		font-size: 0;
+		&:after{
+			content: "";
+			position: absolute;
+			background-image: url("./img/house.png");
+			background-repeat: no-repeat;
+			background-position: left top 2.5px;
+			padding-left: 17px;
+			width: 20px;
+			height: 20px;
+			left:7px;
+			top:0;
+		}
+		span{
+			padding: 0 7px;
+			@media only screen and (min-width : 480px) {
+				padding: 0 15px;	
+			}
+		}
+
+		@media only screen and (min-width : 480px) {
+			padding-bottom: 0 ;
+			font-size: 16px;
+			span{
+				padding: 0 20px 0 17px;
+			}
+		}
+	}
+	.kb_title{
+		display: inline-block;
+		color: white;
+		font-family: "GothamProRegular";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		padding-left: 7px;
+		vertical-align: middle;
+	}
+}
+
+
+
+
+
+
 .message_theme_rosa {
-  display: inline-block;  
+	display: inline-block;  
   // max-width: 614px;  
   // width: 100%;
   min-height: 80px;
@@ -838,18 +909,18 @@ div[class^="col-md"]{
 .clear{clear: both;}
 
 .input_theme_rosa {
-	  display: inline-block;     
-	  width: 100%;
-	  max-width: unset;
-	  @media only screen and (min-width : 580px) {	
+	display: inline-block;     
+	width: 100%;
+	max-width: unset;
+	@media only screen and (min-width : 580px) {	
 		max-width: 335px; 
-	  }
+	}
 }
 .input_theme_main{
 	display: inline-block;   
-  	width: 100%;
-  	margin-bottom: 19px;
-  	@media only screen and (min-width : 580px) {		
+	width: 100%;
+	margin-bottom: 19px;
+	@media only screen and (min-width : 580px) {		
 		max-width: 287px; 
 	}
 }
@@ -988,9 +1059,9 @@ div[class^="col-md"]{
 	}	
 }
 .input_theme_popup {
-  display: inline-block;     
-  width: 100%;
-  margin-bottom: 22px;  
+	display: inline-block;     
+	width: 100%;
+	margin-bottom: 22px;  
 }
 .form_popup__caption{
 	color: #313131;
@@ -1003,14 +1074,14 @@ div[class^="col-md"]{
 }
 .socials-wrapper{
 	max-width: 160px;
-    width: 100%;
-    display: inline-block;   
+	width: 100%;
+	display: inline-block;   
 }
 .socials-inner{
-    max-width: 90px;
-    @media only screen and (min-width : 1024px) {
-        max-width: 160px;
-    }
+	max-width: 90px;
+	@media only screen and (min-width : 1024px) {
+		max-width: 160px;
+	}
 }
 .wearesocials{
 	color: white;
@@ -1022,17 +1093,17 @@ div[class^="col-md"]{
 	margin-bottom: 12px;
 }
 .socials-link {
-    background: #fff;
-    width: 34px;
-    height: 34px;
-    text-align: center;
-    display: inline-block;    
-    font-size: 18px;
-    margin-right: 1.5px;
-    i{
-    	color: #34393b;
-    	padding-top: 9px;
-    }
+	background: #fff;
+	width: 34px;
+	height: 34px;
+	text-align: center;
+	display: inline-block;    
+	font-size: 18px;
+	margin-right: 1.5px;
+	i{
+		color: #34393b;
+		padding-top: 9px;
+	}
 }
 
 
@@ -1101,118 +1172,118 @@ div[class^="col-md"]{
 .clear{clear:both;}
 
 #reviewStars-input input:checked ~ label, #reviewStars-input label,
- #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
-  background: url('./img/star2.png') no-repeat;
-  background-position: top center;
-  outline: none;
-  border: none;
+#reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+	background: url('./img/star2.png') no-repeat;
+	background-position: top center;
+	outline: none;
+	border: none;
 }
 
 #reviewStars-input {
-    overflow: hidden;
-    zoom:0;  
-    position: relative;
-    width: 130px;
-    display: inline-block;   
-    vertical-align: bottom;
-    @media only screen and (min-width : 650px) {
-          width: 155px;
-           padding-top: 5px;
-    }
+	overflow: hidden;
+	zoom:0;  
+	position: relative;
+	width: 130px;
+	display: inline-block;   
+	vertical-align: bottom;
+	@media only screen and (min-width : 650px) {
+		width: 155px;
+		padding-top: 5px;
+	}
 }
 
 #reviewStars-input input {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;  
-  width: 21px;
-  height: 25px;  
-  position: absolute;
-  top: 0;
-  z-index: 0;
-   @media only screen and (min-width : 650px) {
-       width: 25px;
-       height: 25px;  
-    }
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;  
+	width: 21px;
+	height: 25px;  
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	@media only screen and (min-width : 650px) {
+		width: 25px;
+		height: 25px;  
+	}
 }
 
 #reviewStars-input input:checked ~ label {
-  height: 25px;
-  width: 21px;
-  background: url('./img/star1.png') no-repeat;
-    @media only screen and (min-width : 650px) {
-       width: 25px;
-       height: 25px;  
-    }
+	height: 25px;
+	width: 21px;
+	background: url('./img/star1.png') no-repeat;
+	@media only screen and (min-width : 650px) {
+		width: 25px;
+		height: 25px;  
+	}
 }
 
 #reviewStars-input label {
-  height: 25px;
-  width: 21px;
-  float: right;
-  cursor: pointer;
-  margin-right: 5px;  
-  position: relative;
-  z-index: 1;
-    @media only screen and (min-width : 650px) {
-       width: 25px;
-       height: 25px;  
-    }
+	height: 25px;
+	width: 21px;
+	float: right;
+	cursor: pointer;
+	margin-right: 5px;  
+	position: relative;
+	z-index: 1;
+	@media only screen and (min-width : 650px) {
+		width: 25px;
+		height: 25px;  
+	}
 }
 #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
-  height: 25px;
-  width: 21px;
-  background: url('./img/star1.png') no-repeat;
-    @media only screen and (min-width : 650px) {
-       width: 25px;
-       height: 25px;  
-    }
+	height: 25px;
+	width: 21px;
+	background: url('./img/star1.png') no-repeat;
+	@media only screen and (min-width : 650px) {
+		width: 25px;
+		height: 25px;  
+	}
 }
 
 
 .rateandshare_bg{
-    background-color: #eeeeef;
+	background-color: #eeeeef;
 }
 .rateandshare_container{
     // max-width: 1175px;
     margin: 0 auto;
     padding: 25px 10px 30px 10px;
     @media only screen and (min-width : 990px) {
-      padding: 25px 5px 30px 0px !important;
+    	padding: 25px 5px 30px 0px !important;
     }
 }
 .rate_block{    
-     text-align: center;
-     margin-bottom: 15px;
-    @media only screen and (min-width : 650px) {
-        float: left;
-        margin-bottom: 0px;
-    }
+	text-align: center;
+	margin-bottom: 15px;
+	@media only screen and (min-width : 650px) {
+		float: left;
+		margin-bottom: 0px;
+	}
 }
 .rate_block__rate{
-    display: inline-block;
-    vertical-align: bottom;
-    color: #484e4c;
-    font-family: "GothamProMedium";
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 29px;
-     @media only screen and (min-width : 650px) {
-         font-size: 19px;
-         margin-right: 14px;
-    }
+	display: inline-block;
+	vertical-align: bottom;
+	color: #484e4c;
+	font-family: "GothamProMedium";
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 29px;
+	@media only screen and (min-width : 650px) {
+		font-size: 19px;
+		margin-right: 14px;
+	}
 }
 
 .rate_block__nums{
-    color: #878f8c;
-    font-family: "GothamProRegular";
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 29px;
-    display: inline-block;
-    vertical-align: bottom;
-    i{
-        font-style: normal;
-    }
+	color: #878f8c;
+	font-family: "GothamProRegular";
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 29px;
+	display: inline-block;
+	vertical-align: bottom;
+	i{
+		font-style: normal;
+	}
 }
 
 
@@ -1222,27 +1293,27 @@ div[class^="col-md"]{
     margin: 0 auto;
     text-align: center;
     @media only screen and (min-width : 650px) {
-      float: right;
-      display: inline-block;
+    	float: right;
+    	display: inline-block;
     }
 }
 .share{
-    background-image: url("./img/shareimg.png");
-    background-repeat: no-repeat;
-    background-position: right top 2px;
-    color: #39434d;
-    font-family: "GothamProLight";
-    font-size: 13px;
-    font-weight: 300;
-    line-height: 19px;
-    display: inline-block;
-    padding: 5px 15px 7px 0;
+	background-image: url("./img/shareimg.png");
+	background-repeat: no-repeat;
+	background-position: right top 2px;
+	color: #39434d;
+	font-family: "GothamProLight";
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 19px;
+	display: inline-block;
+	padding: 5px 15px 7px 0;
 }
 .share__socials{
-    margin-left: 14px;
-    display: inline-block;
-    vertical-align: top;
-    padding-top: 2px;
+	margin-left: 14px;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 2px;
 }
 .mape {
 	border: 3px solid #e8eff2;
@@ -2599,20 +2670,20 @@ body, html{
 		z-index: 300;
 		.item__img{
 			z-index: 305;
-	    top: 30%;
-  	  left: 34%;
-  	  position: absolute;
+			top: 30%;
+			left: 34%;
+			position: absolute;
 		}
 		&_second{
 			img{
-	      top: 29%;
-      	left: 12%;
+				top: 29%;
+				left: 12%;
 			}
 		}
 		&_third{
 			img{
-		    top: 17%;
- 				left: 9%;
+				top: 17%;
+				left: 9%;
 			}
 		}
 		@media only screen and (min-width : 1000px) {
@@ -2625,8 +2696,8 @@ body, html{
 				left: auto;
 				right: -130px;
 				.item__img{
-		      top: 29%;
-	      	left: 12%;
+					top: 29%;
+					left: 12%;
 				}
 			}
 			&_third{
@@ -2637,8 +2708,8 @@ body, html{
 				width: 646px;
 				height: 646px;
 				.item__img{
-			    top: 17%;
-   				left: 9%;
+					top: 17%;
+					left: 9%;
 				}
 			}
 		}
@@ -2662,8 +2733,8 @@ body, html{
 			}
 			&_second{
 				.item__img{
-          top: -25px;
-				  left: 15px;
+					top: -25px;
+					left: 15px;
 				}
 			}
 		}
@@ -2780,21 +2851,21 @@ body, html{
 		top: -21px;
 		z-index: 100;
 		@media only screen and (max-width : 991px) {
-		 	top: auto;
-	    bottom: -21px;
-	    transform: rotate(180deg);
+			top: auto;
+			bottom: -21px;
+			transform: rotate(180deg);
 		}
 		&::before{
-	    content: "";
-	    position: absolute;
-	    top: 5px;
-	    left: -15px;
-	    width: 0;
-	    height: 0;
-	    border-style: solid;
-	    border-width: 0 14.5px 17px 14.5px;
-	    border-color: transparent transparent #fff transparent;
-	    z-index: 105;
+			content: "";
+			position: absolute;
+			top: 5px;
+			left: -15px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 14.5px 17px 14.5px;
+			border-color: transparent transparent #fff transparent;
+			z-index: 105;
 		}
 	}
 	&__content-wrap{
@@ -3661,412 +3732,412 @@ body, html{
 }
 /* Направления */
 .my_circle {
-  position: absolute;
-  top: -12px;
+	position: absolute;
+	top: -12px;
 }
 .direction_content {
-  position: relative;
-  padding: 25px 0 30px 0;
-  @media screen and (min-width: 992px) {
-    padding: 65px 0 55px 0;
-    .container {
-      padding: 0;
-    }
-  }
-  .col-md-4 {
-    padding: 0;
-    margin-bottom: 30px;
-  }
+	position: relative;
+	padding: 25px 0 30px 0;
+	@media screen and (min-width: 992px) {
+		padding: 65px 0 55px 0;
+		.container {
+			padding: 0;
+		}
+	}
+	.col-md-4 {
+		padding: 0;
+		margin-bottom: 30px;
+	}
 }
 .direction_header {
-  margin-bottom: 25px;
-  @media screen and (min-width: 992px) {
-    margin-bottom: 40px;
-  }
+	margin-bottom: 25px;
+	@media screen and (min-width: 992px) {
+		margin-bottom: 40px;
+	}
 }
 .direction_item {
-  padding: 200px 0 20px 0;
-  border-radius: 10px;
-  height: 260px;
-  &_1{
-    background: url('./img/direction-prom.png') 0 0 no-repeat;
-  }
-  &_2 {
-    background: url('./img/direction-chem.png') 0 0 no-repeat;
-  }
-  &_3 {
-    span {
-      margin-top: 10px;
-    }
-    background: url('./img/direction-machine.png') 0 0 no-repeat;
-    @media screen and (min-width: 992px) {
-      margin-right: 0px;
-    }
-  }
-  &_4 {
-    background: url('./img/direction-lprom.png') 0 0 no-repeat;
-  }
-  &_5 {
-    background: url('./img/direction-metall.png') 0 0 no-repeat;
-  }
-  &_6 {
-    background: url('./img/direction-energy.png') 0 0 no-repeat;
-    @media screen and (min-width: 992px) {
-      margin-right: 0px;
-    }
-  }
-  max-width: 330px;
-  margin: auto;
-  @media screen and (min-width: 992px) {
-    padding: 215px 0 30px 0;
-    max-width: 370px;
-    margin: auto;
-    margin-right: 30px;
-  }
+	padding: 200px 0 20px 0;
+	border-radius: 10px;
+	height: 260px;
+	&_1{
+		background: url('./img/direction-prom.png') 0 0 no-repeat;
+	}
+	&_2 {
+		background: url('./img/direction-chem.png') 0 0 no-repeat;
+	}
+	&_3 {
+		span {
+			margin-top: 10px;
+		}
+		background: url('./img/direction-machine.png') 0 0 no-repeat;
+		@media screen and (min-width: 992px) {
+			margin-right: 0px;
+		}
+	}
+	&_4 {
+		background: url('./img/direction-lprom.png') 0 0 no-repeat;
+	}
+	&_5 {
+		background: url('./img/direction-metall.png') 0 0 no-repeat;
+	}
+	&_6 {
+		background: url('./img/direction-energy.png') 0 0 no-repeat;
+		@media screen and (min-width: 992px) {
+			margin-right: 0px;
+		}
+	}
+	max-width: 330px;
+	margin: auto;
+	@media screen and (min-width: 992px) {
+		padding: 215px 0 30px 0;
+		max-width: 370px;
+		margin: auto;
+		margin-right: 30px;
+	}
 }
 .direction_item__p {
-  color: white;
-  display: inline-block;
-  font-family: 'GothamProBold', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase;
-  max-width: 170px;
-  @media screen and (min-width: 992px) {
-    max-width: 235px;
-    font-size: 16px;
-  }
-  @media screen and (min-width: 1248px) {
-    max-width: 310px;
-  }
+	color: white;
+	display: inline-block;
+	font-family: 'GothamProBold', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 20px;
+	text-transform: uppercase;
+	max-width: 170px;
+	@media screen and (min-width: 992px) {
+		max-width: 235px;
+		font-size: 16px;
+	}
+	@media screen and (min-width: 1248px) {
+		max-width: 310px;
+	}
 }
 .direction_item__circle {
-  width: 11px;
-  height: 11px;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 5px;
-  margin-left: 30px;
-  margin-right: 10px;
-  background: url('./img/direction-circle.png') 0 0 no-repeat;
-  @media screen and (min-width: 992px) {
-    margin-top: 10px;
-  }
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 5px;
+	margin-left: 30px;
+	margin-right: 10px;
+	background: url('./img/direction-circle.png') 0 0 no-repeat;
+	@media screen and (min-width: 992px) {
+		margin-top: 10px;
+	}
 }
 .direction_description_p {
-  color: #393c41;
-  font-family: 'GothamProRegular';
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  @media screen and (min-width: 992px) {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 27px;
-  }
-  &:first-child {
-    margin-bottom: 35px;
-    margin-top: 15px;
-  }
+	color: #393c41;
+	font-family: 'GothamProRegular';
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	@media screen and (min-width: 992px) {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 27px;
+	}
+	&:first-child {
+		margin-bottom: 35px;
+		margin-top: 15px;
+	}
 }
 
 /* Clients */
 .clients_content {
-  position: relative;
+	position: relative;
 }
 .clients_header__h2 {
-  margin-bottom: 30px;
-  padding-left: 16px;
-  margin-top: 25px;
-  @media screen and (min-width: 992px) {
-    margin-top: 60px;
-  }
+	margin-bottom: 30px;
+	padding-left: 16px;
+	margin-top: 25px;
+	@media screen and (min-width: 992px) {
+		margin-top: 60px;
+	}
 }
 .clients_item__img {
-  height: 180px;
+	height: 180px;
 }
 .clients_item {
-  max-width: 285px;
-  margin: auto;
-  margin-bottom: 35px;
-  @media screen and (min-width: 992px) {
-    margin-bottom: 45px;
-  }
+	max-width: 285px;
+	margin: auto;
+	margin-bottom: 35px;
+	@media screen and (min-width: 992px) {
+		margin-bottom: 45px;
+	}
 }
 .clients_item__1 {
-  .clients_item__img {
-    background: url('./img/gazprom.png') 0 0 no-repeat;
-  }
+	.clients_item__img {
+		background: url('./img/gazprom.png') 0 0 no-repeat;
+	}
 }
 .clients_item__2 {
-  .clients_item__img {
-    background: url('./img/bashneft.png') 0 0 no-repeat;
-  }
+	.clients_item__img {
+		background: url('./img/bashneft.png') 0 0 no-repeat;
+	}
 }
 .clients_item__3{
-  .clients_item__img {
-    background: url('./img/autovaz.png') 0 0 no-repeat;
-  }
+	.clients_item__img {
+		background: url('./img/autovaz.png') 0 0 no-repeat;
+	}
 }
 .clients_item__4 {
-  .clients_item__img {
-    background: url('./img/evraz.png') 0 0 no-repeat;
-  }
+	.clients_item__img {
+		background: url('./img/evraz.png') 0 0 no-repeat;
+	}
 }
 .clients_item__5 {
-  .clients_item__img {
-    background: url('./img/lukoil.png') 0 0 no-repeat;
-  }
+	.clients_item__img {
+		background: url('./img/lukoil.png') 0 0 no-repeat;
+	}
 }
 .clients_item__6 {
-  .clients_item__img {
-    background: url('./img/severstal.png') 0 0 no-repeat;
-  }
+	.clients_item__img {
+		background: url('./img/severstal.png') 0 0 no-repeat;
+	}
 }
 .clients_item__7 {
-  .clients_item__img {
-    background: url('./img/nlmk.png') 0 0 no-repeat;
-  }
+	.clients_item__img {
+		background: url('./img/nlmk.png') 0 0 no-repeat;
+	}
 }
 .clients_item__8 {
-  .clients_item__img {
-    background: url('./img/tgroup.png') 0 0 no-repeat;
-  }
+	.clients_item__img {
+		background: url('./img/tgroup.png') 0 0 no-repeat;
+	}
 }
 .clients_content {
-  .col-md-4 {
-    padding: 0;
-  }
-  @media screen and (min-width: 992px) {
-    .container {
-      padding: 0;
-    }
-  }
+	.col-md-4 {
+		padding: 0;
+	}
+	@media screen and (min-width: 992px) {
+		.container {
+			padding: 0;
+		}
+	}
 }
 .clients_item__link {
-  display: block;
-  margin-top: 20px;
-  text-align: center;
+	display: block;
+	margin-top: 20px;
+	text-align: center;
 }
 /* Ролики */
 .rolik_content {
-  position: relative;
+	position: relative;
 }
 .rolik_header {
-  margin-bottom: 25px;
-  margin-top: 25px;
-  @media screen and (min-width: 992px) {
-    margin-bottom: 35px;
-    margin-top: 60px;
-  }
+	margin-bottom: 25px;
+	margin-top: 25px;
+	@media screen and (min-width: 992px) {
+		margin-bottom: 35px;
+		margin-top: 60px;
+	}
 }
 .rolik_p {
-  color: #393f41;
-  font-family: 'GothamProRegular', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 22px;
-  max-width: 658px;
-  @media screen and (min-width: 992px) {
-    font-size: 16px;
-    line-height: 32px;
-  }
-  &1 {
-    margin-bottom: 30px;
-    @media screen and (min-width: 992px) {
-      margin-bottom: 50px;
-    }
-  }
-  &2 {
-    margin-bottom: 20px;
-  }
+	color: #393f41;
+	font-family: 'GothamProRegular', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 22px;
+	max-width: 658px;
+	@media screen and (min-width: 992px) {
+		font-size: 16px;
+		line-height: 32px;
+	}
+	&1 {
+		margin-bottom: 30px;
+		@media screen and (min-width: 992px) {
+			margin-bottom: 50px;
+		}
+	}
+	&2 {
+		margin-bottom: 20px;
+	}
 }
 .rolik_img {
-  background: url('./img/rolik.png') 0 0 no-repeat;
-  background-size: cover;
-  height: 268px;
-  @media screen and (min-width: 1248px) {
-    height: 290px;
-  }
-  max-width: 438px;
-  margin:auto;
+	background: url('./img/rolik.png') 0 0 no-repeat;
+	background-size: cover;
+	height: 268px;
+	@media screen and (min-width: 1248px) {
+		height: 290px;
+	}
+	max-width: 438px;
+	margin:auto;
 }
 .rolik_img_m {
-  background: url('./img/rolik-m.png') 0 0 no-repeat;
-  background-size: cover;
-  height: 219px;
-  max-width: 260px;
-  margin:auto;
-  @media screen and (min-width: 768px) {
-    height: 277px;
-    max-width:unset;
-  }
-  margin-bottom: 25px;
+	background: url('./img/rolik-m.png') 0 0 no-repeat;
+	background-size: cover;
+	height: 219px;
+	max-width: 260px;
+	margin:auto;
+	@media screen and (min-width: 768px) {
+		height: 277px;
+		max-width:unset;
+	}
+	margin-bottom: 25px;
 }
 .rolik_button_span {
-  width: 115px;
-  height: 30px;
-  &:after {
-    display: inline-block;
-    margin-left: 10px;
-    content: '';
-    width: 15px;
-    height: 8px;
-    background: url('./img/arrow.png') 0 0 no-repeat;
-  }
+	width: 115px;
+	height: 30px;
+	&:after {
+		display: inline-block;
+		margin-left: 10px;
+		content: '';
+		width: 15px;
+		height: 8px;
+		background: url('./img/arrow.png') 0 0 no-repeat;
+	}
 }
 .button_rolik  {
-  display: block;
-  margin:auto;
-  @media screen and (min-width: 992px) {
-    margin: 0;
-  }
-  width: 115px;
-  height: 30px;
+	display: block;
+	margin:auto;
+	@media screen and (min-width: 992px) {
+		margin: 0;
+	}
+	width: 115px;
+	height: 30px;
 }
 .rolik_wrap {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 /* Ленточный конвейер */
 .conv_content {
-  padding: 30px 0 40px 0;
-  position: relative;
-  @media screen and (min-width: 992px) {
-    padding: 60px 0 60px 0;
-  }
+	padding: 30px 0 40px 0;
+	position: relative;
+	@media screen and (min-width: 992px) {
+		padding: 60px 0 60px 0;
+	}
 }
 .conv_header {
-  display: inline-block;
+	display: inline-block;
 }
 .conv_bg {
-  background: url('./img/conv-headerbg.png') 0 0 no-repeat;
-  height:375px;
-  position: relative;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  &:after {
-    content: '';
-    width:141px;
-    height: 45px;
-    background-image: url('./img/conv-calendar.png');
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
+	background: url('./img/conv-headerbg.png') 0 0 no-repeat;
+	height:375px;
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	&:after {
+		content: '';
+		width:141px;
+		height: 45px;
+		background-image: url('./img/conv-calendar.png');
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
 }
 .conv_h3 {
-  color: #484e4c;
-  font-family: 'GothamProRegular', sans-serif;
-  font-size: 23px;
-  @media screen and (min-width: 992px) {
-    font-size: 28px;
-  }
-  font-weight: 400;
-  line-height: 29px;
-  margin-bottom: 25px;
-  &:after {
-    content: '';
-    display: block;
-    width:66px;
-    height: 1px;
-    margin-top: 15px;
-    background-color: #ffcd72;
-  }
+	color: #484e4c;
+	font-family: 'GothamProRegular', sans-serif;
+	font-size: 23px;
+	@media screen and (min-width: 992px) {
+		font-size: 28px;
+	}
+	font-weight: 400;
+	line-height: 29px;
+	margin-bottom: 25px;
+	&:after {
+		content: '';
+		display: block;
+		width:66px;
+		height: 1px;
+		margin-top: 15px;
+		background-color: #ffcd72;
+	}
 }
 .conv_p {
-  color: #484e4c;
-  font-family: 'GothamProRegular', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  &_1 {
-    @media screen and (min-width: 992px) {
-      margin-bottom: 40px;
-    }
-  }
-  @media screen and (min-width: 992px) {
-    font-size: 16px;
-    line-height: 29px;
-  }
+	color: #484e4c;
+	font-family: 'GothamProRegular', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	&_1 {
+		@media screen and (min-width: 992px) {
+			margin-bottom: 40px;
+		}
+	}
+	@media screen and (min-width: 992px) {
+		font-size: 16px;
+		line-height: 29px;
+	}
 }
 .conv_list {
-  max-width: 365px;
-  background: #eeeeef;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin:auto;
+	max-width: 365px;
+	background: #eeeeef;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin:auto;
 }
 .conv_list__p {
-  color: #393f41;
-  padding-left: 14px;
-  padding-right: 14px;
-  font-family: 'GothamProRegular', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 51px;
-  @media screen and (min-width: 992px) {
-    font-size: 16px;
-    padding-left: 30px;
-    padding-right: 40px;
-  }
-  &:before {
-    content: '';
-    width: 11px;
-    height: 11px;
-    background: url('./img/conv-circle.png') 0 0 no-repeat;
-    display: inline-block;
-    margin-right: 9px;
-  }
+	color: #393f41;
+	padding-left: 14px;
+	padding-right: 14px;
+	font-family: 'GothamProRegular', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 51px;
+	@media screen and (min-width: 992px) {
+		font-size: 16px;
+		padding-left: 30px;
+		padding-right: 40px;
+	}
+	&:before {
+		content: '';
+		width: 11px;
+		height: 11px;
+		background: url('./img/conv-circle.png') 0 0 no-repeat;
+		display: inline-block;
+		margin-right: 9px;
+	}
 }
 .conv_list__item {
-  background: url('./img/conv-dash.png') bottom left no-repeat;
-  &:last-child {
-    background: none;
-  }
+	background: url('./img/conv-dash.png') bottom left no-repeat;
+	&:last-child {
+		background: none;
+	}
 }
 .conv_block {
-  @media screen and (min-width: 992px) {
-    margin-top: 60px;
-  }
+	@media screen and (min-width: 992px) {
+		margin-top: 60px;
+	}
 }
 .conv_images {
-  margin-top: 45px;
+	margin-top: 45px;
 }
 .conv_block__img {
-  width: 100%;
-  display: block;
-  max-width: 572px;
-  margin:auto;
+	width: 100%;
+	display: block;
+	max-width: 572px;
+	margin:auto;
 }
 .conv_block__img3 {
-  max-width: 287px;
-  margin:auto;
+	max-width: 287px;
+	margin:auto;
 }
 .conv_bg_m {
-  background: url('./img/conv-m.jpg') 0 0 no-repeat;
-  height: 445px;
-  margin-top: 30px;
-  margin-bottom: 25px;
-  background-size: cover;
+	background: url('./img/conv-m.jpg') 0 0 no-repeat;
+	height: 445px;
+	margin-top: 30px;
+	margin-bottom: 25px;
+	background-size: cover;
 }
 .conv_m_list {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 .conv_m_h3 {
-  margin-top: 40px;
+	margin-top: 40px;
 }
 .conv_block__imgblock {
-  max-width: 450px;
-  @media screen and (min-width: 1200px) {
-    max-width: unset;
-  }
+	max-width: 450px;
+	@media screen and (min-width: 1200px) {
+		max-width: unset;
+	}
 }
 .lent-sm {
-  width: 50%;
-  float: left;
+	width: 50%;
+	float: left;
 }
 
 @media only screen and (min-width : 320px) {
@@ -4130,9 +4201,9 @@ $t-c-lb-m : #1e91bc;
 	}
 }
 .header-d{
-		visibility: hidden;
-		position: absolute;
-	}
+	visibility: hidden;
+	position: absolute;
+}
 @media only screen and (min-width : 320px) {
 }
 

@@ -663,6 +663,61 @@ body {
       .bread_menu__link:first-child a {
         padding: 0 20px 0 17px; } }
 
+.kama_breadcrumbs a {
+  display: inline-block;
+  color: white;
+  font-family: "GothamProRegular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-left: 7px;
+  vertical-align: middle; }
+  .kama_breadcrumbs a span {
+    text-decoration: underline;
+    color: white;
+    background-image: url("./img/breadright.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: inline-block;
+    padding-right: 20px; }
+    .kama_breadcrumbs a span:hover {
+      text-decoration: none; }
+.kama_breadcrumbs a:first-child {
+  position: relative;
+  padding-left: 17px;
+  font-size: 0; }
+  .kama_breadcrumbs a:first-child:after {
+    content: "";
+    position: absolute;
+    background-image: url("./img/house.png");
+    background-repeat: no-repeat;
+    background-position: left top 2.5px;
+    padding-left: 17px;
+    width: 20px;
+    height: 20px;
+    left: 7px;
+    top: 0; }
+  .kama_breadcrumbs a:first-child span {
+    padding: 0 7px; }
+    @media only screen and (min-width: 480px) {
+      .kama_breadcrumbs a:first-child span {
+        padding: 0 15px; } }
+  @media only screen and (min-width: 480px) {
+    .kama_breadcrumbs a:first-child {
+      padding-bottom: 0;
+      font-size: 16px; }
+      .kama_breadcrumbs a:first-child span {
+        padding: 0 20px 0 17px; } }
+.kama_breadcrumbs .kb_title {
+  display: inline-block;
+  color: white;
+  font-family: "GothamProRegular";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-left: 7px;
+  vertical-align: middle; }
+
 .message_theme_rosa {
   display: inline-block;
   min-height: 80px;

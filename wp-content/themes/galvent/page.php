@@ -3,7 +3,7 @@
 
 <div class="bread_menu bread_menu_bg_img conveyors_page">	
 	<div class="container pos-relative">
-		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' » '); ?>
+		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' '); ?>
 		<!-- <ul class="bread_menu__menu">
 			<li class="bread_menu__link "><a href="/" class="bread_menu__link_bg">Главная</a></li>
 			<li class="bread_menu__link"><span>Наше производство</span></li>
