@@ -26,7 +26,7 @@ while ( $query->have_posts() ) {
 						<span class="article__img-descr"><?php the_title(); ?></span>
 					</div>
 					<div class="article__content">
-						<p class="article__txt"><?php echo content(5); ?></p>
+						<p class="article__txt"><?php the_content();?></p>
 						<div class="article__info clearfix">
 							<div class="article__date"><?php the_time('d.m.Y'); ?></div>
 							<div class="article__button">
