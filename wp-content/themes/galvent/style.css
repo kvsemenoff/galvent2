@@ -663,63 +663,66 @@ body {
       .bread_menu__link:first-child a {
         padding: 0 20px 0 17px; } }
 
-.kama_breadcrumbs a {
-  display: inline-block;
+.kama_breadcrumbs {
   color: white;
-  font-family: "GothamProRegular";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  padding-left: 7px;
   vertical-align: middle; }
-  .kama_breadcrumbs a span {
-    text-decoration: underline;
-    color: white;
-    background-image: url("./img/breadright.png");
-    background-repeat: no-repeat;
-    background-position: right center;
+  .kama_breadcrumbs a {
     display: inline-block;
-    padding-right: 20px; }
-    .kama_breadcrumbs a span:hover {
-      text-decoration: none; }
-.kama_breadcrumbs span:first-child a {
-  position: relative;
-  padding-left: 17px;
-  font-size: 0; }
-  .kama_breadcrumbs span:first-child a:after {
-    content: "";
-    position: absolute;
-    background-image: url("./img/house.png");
-    background-repeat: no-repeat;
-    background-position: left top 2.5px;
+    color: white;
+    font-family: "GothamProRegular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 7px;
+    vertical-align: middle; }
+    .kama_breadcrumbs a span {
+      text-decoration: underline;
+      color: white;
+      background-image: url("./img/breadright.png");
+      background-repeat: no-repeat;
+      background-position: right center;
+      display: inline-block;
+      padding-right: 20px; }
+      .kama_breadcrumbs a span:hover {
+        text-decoration: none; }
+  .kama_breadcrumbs span:first-child a {
+    position: relative;
     padding-left: 17px;
-    width: 20px;
-    height: 20px;
-    left: -5px;
-    top: 0; }
+    font-size: 0; }
+    .kama_breadcrumbs span:first-child a:after {
+      content: "";
+      position: absolute;
+      background-image: url("./img/house.png");
+      background-repeat: no-repeat;
+      background-position: left top 2.5px;
+      padding-left: 17px;
+      width: 20px;
+      height: 20px;
+      left: -5px;
+      top: 0; }
+      @media only screen and (min-width: 480px) {
+        .kama_breadcrumbs span:first-child a:after {
+          left: 7px; } }
+    .kama_breadcrumbs span:first-child a span {
+      padding: 0 7px; }
+      @media only screen and (min-width: 480px) {
+        .kama_breadcrumbs span:first-child a span {
+          padding: 0 15px; } }
     @media only screen and (min-width: 480px) {
-      .kama_breadcrumbs span:first-child a:after {
-        left: 7px; } }
-  .kama_breadcrumbs span:first-child a span {
-    padding: 0 7px; }
-    @media only screen and (min-width: 480px) {
-      .kama_breadcrumbs span:first-child a span {
-        padding: 0 15px; } }
-  @media only screen and (min-width: 480px) {
-    .kama_breadcrumbs span:first-child a {
-      padding-bottom: 0;
-      font-size: 16px; }
-      .kama_breadcrumbs span:first-child a span {
-        padding: 0 20px 0 17px; } }
-.kama_breadcrumbs .kb_title {
-  display: inline-block;
-  color: white;
-  font-family: "GothamProRegular";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  padding-left: 7px;
-  vertical-align: middle; }
+      .kama_breadcrumbs span:first-child a {
+        padding-bottom: 0;
+        font-size: 16px; }
+        .kama_breadcrumbs span:first-child a span {
+          padding: 0 20px 0 17px; } }
+  .kama_breadcrumbs .kb_title {
+    display: inline-block;
+    color: white;
+    font-family: "GothamProRegular";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 7px;
+    vertical-align: middle; }
 
 .message_theme_rosa {
   display: inline-block;
@@ -2754,6 +2757,48 @@ body, html {
     background: #006087 url(./img/article__nav-ic.png) center right 15px no-repeat; }
     .article__nav-button:hover {
       background-color: #023245; }
+
+.wppagination {
+  background-color: #eeeeef;
+  margin-top: 15px;
+  padding: 22px 0 12px; }
+  .wppagination .nav-links .page-numbers {
+    display: inline-block;
+    border-radius: 4px;
+    width: 37px;
+    line-height: 37px;
+    text-align: center;
+    background-color: #fff;
+    color: #434444;
+    font-size: 14px;
+    transition: 0.3s all ease;
+    margin: 0 10px 10px 0; }
+    .wppagination .nav-links .page-numbers:hover {
+      color: #fff;
+      background-color: #34393b; }
+  .wppagination .nav-links .next, .wppagination .nav-links .prev {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    width: auto;
+    line-height: 37px;
+    padding: 0 33px 0 20px;
+    transition: 0.3s all ease;
+    border-radius: 4px;
+    background-image: url(./img/article__nav-ic.png);
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+    background-color: #006086; }
+    .wppagination .nav-links .next:hover, .wppagination .nav-links .prev:hover {
+      background-color: #023245; }
+  .wppagination .nav-links .prev {
+    padding: 0 20px 0 33px;
+    background-image: url(./img/article__nav-ic2.png);
+    background-position: center left 15px; }
+  .wppagination .nav-links .current {
+    background-color: #34393b;
+    color: #fff; }
 
 @media only screen and (max-width: 450px) {
   .fancybox-wrap, .fancybox-desktop, .fancybox-type-image, .fancybox-opened {

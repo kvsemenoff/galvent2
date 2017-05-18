@@ -44,11 +44,19 @@
 				</div>
 			</div>
 
-<?php }
-the_posts_pagination();
-?>
+<?php }?>
 		
 	</div>
 </div>
+</div>
+
+<div class="wppagination">
+	<div class="container">
+		<?php 
+		$nav = get_the_posts_pagination();
+		$nav = preg_replace('~<h2.*?h2>~', '', $nav);
+		echo $nav;	
+		?>	
+	</div>
 </div>
 <?php get_footer(); ?>

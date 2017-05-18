@@ -16,7 +16,17 @@
 		<div class="row">
 			<?php 
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
 			$query = new WP_Query('cat=4' , 'paged=$paged');
+
+
+			$args = array(
+				'cat' => 4,
+				'paged' => $paged
+				);
+
+			$query = new WP_Query($args);
+
 			while ( $query->have_posts() ) {
 				$query->the_post();
 				?>
@@ -24,7 +34,11 @@
 					<div class="article">
 						<div class="article__img">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/article-photo-1.jpg" alt="">
+
 							<a href="<?php the_permalink(); ?>"<span class="article__img-descr"><?php the_title(); ?></span></a>
+
+							<a href="<?php the_permalink(); ?>" class="article__img-descr"><?php the_title(); ?></a>
+
 						</div>
 						<div class="article__content">
 							<?php the_excerpt(); ?>
@@ -39,10 +53,18 @@
 					</div>
 				</div>
 				<?php }?>
-				<?php $nav = get_the_posts_pagination();
-				$nav = preg_replace('~<h2.*?h2>~', '', $nav);
-				echo $nav; ?>
+				
 			</div>
+		</div>
+	</div>
+
+	<div class="wppagination">
+		<div class="container">
+			<?php 
+				$nav = get_the_posts_pagination();
+				$nav = preg_replace('~<h2.*?h2>~', '', $nav);
+				echo $nav;	
+			?>	
 		</div>
 	</div>
 	<?php get_footer(); ?>
