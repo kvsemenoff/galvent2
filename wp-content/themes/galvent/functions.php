@@ -27,22 +27,22 @@ add_theme_support( 'post-thumbnails' );
 add_action('init', 'review_register');
 function review_register() {
     $args = array(
-        'label'               => __('Отзывы'),
+        'label'               => __('Клиенты'),
         'labels'              => array(
-            'name'               => __('Отзывы'),
-            'singular_name'      => __('Отзывы'),
-            'menu_name'          => __('Отзывы'),
-            'all_items'          => __('Все отзывы'),
-            'add_new'            => _x('Добавить отзыв', 'review'),
-            'add_new_item'       => __('Новый отзыв'),
-            'edit_item'          => __('Редактировать отзыв'),
-            'new_item'           => __('Новый отзывы'),
-            'view_item'          => __('Отзывы'),
-            'not_found'          => __('Отзыв не найден'),
-            'not_found_in_trash' => __('Удаленных отзывов нет'),
-            'search_items'       => __('Найти отзыв')
+            'name'               => __('Клиенты'),
+            'singular_name'      => __('Клиенты'),
+            'menu_name'          => __('Клиенты'),
+            'all_items'          => __('Все клиенты'),
+            'add_new'            => _x('Добавить клиента', 'review'),
+            'add_new_item'       => __('Новый клиент'),
+            'edit_item'          => __('Редактировать клиента'),
+            'new_item'           => __('Новый клиент'),
+            'view_item'          => __('Клиенты'),
+            'not_found'          => __('Клиент не найден'),
+            'not_found_in_trash' => __('Удаленных клиентов нет'),
+            'search_items'       => __('Найти клиента')
         ),
-        'description'         => __('Отзывы'),
+        'description'         => __('Клиенты'),
         'public'              => true,
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
