@@ -2,49 +2,74 @@
 /*
 Template name: Клиенты
 */
-
-add_action('init', 'review_register');
-function review_register() {
-    $args = array(
-        'label'               => __('Отзывы'),
-        'labels'              => array(
-            'name'               => __('Отзывы'),
-            'singular_name'      => __('Отзывы'),
-            'menu_name'          => __('Отзывы'),
-            'all_items'          => __('Все отзывы'),
-            'add_new'            => _x('Добавить отзыв', 'review'),
-            'add_new_item'       => __('Новый отзыв'),
-            'edit_item'          => __('Редактировать отзыв'),
-            'new_item'           => __('Новый отзывы'),
-            'view_item'          => __('Отзывы'),
-            'not_found'          => __('Отзыв не найден'),
-            'not_found_in_trash' => __('Удаленных отзывов нет'),
-            'search_items'       => __('Найти отзыв')
-        ),
-        'description'         => __('Отзывы'),
-        'public'              => true,
-        'exclude_from_search' => false,
-        'publicly_queryable'  => true,
-        'show_ui'             => true,
-        'show_in_nav_menus'   => true,
-        'show_in_menu'        => true,
-        'show_in_admin_bar'   => true,
-        'menu_position'       => 5,
-        'capability_type'     => 'post',
-        'hierarchical'        => false,
-        'supports'            => array(
-            'title',
-            'thumbnail',
-            'editor'
-            
-   
-        ),
-        'has_archive'         => false,
-        'rewrite'             => array(
-            'slug'       => '',
-            'with_front' => false
-        )
-    );
-    register_post_type('review', $args);
-}
 ?>
+<?php get_header(); ?>
+<div class="bread_menu bread_menu_bg_img conveyors_page">	
+	<div class="container pos-relative">
+		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' '); ?>		
+		<a href="#modal__form_order" class="fancybox order_curcle_innerpage conveyors_page_circle">
+			<span class="order_curcle__text toppadding">On-line</span>
+			<span class="order_curcle__text">заявка</span>
+		</a>
+	</div>
+</div>
+   
+    <div class="clients_content">
+        <div class="container">
+            <div class="clients_header">
+                <h2 class="h2 h2_dark clients_header__h2">Наши клиенты</h2>
+            </div>
+            <div class="clients_block">
+                <div class="col-md-4 col-sm-6 col-lg-3">
+                    <div class="clients_item clients_item__1">
+                        <div class="clients_item__img"></div>
+                        <a href="" class="clients_item__link">ПАО «Газпром»</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-3">
+                    <div class="clients_item clients_item__2">
+                        <div class="clients_item__img"></div>
+                        <a href="" class="clients_item__link">ПАО АНК «Башнефть»</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-3">
+                    <div class="clients_item clients_item__3">
+                        <div class="clients_item__img"></div>
+                        <a href="" class="clients_item__link">ПАО «АвтоВАЗ»</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-3">
+                    <div class="clients_item clients_item__4">
+                        <div class="clients_item__img"></div>
+                        <a href="" class="clients_item__link">Evraz plc</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-3">
+                    <div class="clients_item clients_item__5">
+                        <div class="clients_item__img"></div>
+                        <a href="" class="clients_item__link">НК ЛУКОЙЛ</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-3">
+                    <div class="clients_item clients_item__6">
+                        <div class="clients_item__img"></div>
+                        <a href="" class="clients_item__link">ПАО АНК «Башнефть»</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-3">
+                    <div class="clients_item clients_item__7">
+                        <div class="clients_item__img"></div>
+                        <a href="" class="clients_item__link">Группа НЛМК</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-3">
+                    <div class="clients_item clients_item__8">
+                        <div class="clients_item__img"></div>
+                        <a href="" class="clients_item__link">Т плюс Групп</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<?php get_footer(); ?>	
