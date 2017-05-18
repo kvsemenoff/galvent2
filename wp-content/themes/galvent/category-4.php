@@ -12,7 +12,7 @@
 
 <div class="last__wrap">
 	<div class="container">
-		<h2 class="h2 h2_dark">Последние новости</h2>
+		<h2 class="h2 h2_dark"><?php single_cat_title(); ?></h2>
 		<div class="row">
 			<?php 
 			$query = new WP_Query('cat=4');
@@ -30,7 +30,7 @@
 							<div class="article__info clearfix">
 								<div class="article__date">10.04.2017</div>
 								<div class="article__button">
-									<a href="#" class="button button__view"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
+									<a href="<?php the_permalink(); ?>" class="button button__view"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
 								</div>
 							</div>
 						</div>
