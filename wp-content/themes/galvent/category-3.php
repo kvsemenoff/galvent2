@@ -19,14 +19,20 @@
 			while ( $query->have_posts() ) {
 				$query->the_post();
 				?>
-				<div class="col-xs-12 col-sm-12 col-md-5">
-					<div class="news-box news-box__view">
-						<span>28.03.17</span>
-						<div class="news-box__link">
-							<a class="news-box__link_1"	href="#"><?php the_title(); ?></a>
+				<div class="col-md-4">
+					<div class="article">
+						<div class="article__img">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/article-photo-1.jpg" alt="">
+							<span class="article__img-descr"><?php the_title(); ?></span>
 						</div>
-						<div class="news-box__link">
-							<a class="news-box__link_2"	href="#">читать далее >> </a>
+						<div class="article__content">
+							<p class="article__txt"><?php the_content(); ?></p>
+							<div class="article__info clearfix">
+								<div class="article__date">10.04.2017</div>
+								<div class="article__button">
+									<a href="#" class="button button__view"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
