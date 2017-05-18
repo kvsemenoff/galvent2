@@ -601,10 +601,10 @@ function wpdocs_custom_excerpt_length( $length ) {
 }
 
 
-function new_excerpt_length($length) {
+function galvent_excerpt_length($length) {
  return 20;
 }
-add_filter('excerpt_length', 'new_excerpt_length');
+add_filter('excerpt_length', 'galvent_excerpt_length');
 
 function do_excerpt($string, $word_limit) {
  $words = explode(' ', $string, ($word_limit + 1));
