@@ -15,7 +15,9 @@
 		<h2 class="h2 h2_dark">Последние новости</h2>
 		<div class="row">
 			<?php 
-			$query = new WP_Query('cat=3');
+			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+			$query = new WP_Query('cat=3' , 'paged=$paged');
 			while ( $query->have_posts() ) {
 				$query->the_post();
 				?>
@@ -37,7 +39,7 @@
 					</div>
 				</div>
 				<?php }?>
-
+				<?php the_posts_pagination() ?>
 			</div>
 		</div>
 	</div>
