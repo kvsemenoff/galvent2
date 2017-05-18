@@ -26,9 +26,9 @@ while ( $query->have_posts() ) {
 						<span class="article__img-descr"><?php the_title(); ?></span>
 					</div>
 					<div class="article__content">
-						<p class="article__txt"><?php the_excerpt(); ?></p>
+						<p class="article__txt"><?php echo content(5); ?></p>
 						<div class="article__info clearfix">
-							<div class="article__date">10.04.2017</div>
+							<div class="article__date"><?php the_time('d.m.Y'); ?></div>
 							<div class="article__button">
 								<a href="#" class="button button__view"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
 							</div>
