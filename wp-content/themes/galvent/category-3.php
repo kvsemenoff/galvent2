@@ -10,7 +10,7 @@
 	</div>
 </div>
 
-<div class="last-article">
+<div class="last__wrap">
 	<div class="container">
 		<h2 class="h2 h2_dark">Последние новости</h2>
 		<div class="row">
@@ -19,13 +19,15 @@
 			while ( $query->have_posts() ) {
 				$query->the_post();
 				?>
-				<div class="news-box news-box__view">
-					<span>28.03.17</span>
-					<div class="news-box__link">
-						<a class="news-box__link_1"	href="#"><?php the_title(); ?></a>
-					</div>
-					<div class="news-box__link">
-						<a class="news-box__link_2"	href="#">читать далее >> </a>
+				<div class="col-xs-12 col-sm-12 col-md-5">
+					<div class="news-box news-box__view">
+						<span>28.03.17</span>
+						<div class="news-box__link">
+							<a class="news-box__link_1"	href="#"><?php the_title(); ?></a>
+						</div>
+						<div class="news-box__link">
+							<a class="news-box__link_2"	href="#">читать далее >> </a>
+						</div>
 					</div>
 				</div>
 				<?php }?>
