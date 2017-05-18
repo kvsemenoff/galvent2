@@ -24,25 +24,25 @@ register_sidebar( array(
 add_theme_support('menus');
 
 add_theme_support( 'post-thumbnails' );
-add_action('init', 'Price_register');
-function Price_register() {
+add_action('init', 'review_register');
+function review_register() {
     $args = array(
-        'label'               => __('Прайс'),
+        'label'               => __('Отзывы'),
         'labels'              => array(
-            'name'               => __('Прайс'),
-            'singular_name'      => __('Прайс'),
-            'menu_name'          => __('Прайс'),
-            'all_items'          => __('Все Прайсы'),
-            'add_new'            => _x('Добавить Прайс', 'product'),
-            'add_new_item'       => __('Новый Прайс'),
-            'edit_item'          => __('Редактировать Прайс'),
-            'new_item'           => __('Новый Прайс'),
-            'view_item'          => __('Прайс'),
-            'not_found'          => __('Прайс не найден'),
-            'not_found_in_trash' => __('Удаленных Прайсов нет'),
-            'search_items'       => __('Найти Прайс')
+            'name'               => __('Отзывы'),
+            'singular_name'      => __('Отзывы'),
+            'menu_name'          => __('Отзывы'),
+            'all_items'          => __('Все отзывы'),
+            'add_new'            => _x('Добавить отзыв', 'review'),
+            'add_new_item'       => __('Новый отзыв'),
+            'edit_item'          => __('Редактировать отзыв'),
+            'new_item'           => __('Новый отзывы'),
+            'view_item'          => __('Отзывы'),
+            'not_found'          => __('Отзыв не найден'),
+            'not_found_in_trash' => __('Удаленных отзывов нет'),
+            'search_items'       => __('Найти отзыв')
         ),
-        'description'         => __('Прайс'),
+        'description'         => __('Отзывы'),
         'public'              => true,
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
@@ -54,7 +54,9 @@ function Price_register() {
         'capability_type'     => 'post',
         'hierarchical'        => false,
         'supports'            => array(
-            'title'
+            'title',
+            'thumbnail',
+            'editor'
             
    
         ),
@@ -64,7 +66,7 @@ function Price_register() {
             'with_front' => false
         )
     );
-    register_post_type('Price', $args);
+    register_post_type('review', $args);
 }
 function my_function_admin_bar(){
 return false;
