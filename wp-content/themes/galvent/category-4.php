@@ -39,7 +39,9 @@
 					</div>
 				</div>
 				<?php }?>
-				<?php the_posts_pagination() ?>
+				<?php $nav = get_the_posts_pagination();
+				$nav = preg_replace('~<h2.*?h2>~', '', $nav);
+				echo $nav; ?>
 			</div>
 		</div>
 	</div>
