@@ -1,12 +1,13 @@
-<?php require_once('includes/header.php'); ?>
-<?php require_once('includes/header-top.php'); ?>
+<?php 
+/*
+Template name: Примеры работ
+*/
+?>
+<?php get_header(); ?>
 
-<div class="bread_menu bread_menu_bg_img conveyors_page">
-	<div class="container pos-relative">	
-		<ul class="bread_menu__menu">
-			<li class="bread_menu__link "><a href="/" class="bread_menu__link_bg">Главная</a></li>
-			<li class="bread_menu__link"><span>Примеры работ</span></li>
-		</ul>
+<div class="bread_menu bread_menu_bg_img conveyors_page">	
+	<div class="container pos-relative">
+		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' '); ?>		
 		<a href="#modal__form_order" class="fancybox order_curcle_innerpage conveyors_page_circle">
 			<span class="order_curcle__text toppadding">On-line</span>
 			<span class="order_curcle__text">заявка</span>
@@ -24,12 +25,12 @@
 			<div class="examples__slider">
 				<div class="item">
 					<div class="examples__img">
-						<a href="img/examples1.jpg" data-fancybox-group="group" ><img src="img/examples1.jpg" alt=""></a>
+						<a href="img/examples1.jpg" data-fancybox-group="group" ><img src="<?php echo get_template_directory_uri(); ?>/img/examples1.jpg" alt=""></a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="examples__img">
-						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="img/examples1.jpg" alt=""></a>
+						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples1.jpg" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -40,12 +41,12 @@
 			<div class="examples__slider">
 				<div class="item">
 					<div class="examples__img">
-						<a href="img/examples2.jpg" data-fancybox-group="group"><img src="img/examples2.jpg" alt=""></a>
+						<a href="img/examples2.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples2.jpg" alt=""></a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="examples__img">
-						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="img/examples1.jpg" alt=""></a>
+						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples1.jpg" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -56,12 +57,12 @@
 			<div class="examples__slider">
 				<div class="item">
 					<div class="examples__img">
-						<a href="img/examples3.jpg" data-fancybox-group="group"><img src="img/examples3.jpg" alt=""></a>
+						<a href="img/examples3.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples3.jpg" alt=""></a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="examples__img">
-						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="img/examples1.jpg" alt=""></a>
+						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples1.jpg" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -73,12 +74,12 @@
 			<div class="examples__slider">
 				<div class="item">
 					<div class="examples__img">
-						<a href="img/examples3.jpg" data-fancybox-group="group"><img src="img/examples3.jpg" alt=""></a>
+						<a href="img/examples3.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples3.jpg" alt=""></a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="examples__img">
-						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="img/examples1.jpg" alt=""></a>
+						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples1.jpg" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -89,12 +90,12 @@
 			<div class="examples__slider">
 				<div class="item">
 					<div class="examples__img">
-						<a href="img/examples3.jpg" data-fancybox-group="group"><img src="img/examples3.jpg" alt=""></a>
+						<a href="img/examples3.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples3.jpg" alt=""></a>
 					</div>
 				</div>
 				<div class="item">
 					<div class="examples__img">
-						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="img/examples1.jpg" alt=""></a>
+						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples1.jpg" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -104,8 +105,4 @@
 	<span class="examples__look_more">смотреть еще работы</span>
 </div>
 
-<?php require_once('includes/footer.php'); ?>
-
-
-</body>
-</html>
+<?php get_footer(); ?>	

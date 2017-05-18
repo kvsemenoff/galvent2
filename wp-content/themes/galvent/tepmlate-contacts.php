@@ -1,18 +1,21 @@
-<?php require_once('includes/header.php'); ?>
-<?php require_once('includes/header-top.php'); ?>
+<?php 
+/*
+Template name: Наши контакты
+*/
+?>
+<?php get_header(); ?>
 
 <div class="bread_menu bread_menu_bg_img conveyors_page">	
 	<div class="container pos-relative">
-		<ul class="bread_menu__menu">
-			<li class="bread_menu__link "><a href="/" class="bread_menu__link_bg">Главная</a></li>
-			<li class="bread_menu__link"><span>Наши контакты</span></li>
-		</ul>
+		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' '); ?>		
 		<a href="#modal__form_order" class="fancybox order_curcle_innerpage conveyors_page_circle">
 			<span class="order_curcle__text toppadding">On-line</span>
 			<span class="order_curcle__text">заявка</span>
 		</a>
 	</div>
 </div>
+
+
 <div class="contacts">
 	<div class="container">
 		<h2 class="h2 h2_dark">Наши контакты</h2>
@@ -81,9 +84,4 @@
 	</div>
 </div>
 
-<?php require_once('includes/popup.php'); ?>
-<?php require_once('includes/footer.php'); ?>
-
-	
-</body>
-</html>
+<?php get_footer(); ?>	
