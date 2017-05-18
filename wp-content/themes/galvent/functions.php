@@ -24,8 +24,8 @@ register_sidebar( array(
 add_theme_support('menus');
 
 add_theme_support( 'post-thumbnails' );
-add_action('init', 'review_register');
-function review_register() {
+add_action('init', 'client_register');
+function client_register() {
     $args = array(
         'label'               => __('Клиенты'),
         'labels'              => array(
@@ -66,7 +66,7 @@ function review_register() {
             'with_front' => false
         )
     );
-    register_post_type('review', $args);
+    register_post_type('client', $args);
 }
 function my_function_admin_bar(){
 return false;
