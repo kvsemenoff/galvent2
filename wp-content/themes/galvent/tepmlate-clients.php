@@ -31,58 +31,14 @@ Template name: Клиенты
 				$query->the_post(); ?>
 				<div class="col-md-4 col-sm-6 col-lg-3">
 					<div class="clients_item clients_item__1">
-						<div class="clients_item__img"></div>
+						<a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
 						<a href="" class="clients_item__link"><?php the_title(); ?></a>
 					</div>
 				</div>
 
-		<?php }?>
+				<?php }?>
+			</div>
+		</div>
 	</div>
-         <!--    
-                <div class="col-md-4 col-sm-6 col-lg-3">
-                    <div class="clients_item clients_item__2">
-                        <div class="clients_item__img"></div>
-                        <a href="" class="clients_item__link">ПАО АНК «Башнефть»</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-lg-3">
-                    <div class="clients_item clients_item__3">
-                        <div class="clients_item__img"></div>
-                        <a href="" class="clients_item__link">ПАО «АвтоВАЗ»</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-lg-3">
-                    <div class="clients_item clients_item__4">
-                        <div class="clients_item__img"></div>
-                        <a href="" class="clients_item__link">Evraz plc</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-lg-3">
-                    <div class="clients_item clients_item__5">
-                        <div class="clients_item__img"></div>
-                        <a href="" class="clients_item__link">НК ЛУКОЙЛ</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-lg-3">
-                    <div class="clients_item clients_item__6">
-                        <div class="clients_item__img"></div>
-                        <a href="" class="clients_item__link">ПАО АНК «Башнефть»</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-lg-3">
-                    <div class="clients_item clients_item__7">
-                        <div class="clients_item__img"></div>
-                        <a href="" class="clients_item__link">Группа НЛМК</a>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-lg-3">
-                    <div class="clients_item clients_item__8">
-                        <div class="clients_item__img"></div>
-                        <a href="" class="clients_item__link">Т плюс Групп</a>
-                    </div>
-                </div>
-            -->
-        </div>
-    </div>
 
-    <?php get_footer(); ?>	
+	<?php get_footer(); ?>	
