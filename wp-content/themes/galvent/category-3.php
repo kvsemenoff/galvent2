@@ -23,14 +23,14 @@
 					<div class="article">
 						<div class="article__img">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/article-photo-1.jpg" alt="">
-							<a href="#" class="article__img-descr"><?php the_title(); ?></a>
+							<a href="<?php the_permalink(); ?>" class="article__img-descr"><?php the_title(); ?></a>
 						</div>
 						<div class="article__content">
 						<p class="article__txt"><?php  do_excerpt(get_the_excerpt(), 7); ?></p>
 							<div class="article__info clearfix">
 								<div class="article__date"><?php the_time('d.m.Y'); ?></div>
 								<div class="article__button">
-									<a href="#" class="button button__view"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
+									<a href="<?php the_permalink(); ?>" class="button button__view"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
 								</div>
 							</div>
 						</div>
