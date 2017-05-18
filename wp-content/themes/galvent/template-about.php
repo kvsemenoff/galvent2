@@ -28,41 +28,22 @@ Template name: О компании
 		<?php endif; ?> 	
 		
 
-		<?php 
-		if( class_exists('Dynamic_Featured_Image') ) {
-			global $dynamic_featured_image;
-			$featured_images = $dynamic_featured_image->get_featured_images( get_the_ID() );
-				    //You can now loop through the image to display them as required
-				    //For example
-			foreach( $featured_images as $image ) {
-				echo "<a href='{$image['full']}'>";
-				echo "<img src='{$image['thumb']}' alt='Dynamic Featured Image' />";
-				echo "</a>";
-			}
-		}	
-		?>
+		
 		<span class="about__descr">Фото с нашего производства:</span>
 
-		
 		<div class="about__photos-block clearfix">
-			<?php foreach( $featured_images as $image ) {
-					echo "<a href='{$image['full']}'>";
-					echo "<img src='{$image['thumb']}' alt='Dynamic Featured Image' />";
-					echo "</a>";
-			} ?>
-			<!-- <div class="about__photo">
-				<a class="fancybox photo" href="img/about__photo-2.jpg" data-fancybox-group="gallery">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/about__photo-2.jpg" alt="" />
-				</a>
-			</div>
-			<div class="about__photo">
-				<a class="fancybox photo" href="img/about__photo-3.jpg" data-fancybox-group="gallery">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/about__photo-3.jpg" alt="" />
-				</a>
-			</div> -->
+		<?php if( class_exists('Dynamic_Featured_Image') ) { ?>
+     	<?php global $dynamic_featured_image; ?>
+     	<?php $featured_images = $dynamic_featured_image->get_featured_images( get_the_ID() ); ?>
+			<?php foreach( $featured_images as $image ) { ?>
+				<div class="about__photo">
+					<a class="fancybox photo" href="<?php echo $image['full'] ?>" data-fancybox-group="gallery">
+						<img src="<?php echo $image['full'] ?>" alt="" />
+					</a>
+				</div>
+			<?php } ?>
+		<?php } ?>
 		</div>
-
-
 
 		<p class="about__text">Чтобы купить  конвейер, рассчитать его стоимость или получить консультацию специалиста, просто свяжитесь с нами по телефону, указанному на сайте или используйте форму обратной связи.</p>
 		<span class="about__order-title">Желаете сделать заказ?</span>
