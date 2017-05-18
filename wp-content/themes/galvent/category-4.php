@@ -23,7 +23,7 @@
 					<div class="article">
 						<div class="article__img">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/article-photo-1.jpg" alt="">
-							<span class="article__img-descr"><?php the_title(); ?></span>
+							<a href="<?php the_permalink(); ?>"<span class="article__img-descr"><?php the_title(); ?></span></a>
 						</div>
 						<div class="article__content">
 						<?php the_excerpt(); ?>
@@ -34,6 +34,7 @@
 								</div>
 							</div>
 						</div>
+	<!-- 					<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?> -->
 					</div>
 				</div>
 				<?php }?>
