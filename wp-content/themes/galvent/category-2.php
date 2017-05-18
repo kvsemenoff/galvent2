@@ -14,13 +14,19 @@
 	<div class="container">
 		<h2 class="h2 h2_dark">Последние статьи</h2>
 		<div class="row">
+
 			<?php 
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 2;
-$query = new WP_Query('cat=2', 'paged' => $paged);
-while ( $query->have_posts() ) {
-	$query->the_post();
-?>
-<div class="col-md-4">
+			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+			$args = array(
+				'cat' => 2,
+				'paged' => $paged
+			);
+
+			$query = new WP_Query($args);
+			while ( $query->have_posts() ) {
+				$query->the_post();
+			?>
+			<div class="col-md-4">
 				<div class="article">
 					<div class="article__img">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/article-photo-1.jpg" alt="">
