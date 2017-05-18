@@ -601,6 +601,18 @@ function wpdocs_custom_excerpt_length( $length ) {
 }
 
 
+function new_excerpt_length($length) {
+ return 20;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
+
+function do_excerpt($string, $word_limit) {
+ $words = explode(' ', $string, ($word_limit + 1));
+ if (count($words) > $word_limit)
+ array_pop($words);
+ echo implode(' ', $words).' ...';
+}
+
 /**
  * Изменения:
  * 3.3 - новые хуки: attachment_tax_crumbs, post_tax_crumbs, term_tax_crumbs. Позволяют дополнить крошки таксономий.
