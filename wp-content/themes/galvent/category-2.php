@@ -12,7 +12,7 @@
 
 <div class="last-article">
 	<div class="container">
-		<h2 class="h2 h2_dark">Последние статьи</h2>
+		<h2 class="h2 h2_dark"><?php single_cat_title(); ?></h2>
 		<div class="row">
 			<?php 
 $query = new WP_Query('cat=2');
@@ -26,11 +26,11 @@ while ( $query->have_posts() ) {
 						<span class="article__img-descr"><?php the_title(); ?></span>
 					</div>
 					<div class="article__content">
-						<p class="article__txt"><?php  do_excerpt(get_the_content(), 10); ?></p>
+						<p class="article__txt"><?php  do_excerpt(get_the_excerpt(), 7); ?></p>
 						<div class="article__info clearfix">
 							<div class="article__date"><?php the_time('d.m.Y'); ?></div>
 							<div class="article__button">
-								<a href="#" class="button button__view"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
+								<a href="<?php the_permalink(); ?>" class="button button__view"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
 							</div>
 						</div>
 					</div>
