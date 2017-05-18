@@ -32,7 +32,7 @@ Template name: Клиенты
 				<div class="col-md-4 col-sm-6 col-lg-3">
 					<div class="clients_item clients_item__1">
 						<?php the_post_thumbnail() ?>
-						<a href="<?php the_permalink() ?>" class="clients_item__link"><?php the_title(); ?></a>
+						<span class="clients_item__link"><?php the_title(); ?></span>
 					</div>
 				</div>
 
