@@ -17,7 +17,13 @@
 			<?php 
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-			$query = new WP_Query('cat=3' , 'paged=$paged');
+			$args = array(
+				'cat' => 2,
+				'paged' => $paged
+				);
+
+			$query = new WP_Query($args);
+
 			while ( $query->have_posts() ) {
 				$query->the_post();
 				?>
@@ -28,7 +34,7 @@
 							<a href="<?php the_permalink(); ?>" class="article__img-descr"><?php the_title(); ?></a>
 						</div>
 						<div class="article__content">
-						<p class="article__txt"><?php  do_excerpt(get_the_excerpt(), 7); ?></p>
+							<p class="article__txt"><?php  do_excerpt(get_the_excerpt(), 7); ?></p>
 							<div class="article__info clearfix">
 								<div class="article__date"><?php the_time('d.m.Y'); ?></div>
 								<div class="article__button">
@@ -39,8 +45,18 @@
 					</div>
 				</div>
 				<?php }?>
-				<?php the_posts_pagination() ?>
+				
 			</div>
 		</div>
 	</div>
+	<div class="wppagination">
+		<div class="container">
+			<?php 
+				$nav = get_the_posts_pagination();
+				$nav = preg_replace('~<h2.*?h2>~', '', $nav);
+				echo $nav;	
+			?>	
+		</div>
+	</div>
+	
 	<?php get_footer(); ?>
