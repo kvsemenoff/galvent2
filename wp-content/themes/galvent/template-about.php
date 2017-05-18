@@ -1,12 +1,13 @@
-<?php require_once('includes/header.php'); ?>
-<?php require_once('includes/header-top.php'); ?>
+<?php 
+/*
+Template name: О компании
+*/
+?>
+<?php get_header(); ?>
 
 <div class="bread_menu bread_menu_bg_img conveyors_page">	
 	<div class="container pos-relative">
-		<ul class="bread_menu__menu">
-			<li class="bread_menu__link "><a href="/" class="bread_menu__link_bg">Главная</a></li>
-			<li class="bread_menu__link"><span>О компании</span></li>
-		</ul>
+		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' '); ?>		
 		<a href="#modal__form_order" class="fancybox order_curcle_innerpage conveyors_page_circle">
 			<span class="order_curcle__text toppadding">On-line</span>
 			<span class="order_curcle__text">заявка</span>
@@ -15,8 +16,8 @@
 </div>
 
 <div class="about">
-	<div class="container">
-		<h2 class="h2 h2_dark">О компании</h2>
+	<div class="container">		
+		<h1 class="h2 h2_dark"><?php the_title(); ?></h1>
 		<span class="about__descr">Почему стоит покупать оборудование у ПТО Галвент?</span>
 		<ul class="ul">
 			<li class="ul__point">наша компания имеет в своем составе собственное конструкторское бюро с профессиональными инженерами-конструкторами, поэтому мы различные типы конвейеров, которые точно соответствуют всем требованиям определенного производства, а также высоким нормам и стандартам качества и безопасности;</li>
@@ -32,17 +33,17 @@
 		<div class="about__photos-block clearfix">
 			<div class="about__photo">
 				<a class="fancybox photo" href="img/about__photo-1.jpg" data-fancybox-group="gallery">
-					<img src="img/about__photo-1.jpg" alt="" />
+					<img src="<?php echo get_template_directory_uri(); ?>/img/about__photo-1.jpg" alt="" />
 				</a>
 			</div>
 			<div class="about__photo">
 				<a class="fancybox photo" href="img/about__photo-2.jpg" data-fancybox-group="gallery">
-					<img src="img/about__photo-2.jpg" alt="" />
+					<img src="<?php echo get_template_directory_uri(); ?>/img/about__photo-2.jpg" alt="" />
 				</a>
 			</div>
 			<div class="about__photo">
 				<a class="fancybox photo" href="img/about__photo-3.jpg" data-fancybox-group="gallery">
-					<img src="img/about__photo-3.jpg" alt="" />
+					<img src="<?php echo get_template_directory_uri(); ?>/img/about__photo-3.jpg" alt="" />
 				</a>
 			</div>
 		</div>
@@ -74,9 +75,4 @@
 	</div>
 </div>
 
-<?php require_once('includes/popup.php'); ?>
-<?php require_once('includes/footer.php'); ?>
-
-	
-</body>
-</html>
+<?php get_footer(); ?>	
