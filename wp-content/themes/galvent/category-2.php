@@ -12,10 +12,11 @@
 
 <div class="last-article">
 	<div class="container">
-		<h2 class="h2 h2_dark"><?php single_cat_title(); ?></h2>
+		<h2 class="h2 h2_dark">Последние статьи</h2>
 		<div class="row">
 			<?php 
-$query = new WP_Query('cat=2');
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 2;
+$query = new WP_Query('cat=2', 'paged' => $paged);
 while ( $query->have_posts() ) {
 	$query->the_post();
 ?>
@@ -23,7 +24,7 @@ while ( $query->have_posts() ) {
 				<div class="article">
 					<div class="article__img">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/article-photo-1.jpg" alt="">
-						<span class="article__img-descr"><?php the_title(); ?></span>
+						<a href="<?php the_permalink(); ?>"><span class="article__img-descr"><?php the_title(); ?></span></a>
 					</div>
 					<div class="article__content">
 						<p class="article__txt"><?php  do_excerpt(get_the_excerpt(), 7); ?></p>
@@ -36,7 +37,10 @@ while ( $query->have_posts() ) {
 					</div>
 				</div>
 			</div>
-<?php }?>
+
+<?php }
+the_posts_pagination();
+?>
 		
 	</div>
 </div>
