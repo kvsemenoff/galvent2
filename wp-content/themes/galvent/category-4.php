@@ -15,7 +15,8 @@
 		<h2 class="h2 h2_dark"><?php single_cat_title(); ?></h2>
 		<div class="row">
 			<?php 
-			$query = new WP_Query('cat=4');
+			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+			$query = new WP_Query('cat=4' , 'paged=$paged');
 			while ( $query->have_posts() ) {
 				$query->the_post();
 				?>
@@ -26,7 +27,7 @@
 							<a href="<?php the_permalink(); ?>"<span class="article__img-descr"><?php the_title(); ?></span></a>
 						</div>
 						<div class="article__content">
-						<?php the_excerpt(); ?>
+							<?php the_excerpt(); ?>
 							<div class="article__info clearfix">
 								<div class="article__date">10.04.2017</div>
 								<div class="article__button">
@@ -34,11 +35,11 @@
 								</div>
 							</div>
 						</div>
-	<!-- 					<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?> -->
+
 					</div>
 				</div>
 				<?php }?>
-
+				<?php the_posts_pagination() ?>
 			</div>
 		</div>
 	</div>
