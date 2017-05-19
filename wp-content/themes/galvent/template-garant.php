@@ -1,6 +1,10 @@
+<?php 
+/*
+Template name: Гарантия
+*/
+?>
 
-<?php require_once('includes/header.php'); ?>
-<?php require_once('includes/header-top.php'); ?>
+<?php get_header(); ?>
 
 <div class="bread_menu bread_menu_bg_img conveyors_page">	
 	<div class="container pos-relative">
@@ -108,7 +112,7 @@
 	</div>
 </div>
 
-<?php require_once('includes/footer.php'); ?>
+<?php get_footer(); ?>
 
 </body>
 </html>
