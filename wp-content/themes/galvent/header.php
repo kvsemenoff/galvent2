@@ -88,9 +88,9 @@
 					<span class="menu_xs__item_tel">+7 (495) 790 7698 </span> <a class="menu_xs__item_link fancybox" href="#modal__form_call">заказать обратный звонок</a>
 				</div>
 				<div class="search">
-					<form action="#">
+					<form action="<?php bloginfo( 'url' ); ?>" method="get">
 						<div class="search-wrap">
-							<input type="text" placeholder="Поиск">
+							<input type="text" name="s" placeholder="Поиск" value="<?php if(!empty($_GET['s'])){echo $_GET['s'];}?>">
 							<input type="submit">
 						</div>
 					</form>
@@ -173,9 +173,9 @@
 							</li>
 							<li>
 								<div class="search">
-									<form action="#">
+									<form action="<?php bloginfo( 'url' ); ?>" method="get">
 										<div class="search-wrap">
-											<input type="text" placeholder="Поиск">
+											<input  type="text" name="s" placeholder="Поиск" value="<?php if(!empty($_GET['s'])){echo $_GET['s'];}?>">
 											<input type="submit">
 										</div>
 									</form>
