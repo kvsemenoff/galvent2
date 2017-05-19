@@ -50,73 +50,8 @@ Template name: Примеры работ
 			<p class="examples__block_text"><?php the_content(); ?></p>
 		</div>	
 
-				<?php }?>
-		
-	<!-- 	<div class="examples__block">
-			<h4 class="examples__block_caption">Установка конвейеров для ООО ХлебоПром</h4>
-			<div class="examples__slider">
-				<div class="item">
-					<div class="examples__img">
-						<a href="img/examples2.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples2.jpg" alt=""></a>
-					</div>
-				</div>
-				<div class="item">
-					<div class="examples__img">
-						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples1.jpg" alt=""></a>
-					</div>
-				</div>
-			</div>
-			<p class="examples__block_text">Основная сфера деятельности нашего предприятия – выпуск конвейеров и рольгангов. Наличие высококвалифицированных специалистов  позволяет спроектировать и изготовить оборудование, которое будет максимально соответствовать Вашим требованиям. Мы специализируемся на изготовлении и продаже конвейерных систем различных видов, подходящих практически для всех отраслей промышленности.</p>
-		</div>
-		<div class="examples__block">
-			<h4 class="examples__block_caption">Установка конвейеров для ООО ХлебоПром</h4>
-			<div class="examples__slider">
-				<div class="item">
-					<div class="examples__img">
-						<a href="img/examples3.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples3.jpg" alt=""></a>
-					</div>
-				</div>
-				<div class="item">
-					<div class="examples__img">
-						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples1.jpg" alt=""></a>
-					</div>
-				</div>
-			</div>
-			<p class="examples__block_text">Основная сфера деятельности нашего предприятия – выпуск конвейеров и рольгангов. Наличие высококвалифицированных специалистов  позволяет спроектировать и изготовить оборудование, которое будет максимально соответствовать Вашим требованиям. Мы специализируемся на изготовлении и продаже конвейерных систем различных видов, подходящих практически для всех отраслей промышленности.</p>
-		</div>
-
-		<div class="examples__block">
-			<h4 class="examples__block_caption">Установка конвейеров для ООО ХлебоПром</h4>
-			<div class="examples__slider">
-				<div class="item">
-					<div class="examples__img">
-						<a href="img/examples3.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples3.jpg" alt=""></a>
-					</div>
-				</div>
-				<div class="item">
-					<div class="examples__img">
-						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples1.jpg" alt=""></a>
-					</div>
-				</div>
-			</div>
-			<p class="examples__block_text">Основная сфера деятельности нашего предприятия – выпуск конвейеров и рольгангов. Наличие высококвалифицированных специалистов  позволяет спроектировать и изготовить оборудование, которое будет максимально соответствовать Вашим требованиям. Мы специализируемся на изготовлении и продаже конвейерных систем различных видов, подходящих практически для всех отраслей промышленности.</p>
-		</div>
-		<div class="examples__block">
-			<h4 class="examples__block_caption">Установка конвейеров для ООО ХлебоПром</h4>
-			<div class="examples__slider">
-				<div class="item">
-					<div class="examples__img">
-						<a href="img/examples3.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples3.jpg" alt=""></a>
-					</div>
-				</div>
-				<div class="item">
-					<div class="examples__img">
-						<a href="img/examples1.jpg" data-fancybox-group="group"><img src="<?php echo get_template_directory_uri(); ?>/img/examples1.jpg" alt=""></a>
-					</div>
-				</div>
-			</div>
-			<p class="examples__block_text">Основная сфера деятельности нашего предприятия – выпуск конвейеров и рольгангов. Наличие высококвалифицированных специалистов  позволяет спроектировать и изготовить оборудование, которое будет максимально соответствовать Вашим требованиям. Мы специализируемся на изготовлении и продаже конвейерных систем различных видов, подходящих практически для всех отраслей промышленности.</p>
-		</div> -->
+				<?php }?>		
+	
 	</div>
 	<span class="examples__look_more">смотреть еще работы</span>
 </div>
