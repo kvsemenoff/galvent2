@@ -69,9 +69,4 @@ Template name: Наше производство
 </div>
 
 
-
-<?php require_once('includes/footer.php'); ?>
-
-	
-</body>
-</html>
+<?php get_footer(); ?>	
