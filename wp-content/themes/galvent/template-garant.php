@@ -8,10 +8,7 @@ Template name: Гарантия
 
 <div class="bread_menu bread_menu_bg_img conveyors_page">	
 	<div class="container pos-relative">
-		<ul class="bread_menu__menu">
-			<li class="bread_menu__link "><a href="/" class="bread_menu__link_bg">Главная</a></li>
-			<li class="bread_menu__link"><span>Гарантия</span></li>
-		</ul>
+		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' '); ?>	
 		<a href="#modal__form_order" class="fancybox order_curcle_innerpage conveyors_page_circle">
 			<span class="order_curcle__text toppadding">On-line</span>
 			<span class="order_curcle__text">заявка</span>
@@ -43,7 +40,7 @@ Template name: Гарантия
 
 					</div>
 
-					<div class="strv"><img src="img/strv.png" alt=""></div>
+					<div class="strv"><img src="<?php echo get_template_directory_uri(); ?>/img/strv.png" alt=""></div>
 				</div>
 
 				<div class="service-box service-box__view service-box__view_garant_2">
