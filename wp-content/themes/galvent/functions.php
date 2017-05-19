@@ -24,6 +24,7 @@ register_sidebar( array(
 add_theme_support('menus');
 
 add_theme_support( 'post-thumbnails' );
+
 add_action('init', 'client_register');
 function client_register() {
     $args = array(
@@ -68,6 +69,57 @@ function client_register() {
     );
     register_post_type('client', $args);
 }
+
+
+add_action('init', 'job_register');
+function job_register() {
+    $args = array(
+        'label'               => __('Работы'),
+        'labels'              => array(
+            'name'               => __('Работы'),
+            'singular_name'      => __('Работы'),
+            'menu_name'          => __('Работы'),
+            'all_items'          => __('Все работы'),
+            'add_new'            => _x('Добавить работу', 'review'),
+            'add_new_item'       => __('Новая работа'),
+            'edit_item'          => __('Редактировать работу'),
+            'new_item'           => __('Новый работа'),
+            'view_item'          => __('Работы'),
+            'not_found'          => __('Работа не найдена'),
+            'not_found_in_trash' => __('Удаленных работ нет'),
+            'search_items'       => __('Найти работу')
+        ),
+        'description'         => __('Работы'),
+        'public'              => true,
+        'exclude_from_search' => false,
+        'publicly_queryable'  => true,
+        'show_ui'             => true,
+        'show_in_nav_menus'   => true,
+        'show_in_menu'        => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => 5,
+        'capability_type'     => 'post',
+        'hierarchical'        => false,
+        'supports'            => array(
+            'title',
+            'thumbnail',
+            'editor'
+            
+   
+        ),
+        'has_archive'         => false,
+        'rewrite'             => array(
+            'slug'       => '',
+            'with_front' => false
+        )
+    );
+    register_post_type('job', $args);
+}
+
+
+
+
+
 function my_function_admin_bar(){
 return false;
 }
