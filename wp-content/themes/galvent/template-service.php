@@ -25,25 +25,29 @@ Template name: Сервис
 			<div class="clearfix"></div>
 
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div class="service-box service-box__view">
 
 					<span class="service-box__view_span"><?php the_field('подзаголовок'); ?></span>
-					<!-- <div class="service-box__inner">
-						<p class="service-box__view_p">«ПТО Галвент» следит за качеством своей продукции и гарантирует своим клиентом сервисное обслуживание, как в течение гарантийного срока, так и после его завершения.</p>
-						<p class="service-box__view_p">Если оборудование приобретено в нашей компании и гарантийный срок не истек, мы оперативно исправим все неполадки и сделаем все возможное, чтобы все Ваши неудобства были устранены в максимально короткие сроки. Как показывает практика, новое конвейерное оборудование, изготовленное нашей компанией, очень редко вызывает какие-либо нарекания в работе. Это связано с высоким с качеством комплектующих, современными производственными линиями и профессионализмом наших сотрудников.</p>
+					<div class="service-box__inner">
+						<p class="service-box__view_p"><?php the_content(); ?>	</p>
 
-						<div class="service__item service__item_1"><img src="img/ts.png" alt="" /></div>
+
+						<div class="service__item service__item_1"><img src="<?php echo get_template_directory_uri(); ?>/img/ts.png" alt="" /></div>
 						<div class="service__item service__item_2">
-							<p class="q q_white">Если гарантийный срок закончился, то ремонт или возможность послегарантийного обслуживания рассчитывается отдельно. Наши специалисты могут оперативно и качественно устранить любые неполадки.</p>
+							<p class="q q_white">
+								<?php the_field('цитата'); ?>
+							</p>
 
 						</div>
 					</div>
-					<div class="clearfix"></div> -->
+					<div class="clearfix"></div>
 				</div>
 
-				
 
+<?php endwhile; ?>
+		<?php else: ?>
+		<?php endif; ?> 
 
 			</div>
 			<div class="clearfix"></div>
