@@ -53,7 +53,7 @@ Template name: Примеры работ
 				<?php }?>		
 	
 	</div>
-	<span class="examples__look_more">смотреть еще работы</span>
+	<!-- <span class="examples__look_more">смотреть еще работы</span> -->
 </div>
 
 <?php get_footer(); ?>	
