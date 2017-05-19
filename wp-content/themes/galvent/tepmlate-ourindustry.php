@@ -30,7 +30,7 @@ Template name: Наше производство
 	<div class="ourindustry__img_box">
 		<?php if( class_exists('Dynamic_Featured_Image') ) { ?>
      	<?php global $dynamic_featured_image; ?>
-     	<?php $featured_images = $dynamic_featured_image->get_featured_images( get_the_ID() ); ?>
+     	<?php $featured_images = $dynamic_featured_image->get_featured_images(get_the_ID()); ?>
 			<?php foreach( $featured_images as $image ) { ?>			
 				<a href="<?php echo $image['full'] ?>" class="ourindustry__link" data-fancybox-group="group"><img src="<?php echo $image['full'] ?>" alt=""></a>
 			<?php } ?>
