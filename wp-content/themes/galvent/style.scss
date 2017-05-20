@@ -2088,10 +2088,14 @@ body, html{
 	&_span{
 		display: inline-block;
 		font-family: "GothamProMedium";
-		font-size: 18px;
+		font-size: 15px;
+		@media only screen and (min-width : 992px) {
+			font-size: 18px;
+			margin-bottom: 40px;
+		}
 		font-weight: 500;
 		color: #484e4c;
-		margin-bottom: 40px;
+		margin-bottom: 55px;
 		background:url(./img/sh.png) no-repeat left center;
 		padding-left: 50px;
 		height: 30px;
@@ -2116,6 +2120,7 @@ body, html{
 		margin-bottom: 38px;
 		line-height: 29px;
 	}
+
 	.q{
 		background:none;
 		padding: 0;
@@ -2133,6 +2138,20 @@ body, html{
 		}
 	}
 }
+.service__item{
+	&_1{
+		margin-bottom: 10px;
+	}
+	&_2{
+		p{
+			font-size: 14px !important;
+			line-height: 23px;
+			@media only screen and (min-width : 992px) {
+				font-size: 16px !important;
+			}
+		}
+	}
+}
 @media only screen and (min-width : 480px) {
 	.service__item{
 		float: left;
@@ -2141,6 +2160,8 @@ body, html{
 			// padding-top: 10px;
 			@media only screen and (min-width : 770px) {
 				width: 5%;
+				position: relative;
+				top: 12px;
 			}
 		}
 		&_2{
@@ -2152,6 +2173,19 @@ body, html{
 	}
 }
 .service-box__inner{
+	p{
+		font-size: 14px;
+		@media only screen and (min-width : 992px) {
+			font-size: 16px;
+		}
+	}
+	p:nth-child(2){
+		padding: 20px 0;
+		@media only screen and (min-width : 992px) {
+			padding: 30px 0;
+		}
+	}
+	
 	@media only screen and (min-width : 992px) {
 		padding-left: 50px;
 	}
