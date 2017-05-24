@@ -37,21 +37,21 @@ $query = new WP_Query($args);
 
 
 			<?php } ?>
- <div class="col-md-12">
-		<div class="direction_description">
-			<p class="direction_description_p">
-				<?php echo get_post_meta($post->ID, ' определение ', true); ?>
-			</p>
-			<p class="direction_description_p">
-				<?php echo category_description( $category_id ); ?>
-			</p>
-		</div>
-	</div>
+			<div class="col-md-12">
+				<div class="direction_description">
+					<p class="direction_description_p">
+					<?php echo get_post_meta( 239, 'определение', true); 
+
+					?>
+
+					</p>
+					<p class="direction_description_p">
+						<?php echo category_description( $category_id ); ?>
+					</p>
+				</div>
+			</div>
 
 		</div>
 	</div>
-	
-	
 
-
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
