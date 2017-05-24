@@ -46,38 +46,43 @@
 		// $cat->cat_name (Рубрика 1)
 		// $cat->category_nicename (rubrika-1)
 		// $cat->category_parent (0)
-				?>
-				<h2 class="h2 h2_dark beltconveyors__caption"><?php echo $cat->name; ?></h2>
-				<p class="beltconveyors__text"><?php echo $cat->description; ?></p>	
-				<?php	
+			?>
+			<h2 class="h2 h2_dark beltconveyors__caption"><?php echo $cat->name; ?></h2>
+			<p class="beltconveyors__text"><?php echo $cat->description; ?></p>	
+			<?php	
+			$args = array(
+				'cat' => $cat->term_id,
+				);
+$query = new WP_Query($args);
+while ( $query->have_posts() ) {
+				$query->the_post();
+			?>
+			<a href="<?php the_permalink(); ?>" class="beltconveyors__link"><?php the_post_thumbnail() ?><span><?php the_title(); ?></span></a>
+			<?php
+				}
 
 		# получаем записи из рубрики
-			$myposts = get_posts( array(
-				'numberposts' => -1,
-				'category'    => $cat->cat_ID,
-				'orderby'     => 'post_date',
-				'order'       => 'DESC',
-				) );
+			// $myposts = get_posts( array(
+			// 	'numberposts' => -1,
+			// 	'category'    => $cat->cat_ID,
+			// 	'orderby'     => 'post_date',
+			// 	'order'       => 'DESC',
+			// 	) );
 				?>
-				<div class="beltconveyors__img_box beltconveyors__img_box_marginbot">
-				<?php
-			foreach( $myposts as $cat2 ){
-				?>
-				<a href="<?php the_permalink(); ?>" class="beltconveyors__link"><?php the_post_thumbnail() ?><span><?php echo $cat2->post_title; ?></span></a>
 				
 				<?php
-			}
-			?>
-			</div>
-			<?php
 			// echo "<pre>";
-			// 	print_r($cat2);
+			// 	print_r($query);
 			// 	echo "</pre>";
+			}
 		}
-	}
-	?>
-
+		?>
+<div class="beltconveyors__img_box beltconveyors__img_box_marginbot">
+					
+					
 </div>
+
+	</div>
 
 
 	<!-- 
