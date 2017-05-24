@@ -71,32 +71,7 @@ while ( $query->have_posts() ) {
 		}
 		?>
 
-					
-					
-
-
 	</div>
-
-
-	<!-- 
-		
-			<a href="#" class="beltconveyors__link"><img src="img/conv1.jpg" alt=""><span>Горизонтальные ленточные конвейеры</span></a>
-			<a href="#" class="beltconveyors__link"><img src="img/conv2.jpg" alt=""><span>Наклонные ленточные конвейеры</span></a>
-			<a href="#" class="beltconveyors__link"><img src="img/conv3.jpg" alt=""><span>Z-образные ленточные конвейеры</span></a>
-			<a href="#" class="beltconveyors__link lastmarginoff"><img src="img/conv4.jpg" alt=""><span>Г- образные ленточные конвейеры</span></a>
-		
-		
-		
-		<div class="beltconveyors__img_box">
-			<a href="#" class="beltconveyors__link"><img src="img/conv5.jpg" alt=""><span>Прямые неприводные рольганги</span></a>
-			<a href="#" class="beltconveyors__link"><img src="img/conv6.jpg" alt=""><span>Прямые приводные рольганги</span></a>
-			<a href="#" class="beltconveyors__link"><img src="img/conv7.jpg" alt=""><span>Поворотный неприводной рольганг</span></a>
-			<a href="#" class="beltconveyors__link lastmarginoff"><img src="img/conv8.jpg" alt=""><span>Поворотный приводной рольганг </span></a>
-		</div> -->
-
-
-
-
 
 		<div class="container">
 			<h2 class="h2 h2_dark beltconveyors__caption_form">Хотите сделать заказ?</h2>

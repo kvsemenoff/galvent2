@@ -192,6 +192,19 @@ footer, header, hgroup, menu, nav, section {
 															margin: 0px;
 														}
 													}
+													.box-width{
+														max-width: 370px;
+														margin: 0 auto;
+														@media only screen and (min-width : 992px) {
+														max-width: unset;
+														}
+													}
+													.zagolovok{
+														margin-top: -65px;
+														@media only screen and (min-width : 992px) {
+														margin-top: -52px;
+														}
+													}
 													.h1 {
 														font-family: "GothamProRegular", arial, sans-serif ;
 														color: #fff;
