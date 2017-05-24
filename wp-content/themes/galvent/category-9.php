@@ -34,23 +34,20 @@ $query = new WP_Query($args);
 					</div>
 				</div>
 			</div>
-
-
 			<?php } ?>
 			<div class="col-md-12">
+
 				<div class="direction_description">
 					<p class="direction_description_p">
-					<?php echo get_post_meta( 239, 'определение', true); 
-
-					?>
-
+						<?php 
+						$post_id = 'category_9';
+						the_field('определение', $post_id); ?>
 					</p>
 					<p class="direction_description_p">
 						<?php echo category_description( $category_id ); ?>
 					</p>
 				</div>
 			</div>
-
 		</div>
 	</div>
 
