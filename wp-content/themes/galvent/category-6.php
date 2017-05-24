@@ -46,7 +46,10 @@
 		// $cat->cat_name (Рубрика 1)
 		// $cat->category_nicename (rubrika-1)
 		// $cat->category_parent (0)
-
+				?>
+				<h2 class="h2 h2_dark beltconveyors__caption"><?php echo $cat->name; ?></h2>
+				<p class="beltconveyors__text"><?php echo $cat->description; ?></p>	
+				<?php	
 
 		# получаем записи из рубрики
 			$myposts = get_posts( array(
@@ -55,14 +58,21 @@
 				'orderby'     => 'post_date',
 				'order'       => 'DESC',
 				) );
+				?>
+				<div class="beltconveyors__img_box beltconveyors__img_box_marginbot">
+				<?php
 			foreach( $myposts as $cat2 ){
 				?>
-				<h2 class="h2 h2_dark beltconveyors__caption"><?php echo $cat->name; ?></h2>
-				<p class="beltconveyors__text"><?php echo $cat2->post_content; ?></p>	
-
-
-				<?php	
+				<a href="<?php the_permalink(); ?>" class="beltconveyors__link"><?php the_post_thumbnail() ?><span><?php echo $cat2->post_title; ?></span></a>
+				
+				<?php
 			}
+			?>
+			</div>
+			<?php
+			// echo "<pre>";
+			// 	print_r($cat2);
+			// 	echo "</pre>";
 		}
 	}
 	?>
@@ -71,12 +81,12 @@
 
 
 	<!-- 
-		<div class="beltconveyors__img_box beltconveyors__img_box_marginbot">
+		
 			<a href="#" class="beltconveyors__link"><img src="img/conv1.jpg" alt=""><span>Горизонтальные ленточные конвейеры</span></a>
 			<a href="#" class="beltconveyors__link"><img src="img/conv2.jpg" alt=""><span>Наклонные ленточные конвейеры</span></a>
 			<a href="#" class="beltconveyors__link"><img src="img/conv3.jpg" alt=""><span>Z-образные ленточные конвейеры</span></a>
 			<a href="#" class="beltconveyors__link lastmarginoff"><img src="img/conv4.jpg" alt=""><span>Г- образные ленточные конвейеры</span></a>
-		</div>
+		
 		
 		
 		<div class="beltconveyors__img_box">
