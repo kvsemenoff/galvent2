@@ -2141,6 +2141,9 @@ body, html{
 .service__item{
 	&_1{
 		margin-bottom: 10px;
+		@media only screen and (min-width : 992px) {
+		margin-bottom: auto;
+		}
 	}
 	&_2{
 		p{
@@ -2148,6 +2151,7 @@ body, html{
 			line-height: 23px;
 			@media only screen and (min-width : 992px) {
 				font-size: 16px !important;
+				line-height: 29px;
 			}
 		}
 	}
