@@ -49,6 +49,7 @@
 			?>
 			<h2 class="h2 h2_dark beltconveyors__caption"><?php echo $cat->name; ?></h2>
 			<p class="beltconveyors__text"><?php echo $cat->description; ?></p>	
+			<div class="beltconveyors__img_box beltconveyors__img_box_marginbot">
 			<?php	
 			$args = array(
 				'cat' => $cat->term_id,
@@ -57,19 +58,11 @@ $query = new WP_Query($args);
 while ( $query->have_posts() ) {
 				$query->the_post();
 			?>
-			<a href="<?php the_permalink(); ?>" class="beltconveyors__link"><?php the_post_thumbnail() ?><span><?php the_title(); ?></span></a>
+			<a href="<?php the_permalink(); ?>" class="beltconveyors__link"><?php the_post_thumbnail(); ?><span><?php the_title(); ?></span></a>
 			<?php
 				}
-
-		# получаем записи из рубрики
-			// $myposts = get_posts( array(
-			// 	'numberposts' => -1,
-			// 	'category'    => $cat->cat_ID,
-			// 	'orderby'     => 'post_date',
-			// 	'order'       => 'DESC',
-			// 	) );
 				?>
-				
+				</div>
 				<?php
 			// echo "<pre>";
 			// 	print_r($query);
@@ -77,10 +70,10 @@ while ( $query->have_posts() ) {
 			}
 		}
 		?>
-<div class="beltconveyors__img_box beltconveyors__img_box_marginbot">
+
 					
 					
-</div>
+
 
 	</div>
 
