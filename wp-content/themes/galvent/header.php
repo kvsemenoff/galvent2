@@ -171,35 +171,38 @@
 
 			<div class="menu_md__right_item">
 				<div class="menu-wrap">
-					<nav class="menu">
-						<ul class="main-menu">
-							<li class="point-active">
-								<a href="#">О компании</a>
-							</li>
-							<li>
-								<a href="#">Продукция</a>
-							</li>
-							<li>
-								<a href="#">Производство</a>
-							</li>
-							<li>
-								<a href="#">Гарантия</a>
-							</li>
-							<li>
-								<a href="#">Контакты</a>
-							</li>
-							<li>
-								<div class="search">
-									<form action="<?php bloginfo( 'url' ); ?>" method="get">
-										<div class="search-wrap">
-											<input  type="text" name="s" placeholder="Поиск" value="<?php if(!empty($_GET['s'])){echo $_GET['s'];}?>">
-											<input type="submit">
-										</div>
-									</form>
-								</div>
-							</li>
-						</ul>
+					<nav class="menu desktopmenu">				
+						<?php 
+						wp_nav_menu( array(
+							'theme_location'  => 'Main menu',
+							'menu'            => 'Главное меню', 
+							'container'       => '', 
+							'container_class' => '', 
+							'container_id'    => '',
+							'menu_class'      => 'main-menu', 
+							'menu_id'         => '',
+							'echo'            => true,
+							'fallback_cb'     => 'wp_page_menu',
+							'before'          => '',
+							'after'           => '',
+							'link_before'     => '',
+							'link_after'      => '',
+							'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+							'depth'           => 0,
+							'walker'          => '',
+							) );	
+							?>
+						
 					</nav>
+
+					<div class="search desktopsearch">
+						<form action="<?php bloginfo( 'url' ); ?>" method="get">
+							<div class="search-wrap">
+								<input  type="text" name="s" placeholder="Поиск" value="<?php if(!empty($_GET['s'])){echo $_GET['s'];}?>">
+								<input type="submit">
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>	

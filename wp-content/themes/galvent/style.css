@@ -2193,6 +2193,13 @@ body, html {
       position: absolute;
       width: 140px;
       top: -29px; } }
+.desktopmenu {
+  display: inline-block;
+  max-width: 800px; }
+
+.desktopsearch {
+  display: inline-block; }
+
 .fancybox-skin {
   border-radius: 6px;
   background: #fff;
