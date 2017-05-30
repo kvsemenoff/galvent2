@@ -12,10 +12,14 @@
 </head>
 <body>
 <?php 
-$phone = get_field('телефон');
-$email = get_field('email');
-$address = get_field('адрес');
-$soc = get_field('блок_соцсетей');
+$query = new WP_Query('page_id=281');
+while ( $query->have_posts() ) {
+	$query->the_post();
+	$phone = get_field('телефон');
+	$email = get_field('email');
+	$address = get_field('адрес');
+	$soc = get_field('блок_соцсетей');
+}
 ?>
 <div class="menu_xs">
 
@@ -30,7 +34,7 @@ $soc = get_field('блок_соцсетей');
 	<div class="menu_xs__item menu_xs__item_middle">
 
 		<div class="menu_xs__item_middle_box1">
-			<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/di-logo-m.png" alt="">
+			<a href="/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/di-logo-m.png" alt="Галвент"></a>
 		</div>
 
 		<div class="menu_xs__item_middle_box2">
@@ -83,12 +87,10 @@ $soc = get_field('блок_соцсетей');
 
 			<div class="col-xs-3 col-sm-3 col-md-3">
 				<div class="menu_sm__item">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/di-logo-t.png" alt="">
+					<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/di-logo-t.png" alt="Галвент"></a>
 				</div>	
 			</div>
-
 			<div class="col-xs-5 col-sm-5 col-md-5">
-
 				<div class="menu_sm__item">
 					<div class="address">
 						<span class="address__info"><?php echo $address; ?></span>

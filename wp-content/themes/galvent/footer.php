@@ -1,8 +1,12 @@
 <?php 
-$phone = get_field('телефон');
-$email = get_field('email');
-$address = get_field('адрес');
-$soc = get_field('блок_соцсетей');
+$query = new WP_Query('page_id=281');
+while ( $query->have_posts() ) {
+	$query->the_post();
+	$phone = get_field('телефон');
+	$email = get_field('email');
+	$address = get_field('адрес');
+	$soc = get_field('блок_соцсетей');
+}
 ?>
 <div class="footer-top footer-top_view footer-top_padding">
 	<div class="container">
@@ -49,13 +53,13 @@ $soc = get_field('блок_соцсетей');
 					<span class="address__info"><?php echo $address; ?></span>
 					<div class="address__mail">
 						<span class="address__mail-title address_footer">C пометкой Конвейер</span>
-						<a href="#" class="address__mail-link">galvent@galvent.su</a>
+						<a href="mailto:<?php echo $email; ?>" class="address__mail-link"><?php echo $email; ?></a>
 					</div>
 				</div>	
 			</div>
 			<div class="col-md-3 col-sm-12 col-xs-12">
 				<div class="footer-phone footer-phone_center">
-					<span class="telefone telefone_footer telefone_padding">+7 (495) 790 7698</span>
+					<span class="telefone telefone_footer telefone_padding"><?php echo $phone; ?></span>
 					<a href="#modal__form_call" class="link link_footer link_float fancybox"><span>заказать обратный звонок</span></a>
 				</div>
 			</div>
@@ -63,16 +67,16 @@ $soc = get_field('блок_соцсетей');
 		<div class="down">
 			<div class="col-md-3 col-sm-12 col-xs-12">
 				<div class="footer-phone footer-phone_center footer-phone-bottom">
-					<span class="telefone telefone_footer telefone_padding">+7 (495) 790 7698</span>
+					<span class="telefone telefone_footer telefone_padding"><?php echo $phone; ?></span>
 					<a href="#modal__form_call" class="link link_footer link_float fancybox"><span>заказать обратный звонок</span></a>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-12 col-xs-12">
 				<div class="address address__footer address_padding">
-					<span class="address__info">111123 Москва, Шоссе Энтузиастов д.56 стр 47</span>
+					<span class="address__info"><?php echo $address; ?></span>
 					<div class="address__mail">
 						<span class="address__mail-title address_footer">C пометкой Конвейер</span>
-						<a href="#" class="address__mail-link">galvent@galvent.su</a>
+						<a href="mailti:<?php echo $email; ?>" class="address__mail-link"><?php echo $email; ?></a>
 					</div>
 				</div>	
 			</div>
@@ -85,7 +89,7 @@ $soc = get_field('блок_соцсетей');
 			<p class="footer-bottom__copyright">&copy;2017 ГАЛВЕНТ - Все права защищены</p>
 		</div>				
 		<div class="col-md-6 col-sm-12 col-xs-12">
-			<p class="footer-bottom__site"><a href="#" class="footer-bottom__link"><span>Разработка сайта "ЮТЕКС Проект"</span></a><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/db-ex.png" alt="img"></a></p>
+			<p class="footer-bottom__site"><a href="http://www.utex.ru/" target="_blank" class="footer-bottom__link"><span>Разработка сайта "ЮТЕКС Проект"</span></a><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/db-ex.png" alt="ЮТЕКС Проект"></a></p>
 		</div>
 	</div>
 </div>
