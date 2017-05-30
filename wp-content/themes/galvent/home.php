@@ -6,7 +6,9 @@ Template name: Главная
 
 <?php get_header(); ?>
 
+<?php 
 
+?>
 <div class="equipment">
 	<div class="container">
 		<h1 class="h1">Конвейерное оборудование</h1>

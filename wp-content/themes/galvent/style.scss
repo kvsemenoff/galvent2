@@ -328,6 +328,11 @@ footer, header, hgroup, menu, nav, section {
 				}
 			}
 		}
+		.current-menu-item{
+			a{
+				border-color: #f2b600;
+			}
+		}
 		.point-active a{
 			border-color: #f2b600;
 		}
@@ -455,7 +460,7 @@ footer, header, hgroup, menu, nav, section {
 			display: none;
 		}
 		input[type="text"]{
-			padding: 0 0 0 27px;
+			padding: 0 35px 0 20px;
 			background: #ededed;
 			color: #919293;
 			font-size: 15px;
@@ -4394,4 +4399,8 @@ $t-c-lb-m : #1e91bc;
 			}
 		}
 	}
+}
+
+a{
+	outline: none !important;
 }

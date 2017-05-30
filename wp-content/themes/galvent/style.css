@@ -270,6 +270,8 @@ body {
         @media only screen and (max-width: 1000px) {
           .menu-wrap .main-menu li a {
             padding: 10px 0; } }
+    .menu-wrap .main-menu .current-menu-item a {
+      border-color: #f2b600; }
     .menu-wrap .main-menu .point-active a {
       border-color: #f2b600; }
 
@@ -372,7 +374,7 @@ body {
     .search-wrap {
       display: none; } }
   .search-wrap input[type="text"] {
-    padding: 0 0 0 27px;
+    padding: 0 35px 0 20px;
     background: #ededed;
     color: #919293;
     font-size: 15px;
@@ -3728,5 +3730,8 @@ body, html {
       text-decoration: underline; }
       .menu_footer li a:hover {
         color: #f2b600; }
+
+a {
+  outline: none !important; }
 
 /*# sourceMappingURL=style.css.map */

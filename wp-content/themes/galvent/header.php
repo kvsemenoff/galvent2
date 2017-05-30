@@ -152,7 +152,7 @@ while ( $query->have_posts() ) {
 <div class="menu_md">
 	<div class="container">	
 		<div class="menu_md__left">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/di-logo-d.png" alt="">
+			<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/di-logo-d.png" alt="Галвент"></a>
 		</div>	
 
 		<div class="menu_md__right">
