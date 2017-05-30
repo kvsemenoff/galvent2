@@ -3715,5 +3715,18 @@ body, html {
       float: right; }
     .header-d .first-block__search {
       float: right; } }
+.menu_footer {
+  height: 95px; }
+  .menu_footer li {
+    display: inline-block;
+    min-width: 130px; }
+    .menu_footer li a {
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 28px;
+      text-decoration: underline; }
+      .menu_footer li a:hover {
+        color: #f2b600; }
 
 /*# sourceMappingURL=style.css.map */

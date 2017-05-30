@@ -13,20 +13,30 @@
 		</div>
 		<div class="col-md-4 col-sm-6 col-xs-12">
 			<div class="footer-menu footer-menu_view">
-				<div class="footer-menu__one">
-					<ul>
-					<li class="footer-menu__item"><a href="" class="footer-menu__link">Акции</a></li>
-					<li class="footer-menu__item"><a href="" class="footer-menu__link">Новости</a></li>
-					<li class="footer-menu__item"><a href="" class="footer-menu__link">Статьи</a></li>
-					</ul>
-				</div>
-				<!-- <li class="clear"></li> -->
-				<div class="footer-menu__two">
-					<ul>
-					<li class="footer-menu__item"><a href="" class="footer-menu__link">Примеры работ</a></li>
-					<li class="footer-menu__item"><a href="" class="footer-menu__link">Сервис</a></li>
-					</ul>
-				</div>
+				
+				 <div class="footer-menu__one">
+				 	<?php 
+				 	wp_nav_menu( array(
+				 		'theme_location'  => 'Main menu',
+				 		'menu'            => 'Меню футера', 
+				 		'container'       => 'div', 
+				 		'container_class' => '', 
+				 		'container_id'    => '',
+				 		'menu_class'      => 'menu_footer', 
+				 		'menu_id'         => '',
+				 		'echo'            => true,
+				 		'fallback_cb'     => 'wp_page_menu',
+				 		'before'          => '',
+				 		'after'           => '',
+				 		'link_before'     => '',
+				 		'link_after'      => '',
+				 		'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				 		'depth'           => 0,
+				 		'walker'          => '',						
+				 		) );	
+				 		?>
+				</div>		
+			
 				<div class="clearfix"></div>
 			</div>
 		</div>				
