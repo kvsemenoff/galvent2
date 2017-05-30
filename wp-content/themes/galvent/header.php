@@ -20,6 +20,7 @@ while ( $query->have_posts() ) {
 	$address = get_field('адрес');
 	$soc = get_field('блок_соцсетей');
 }
+wp_reset_query();
 ?>
 <div class="menu_xs">
 

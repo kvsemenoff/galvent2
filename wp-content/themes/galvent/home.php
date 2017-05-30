@@ -7,6 +7,12 @@ Template name: Главная
 <?php get_header(); ?>
 
 <?php 
+$dop1 = get_field('дополнительная_услуга_1');
+$dop2 = get_field('дополнительная_услуга_2');
+$dop3 = get_field('дополнительная_услуга_3');
+$dop4 = get_field('дополнительная_услуга_4');
+$dop5 = get_field('дополнительная_услуга_5');
+$dop6 = get_field('дополнительная_услуга_6');
 
 ?>
 <div class="equipment">
@@ -14,7 +20,7 @@ Template name: Главная
 		<h1 class="h1">Конвейерное оборудование</h1>
 		<span class="equipment__descr">Качественное конвейерное оборудование от производителя </span>
 		<div class="equipment__button">
-			<a href="#" class="button button__view"><span class="button__view_ico"></span><span class="button__view_txt">перейти в каталог</span></a>
+			<a href="/category/produktsiya/" class="button button__view"><span class="button__view_ico"></span><span class="button__view_txt">перейти в каталог</span></a>
 		</div>
 		<div class="equipment_order">
 			<a href="#modal__form_order" class="fancybox order_curcle">
@@ -76,14 +82,14 @@ Template name: Главная
 
 			<div class="col-sm-6 col-md-6 ">
 				<div class="dd-about about__view about__view_1">
-					<span>Широкий перечень услуг</span>
-					<p>Помимо производства и продажи конвейеров, мы предлагаем разработку готового решения внутренней транспортировки</p>
+					<span><?php the_field('заголовок_1'); ?></span>
+					<p><?php the_field('текст_1'); ?></p>
 				</div>
 			</div>
 			<div class="col-sm-6 col-md-6 ">
 				<div class="dd-about about__view about__view_2">
-					<span>Качество продукции</span>
-					<p>Опыт и квалификация наших сотрудников позволяет реализовывать сложные проекты в достаточно короткие сроки, и при этом гарантировать качество предоставляемой продукции.</p>
+					<span><?php the_field('заголовок_2'); ?></span>
+					<p><?php the_field('текст_2'); ?></p>
 				</div>
 			</div>
 			<div class="clearfix"></div>
@@ -93,17 +99,17 @@ Template name: Главная
 					<div class="about__view_img">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/m3.png" alt="">
 					</div>
-					<p>Лучшие цены на конвейеры и комплектующие к ним среди конкурентов.</p>
-					<a href="#" class="button button__view"><span class="button__view_ico"></span><span class="button__view_txt">перейти в каталог</span></a>
+					<p><?php the_field('текст_3'); ?></p>
+					<a href="/category/produktsiya/" class="button button__view"><span class="button__view_ico"></span><span class="button__view_txt">перейти в каталог</span></a>
 				</div>
 			</div>
 			<div class="col-sm-6 col-md-6 ">
 				<div class="dd-about about__view about__view_4">
 					<div class="str"><img src="<?php echo get_template_directory_uri(); ?>/img/strm.jpg" alt=""></div>
 					<div class="str str2"><img src="<?php echo get_template_directory_uri(); ?>/img/bn2.png" alt=""></div>
-					<p class="about__view_p">ПТО Галвент — структурное подразделение "Фабрики Вентиляции ГалВент".</p>
+					<p class="about__view_p"><?php the_field('заголовок_4'); ?></p>
 					<p class="about__view_txt">
-						Основная сфера деятельности нашего предприятия – выпуск конвейеров и рольгангов. Наличие высококвалифицированных специалистов  позволяет спроектировать и изготовить оборудование, которое будет максимально соответствовать Вашим требованиям. Мы специализируемся на изготовлении и продаже конвейерных систем различных видов, подходящих практически для всех отраслей промышленности.
+						<?php the_field('текст_4'); ?>
 					</p>
 				</div>
 			</div>
@@ -117,24 +123,38 @@ Template name: Главная
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-5">
 				<h2 class="h2 h2_light">Последние новости</h2>
+				<?php 
+				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+				$args = array(
+					'cat' => 2,
+					'paged' => $paged
+					);
+
+				$query = new WP_Query($args);
+				$i=0;
+				while ( $query->have_posts() ) {
+				$query->the_post();
+				if ($i>=2) {
+					break;
+				}
+				
+				?>
+
 				<div class="news-box news-box__view">
-					<span>28.03.17</span>
+					<span><?php the_time('d.m.Y'); ?></span>
 					<div class="news-box__link">
-						<a class="news-box__link_1"	href="#">Закончено оборудование одного из цехов роликовыми транспортерами</a>
+						<a class="news-box__link_1"	href="<?php the_permalink(); ?>"><?php  do_excerpt(get_the_excerpt(), 7); ?></a>
 					</div>
 					<div class="news-box__link">
-						<a class="news-box__link_2"	href="#">читать далее >> </a>
+						<a class="news-box__link_2"	href="<?php the_permalink(); ?>">читать далее >> </a>
 					</div>
 				</div>
-				<div class="news-box news-box__view">
-					<span>23.03.17</span>
-					<div class="news-box__link">
-						<a class="news-box__link_1"	href="#">Закончена сборка ленточного транспортера для собственного производства</a>
-					</div>
-					<div class="news-box__link">
-						<a class="news-box__link_2"	href="#">читать далее >> </a>
-					</div>
-				</div>
+				<?php
+				 $i++; 
+				}
+				wp_reset_query();
+				?>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-7">
 				<div class="news-box news-box__play">
@@ -244,8 +264,7 @@ Template name: Главная
 						<img src="<?php echo get_template_directory_uri(); ?>/img/p1.png" alt="">
 					</div>
 					<div class="services__item">
-						<p>Консультирование клиентов по<br class="br"/> выбору конвейера с выездом<br class="br"/> специалиста на территорию<br class="br"/> заказчика
-						</p>
+						<p><?php echo $dop1; ?></p>
 					</div>
 				</div>
 			</div>
@@ -256,7 +275,7 @@ Template name: Главная
 						<img src="<?php echo get_template_directory_uri(); ?>/img/p2.png" alt="">
 					</div>
 					<div class="services__item">
-						<p>Составление технического задания <br/>и произведение необходимых замеров</p>
+						<p><?php echo $dop2; ?></p>
 					</div>
 				</div>
 			</div>
@@ -267,8 +286,7 @@ Template name: Главная
 						<img src="<?php echo get_template_directory_uri(); ?>/img/p3.png" alt="">
 					</div>
 					<div class="services__item">
-						<p>Проведение всех необходимых подготовительных работ по установке транспортера
-						</p>
+						<p><?php echo $dop3; ?></p>
 					</div>
 				</div>
 			</div>
@@ -281,7 +299,7 @@ Template name: Главная
 						<img src="<?php echo get_template_directory_uri(); ?>/img/p4.png" alt="">
 					</div>
 					<div class="services__item">
-						<p>Планирование и проектирование будущего оборудования</p>
+						<p><?php echo $dop4; ?></p>
 					</div>
 				</div>
 			</div>
@@ -292,7 +310,7 @@ Template name: Главная
 						<img src="<?php echo get_template_directory_uri(); ?>/img/p5.png" alt="">
 					</div>
 					<div class="services__item">
-						<p>Гарантийное и постгарантийное обслуживание</p>
+						<p><?php echo $dop5; ?></p>
 					</div>
 				</div>
 			</div>
@@ -303,7 +321,7 @@ Template name: Главная
 						<img src="<?php echo get_template_directory_uri(); ?>/img/p6.png" alt="">
 					</div>
 					<div class="services__item">
-						<p>Установка и ввод в эксплуатацию</p>
+						<p><?php echo $dop6; ?></p>
 					</div>
 				</div>
 			</div>
