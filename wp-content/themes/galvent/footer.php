@@ -1,13 +1,16 @@
+<?php 
+$phone = get_field('телефон');
+$email = get_field('email');
+$address = get_field('адрес');
+$soc = get_field('блок_соцсетей');
+?>
 <div class="footer-top footer-top_view footer-top_padding">
 	<div class="container">
 		<div class="col-md-2 col-sm-6 col-xs-12">
 			<div class="footer-social footer-social_float footer-social_center">
 				<span class="wearesocials">Мы в соц.сетях:</span>
 				<div class="socials-inner">
-					<a href="#" class="socials-link"><i class="fa fa-vk" aria-hidden="true"></i></a>
-					<a href="#" class="socials-link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a href="#" class="socials-link socials-link_margin"><i class="fa fa-youtube" aria-hidden="true"></i></a> 
-					<a href="#" class="socials-link socials-link_margin"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+					<?php echo $soc; ?>
 				</div>	
 			</div>
 		</div>
@@ -33,7 +36,7 @@
 		<div class="up">
 			<div class="col-md-3 col-sm-12 col-xs-12">
 				<div class="address address__footer address_padding">
-					<span class="address__info">111123 Москва, Шоссе Энтузиастов д.56 стр 47</span>
+					<span class="address__info"><?php echo $address; ?></span>
 					<div class="address__mail">
 						<span class="address__mail-title address_footer">C пометкой Конвейер</span>
 						<a href="#" class="address__mail-link">galvent@galvent.su</a>

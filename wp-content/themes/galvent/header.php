@@ -11,13 +11,18 @@
 <?php wp_head(); ?>
 </head>
 <body>
-
+<?php 
+$phone = get_field('телефон');
+$email = get_field('email');
+$address = get_field('адрес');
+$soc = get_field('блок_соцсетей');
+?>
 <div class="menu_xs">
 
 	<div class="menu_xs__wrap">
 
 		<div class="menu_xs__item menu_xs__item_top">
-			<span class="menu_xs__item_tel">+7 (495) 790 7698 </span> <a class="menu_xs__item_link fancybox" href="#modal__form_call"> перезвоните</a>
+			<span class="menu_xs__item_tel"><?php echo $phone; ?></span> <a class="menu_xs__item_link fancybox" href="#modal__form_call"> перезвоните</a>
 		</div>
 
 	</div>
@@ -86,10 +91,10 @@
 
 				<div class="menu_sm__item">
 					<div class="address">
-						<span class="address__info">111123 Москва, Шоссе Энтузиастов д.56 стр 47</span>
+						<span class="address__info"><?php echo $address; ?></span>
 						<div class="address__mail">
 							<span class="address__mail-title">C пометкой Конвейер</span>
-							<a href="#" class="address__mail-link">galvent@galvent.su</a>
+							<a href="mailto:<?php echo $email; ?>" class="address__mail-link"><?php echo $email; ?></a>
 						</div>
 					</div>
 				</div>
@@ -98,7 +103,7 @@
 
 			<div class="col-xs-4 col-sm-4 col-md-4">
 				<div class="menu_sm__item menu_sm__item_tel">
-					<span class="menu_xs__item_tel">+7 (495) 790 7698 </span> <a class="menu_xs__item_link fancybox" href="#modal__form_call">заказать обратный звонок</a>
+					<span class="menu_xs__item_tel"><?php echo $phone; ?> </span> <a class="menu_xs__item_link fancybox" href="#modal__form_call">заказать обратный звонок</a>
 				</div>
 				<div class="search">
 					<form action="<?php bloginfo( 'url' ); ?>" method="get">
@@ -153,10 +158,10 @@
 			<div class="menu_md__right_item">
 				<div class="menu_sm__item">
 					<div class="address">
-						<span class="address__info">111123 Москва, Шоссе Энтузиастов д.56 стр 47</span>
+						<span class="address__info"><?php echo $address; ?></span>
 						<div class="address__mail">
 							<span class="address__mail-title">C пометкой Конвейер</span>
-							<a href="#" class="address__mail-link">galvent@galvent.su</a>
+							<a href="mailto:<?php echo $email; ?>" class="address__mail-link"><?php echo $email; ?></a>
 						</div>
 					</div>
 				</div>
@@ -164,7 +169,7 @@
 
 			<div class="menu_md__right_item2">
 				<div class="menu_sm__item menu_sm__item_tel">
-					<span class="menu_xs__item_tel">+7 (495) 790 7698 </span><br/> <a class="menu_xs__item_link fancybox" href="#modal__form_call">заказать обратный звонок</a>
+					<span class="menu_xs__item_tel"><?php echo $phone; ?> </span><br/> <a class="menu_xs__item_link fancybox" href="#modal__form_call">заказать обратный звонок</a>
 				</div>
 			</div>
 			<div class="clearfix"></div>
