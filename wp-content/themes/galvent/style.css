@@ -2741,7 +2741,10 @@ body, html {
     overflow: hidden;
     margin-bottom: 10px; }
     .article__img img {
-      display: block; }
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 258px; }
   .article__img-descr {
     position: absolute;
     color: #fff;
