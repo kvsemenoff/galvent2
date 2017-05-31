@@ -27,7 +27,7 @@ $query = new WP_Query($args);
 			?>
 			<div class="col-md-4 col-sm-6">
 				<div class="box-width">
-				<a href="<?php the_permalink(); ?>">
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 					<?php the_post_thumbnail() ?>
 					<div class="zagolovok">
 						<span class="direction_item__circle"></span>

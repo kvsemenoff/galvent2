@@ -35,9 +35,9 @@
 						<div class="article__img">
 							<?php the_post_thumbnail(); ?>
 
-							<a href="<?php the_permalink(); ?>" ><span class="article__img-descr"><?php the_title(); ?></span></a>
+							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><span class="article__img-descr"><?php the_title(); ?></span></a>
 
-							<a href="<?php the_permalink(); ?>" class="article__img-descr"><?php the_title(); ?></a>
+							<a href="<?php the_permalink(); ?>" class="article__img-descr" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 
 						</div>
 						<div class="article__content">
@@ -45,7 +45,7 @@
 							<div class="article__info clearfix">
 								<div class="article__date">10.04.2017</div>
 								<div class="article__button">
-									<a href="<?php the_permalink(); ?>" class="button button__view"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
+									<a href="<?php the_permalink(); ?>" class="button button__view" title="<?php the_title(); ?>"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
 								</div>
 							</div>
 						</div>
