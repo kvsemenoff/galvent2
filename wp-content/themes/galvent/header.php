@@ -38,7 +38,13 @@ wp_reset_query();
 	<div class="menu_xs__item menu_xs__item_middle">
 
 		<div class="menu_xs__item_middle_box1">
-			<a href="/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/di-logo-m.png" alt="Галвент"></a>
+			<?php if ( is_front_page() ) { ?>
+			<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/di-logo-m.png" alt="Галвент">
+ 			<?php  }else { ?>
+ 			<a href="/"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/di-logo-m.png" alt="Галвент"></a>
+			<?php } ?>
+
+			
 		</div>
 
 		<div class="menu_xs__item_middle_box2">
@@ -91,7 +97,11 @@ wp_reset_query();
 
 			<div class="col-xs-3 col-sm-3 col-md-3">
 				<div class="menu_sm__item">
-					<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/di-logo-t.png" alt="Галвент"></a>
+					<?php if ( is_front_page() ) { ?>
+					<img src="<?php echo get_template_directory_uri(); ?>/img/di-logo-t.png" alt="Галвент">
+		 			<?php  }else { ?>
+		 			<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/di-logo-t.png" alt="Галвент"></a>
+					<?php } ?>
 				</div>	
 			</div>
 			<div class="col-xs-5 col-sm-5 col-md-5">
@@ -156,7 +166,11 @@ wp_reset_query();
 <div class="menu_md">
 	<div class="container">	
 		<div class="menu_md__left">
-			<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/di-logo-d.png" alt="Галвент"></a>
+			<?php if ( is_front_page() ) { ?>
+			<img src="<?php echo get_template_directory_uri(); ?>/img/di-logo-d.png" alt="Галвент">
+		 	<?php  }else { ?>
+		 	<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/di-logo-d.png" alt="Галвент"></a>
+			<?php } ?>
 		</div>	
 
 		<div class="menu_md__right">
