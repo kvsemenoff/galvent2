@@ -38,8 +38,9 @@ Template name: Примеры работ
 				<?php foreach( $featured_images as $image ) { ?>
 				
 				<div class="item">
-					<div class="examples__img">
-						<a href="<?php echo $image['full'] ?>" data-fancybox-group="group" ><img src="<?php echo $image['full'] ?>" alt=""></a>
+					<div class="examples__img" >
+						<img src="<?php echo $image['full'] ?>" alt="">
+						<a class="examples__zoom" href="<?php echo $image['full'] ?>"  data-fancybox-group="group" ></a>
 					</div>
 				</div>
 				<?php } ?>
