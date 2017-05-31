@@ -29,7 +29,7 @@
 			<div class="col-md-4">
 				<div class="article">
 					<div class="article__img">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/article-photo-1.jpg" alt="">
+						<?php the_post_thumbnail(); ?>
 						<a href="<?php the_permalink(); ?>"><span class="article__img-descr"><?php the_title(); ?></span></a>
 					</div>
 					<div class="article__content">
