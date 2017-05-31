@@ -111,5 +111,3 @@ Template name: Гарантия
 
 <?php get_footer(); ?>
 
-</body>
-</html>
