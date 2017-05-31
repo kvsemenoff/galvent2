@@ -295,6 +295,9 @@ body {
     .link_header span {
       display: none; } }
 
+strong {
+  font-family: "GothamProBold", arial, sans-serif; }
+
 @media only screen and (max-width: 700px) {
   .telefone-wrap {
     text-align: center; } }

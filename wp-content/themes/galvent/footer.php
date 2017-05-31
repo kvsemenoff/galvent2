@@ -89,7 +89,7 @@ while ( $query->have_posts() ) {
 			<p class="footer-bottom__copyright">&copy;2017 ГАЛВЕНТ - Все права защищены</p>
 		</div>				
 		<div class="col-md-6 col-sm-12 col-xs-12">
-			<p class="footer-bottom__site"><a href="http://www.utex.ru/" target="_blank" class="footer-bottom__link"><span>Разработка сайта "ЮТЕКС Проект"</span></a><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/db-ex.png" alt="ЮТЕКС Проект"></a></p>
+			<p class="footer-bottom__site"><a href="http://www.utex.ru/" target="_blank" class="footer-bottom__link"><span>Разработка сайта "ЮТЕКС Проект"</span></a><a href="http://www.utex.ru/" target="_blank" ><img src="<?php echo get_template_directory_uri(); ?>/img/db-ex.png" alt="ЮТЕКС Проект"></a></p>
 		</div>
 	</div>
 </div>

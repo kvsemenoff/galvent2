@@ -1,4 +1,6 @@
 <?php 	
+
+
 remove_filter('the_content', 'wptexturize'); 
 
   if (function_exists('register_sidebar'))

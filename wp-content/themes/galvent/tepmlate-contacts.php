@@ -5,6 +5,7 @@ Template name: Наши контакты
 ?>
 <?php get_header(); ?>
 
+
 <div class="bread_menu bread_menu_bg_img conveyors_page">	
 	<div class="container pos-relative">
 		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' '); ?>		
@@ -23,37 +24,35 @@ Template name: Наши контакты
 			<div class="contacts__items clearfix">
 				<div class="contacts__item">
 					<div class="item item_mape">
-						<span class="item__text">111123 Москва, Шоссе</span>
-						<span class="item__text">Энтузиастов д.56 стр 47 </span>
-						<a class="item__link" href="#">показать на карте</a>
+						<?php the_field('контакты_ардес'); ?>
 					</div>
 				</div>
 				<div class="contacts__item">
 					<div class="item item_massage">
-						<span class="item__text">galvent@galvent.su</span>
-						<span class="item__text">snab@galvent.su</span>
-						<a class="item__link" href="#">написать нам</a>
+						<?php the_field('контакты_элекстронная_почта'); ?>
+						
 					</div>
 				</div>
 				<div class="contacts__item">
 					<div class="item item_time">
-						<span class="item__title">Режим работы </span>
-						<span class="item__text">Пн.– Пт.: с 9:00 до 18:00</span>
-						<span class="item__text">Cб.-Вс. - выходные</span>
+						<?php the_field('контакты_режим_работы'); ?>
+						
 					</div>
 				</div>
 				<div class="contacts__item">
 					<div class="item item_number">
-						<span class="item__number">+7 (495) 790 7698</span>
-						<span class="item__number">+7 (495) 229 2647</span>
-						<a class="item__link" href="#">заказть обратный звонок</a>
+						<?php the_field('контакты_телефоны'); ?>
+						<a class="item__link fancybox" href="#modal__form_call">заказть обратный звонок</a>
 					</div>
 				</div>
 			</div>
+
+
 			<div class="mape">
 				<div class="map-img" id="map">
 				</div>
 			</div>
+
 			<div class="form__title-block">
 				<span class="form__title">Есть вопросы?</span>
 				<span class="form__descr">Свяжитесь с нами через форму обратной связи</span>
@@ -83,5 +82,5 @@ Template name: Наши контакты
 		</div>
 	</div>
 </div>
-
+			
 <?php get_footer(); ?>	

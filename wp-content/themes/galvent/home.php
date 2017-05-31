@@ -17,8 +17,8 @@ $dop6 = get_field('дополнительная_услуга_6');
 ?>
 <div class="equipment">
 	<div class="container">
-		<h1 class="h1">Конвейерное оборудование</h1>
-		<span class="equipment__descr">Качественное конвейерное оборудование от производителя </span>
+		<h1 class="h1"><?php the_field('шапка_заголовок'); ?></h1>
+		<span class="equipment__descr"><?php the_field('шапка_подзаголовок'); ?></span>
 		<div class="equipment__button">
 			<a href="/category/produktsiya/" class="button button__view"><span class="button__view_ico"></span><span class="button__view_txt">перейти в каталог</span></a>
 		</div>
