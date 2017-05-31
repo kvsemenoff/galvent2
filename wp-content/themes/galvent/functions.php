@@ -1,5 +1,9 @@
 <?php 	
 
+add_filter('term_description', 'clear_term_description');
+function clear_term_description($value){
+    return preg_replace(array('@<p>@','@</p>@'), '', $value);
+}
 
 remove_filter('the_content', 'wptexturize'); 
 
