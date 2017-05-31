@@ -3740,6 +3740,9 @@ body, html{
 
 .beltconveyors__img_box{
 	text-align: center;
+	@media only screen and (min-width : 750px) {
+		text-align: left;
+	}
 }
 .beltconveyors__img_box_marginbot{
 	margin-bottom: 25px;
@@ -3765,7 +3768,7 @@ body, html{
 	@media only screen and (min-width : 1200px) {
 		max-width: 272px;
 		width: 100%;
-	 margin-right: 16px;
+	 	margin-right: 20px;//16
 	}
 	img{max-width:100%; height: auto; }
 	span{
