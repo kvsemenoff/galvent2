@@ -133,7 +133,7 @@ $(document).ready(function(){
 
 			var owl2 = $(".examples__slider");
 			owl2.owlCarousel({
-				loop:false,
+				loop:true,
 				nav:true, 
 				autoplay:false,
 				smartSpeed:1000,
