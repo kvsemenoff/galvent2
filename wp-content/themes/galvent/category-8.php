@@ -12,31 +12,38 @@
 
 
 <div class="container container_padding_top">
-	<h2 class="h2 h2_dark beltconveyors__caption"><?php the_title(); ?></h2>
-
-	<p class="beltconveyors__text">Прямые ленточные конвейеры являются самым распространенным и наиболее рентабельным оборудованием для перемещения продукции на производстве или складе в любой отрасли.</p>	
-	<div class="beltconveyors__img_box beltconveyors__img_box_marginbot">
-		
-	
-	
 	<?php 
-			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+		$categories = get_the_category();
+		$category_id = $categories[0]->cat_ID;
+	?>
+	<h2 class="h2 h2_dark beltconveyors__caption">
+		<?php echo $category_id = $categories[0]->name; ?>			
+	</h2>
+	
+	<p class="beltconveyors__text">
+		<?php echo $category_id = $categories[0]->description; ?>		
+	</p>	
+	
+	<div class="beltconveyors__img_box beltconveyors__img_box_marginbot">
 
-			$args = array(
-				'cat' => 8,
-				'paged' => $paged
-				);
+		<?php 
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-			$query = new WP_Query($args);
+		$args = array(
+			'cat' => 8,
+			'paged' => $paged
+			);
 
-			while ( $query->have_posts() ) {
-				$query->the_post();
-				?>	
+		$query = new WP_Query($args);
 
-				<a href="<?php the_permalink(); ?>" class="beltconveyors__link"><?php the_post_thumbnail(); ?><span><?php the_title(); ?></span></a>
+		while ( $query->have_posts() ) {
+			$query->the_post();
+			?>	
 
-				<?php }?>
-	</div>
+			<a href="<?php the_permalink(); ?>" class="beltconveyors__link"><?php the_post_thumbnail(); ?><span><?php the_title(); ?></span></a>
+
+			<?php }?>
+		</div>
 
 		<div class="container">
 			<h2 class="h2 h2_dark beltconveyors__caption_form">Хотите сделать заказ?</h2>
