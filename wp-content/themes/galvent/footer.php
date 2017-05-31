@@ -91,7 +91,7 @@ wp_reset_query();
 			<p class="footer-bottom__copyright">&copy;2017 ГАЛВЕНТ - Все права защищены</p>
 		</div>				
 		<div class="col-md-6 col-sm-12 col-xs-12">
-			<?php $post_id = get_the_ID();  echo $post_id;?>
+			<?php $post_id = get_the_ID(); ?>
 
 			
 
@@ -187,7 +187,7 @@ wp_reset_query();
 <div class="modal modal__form" id="modal__form_call">
 	<div class="form_for_popup">
 		<h4 class="form_popup__caption">заказать обратный звонок</h4>
-		<form action="#" method="post" class="js-submit">	
+		<form action="#" method="post" class="callback-form">	
 			<span class="for_input">Ваше ФИО:<i>*</i></span>
 			<span class="input input_theme_popup"><input type="text" class="input__control"  name="uname" placeholder="Василий" required></span> 	
 			<span class="for_input">Телефон:<i>*</i></span>

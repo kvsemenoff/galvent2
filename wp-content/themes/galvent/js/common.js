@@ -100,6 +100,36 @@ $(document).ready(function(){
 			var form_data = $(this).serialize(); 
 			$.ajax({
 				type: "POST", 
+				url: "sendmessage.php", 
+				data: form_data,
+				success: function(form) {
+					$('.js-window').hide();
+					$("input[type=text]").val("");
+					$("input[type=tel]").val("");
+					$("textarea").val("");
+					$('a[href=#modal__thanks]').trigger('click');
+				// location = "thanks.php";
+			}
+		});
+		}
+		return false;
+	});
+
+	$('.callback-form').submit(function(){
+		
+		var phone = $(this).find('input[name="phone"]');
+		
+		if(phone.val() == ""){
+			phone.focus();
+			return false;
+		}
+
+		else{
+			
+			var form_data = $(this).serialize(); 
+			alert(form_data);
+			$.ajax({
+				type: "POST", 
 				url: "/sendmessage.php", 
 				data: form_data,
 				success: function(form) {
