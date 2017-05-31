@@ -12,65 +12,30 @@
 
 
 <div class="container container_padding_top">
+	<h2 class="h2 h2_dark beltconveyors__caption"><?php the_title(); ?></h2>
 
-	<?php
+	<p class="beltconveyors__text">Прямые ленточные конвейеры являются самым распространенным и наиболее рентабельным оборудованием для перемещения продукции на производстве или складе в любой отрасли.</p>	
+	<div class="beltconveyors__img_box beltconveyors__img_box_marginbot">
+		
+	
+	
+	<?php 
+			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-
-	$parent_id = 6;
-
-
-# получаем дочерние рубрики
-	$sub_cats = get_categories( array(
-		'child_of' => $parent_id,
-		'hide_empty' => 0
-		) );
-
-	if( $sub_cats ){
-		foreach( $sub_cats as $cat ){
-
-		// Данные в объекте $cat
-
-		// $cat->term_id
-		// $cat->name (Рубрика 1)
-		// $cat->slug (rubrika-1)
-		// $cat->term_group (0)
-		// $cat->term_taxonomy_id (4)
-		// $cat->taxonomy (category)
-		// $cat->description ()
-		// $cat->parent (0)
-		// $cat->count (14)
-		// $cat->object_id (2743)
-		// $cat->cat_ID (4)
-		// $cat->category_count (14)
-		// $cat->category_description ()
-		// $cat->cat_name (Рубрика 1)
-		// $cat->category_nicename (rubrika-1)
-		// $cat->category_parent (0)
-			?>
-			<h2 class="h2 h2_dark beltconveyors__caption"><?php echo $cat->name; ?></h2>
-			<p class="beltconveyors__text"><?php echo $cat->description; ?></p>	
-			<div class="beltconveyors__img_box beltconveyors__img_box_marginbot">
-			<?php	
 			$args = array(
-				'cat' => $cat->term_id,
+				'cat' => 8,
+				'paged' => $paged
 				);
-$query = new WP_Query($args);
-while ( $query->have_posts() ) {
-				$query->the_post();
-			?>
-			<a href="<?php the_permalink(); ?>" class="beltconveyors__link"><?php the_post_thumbnail(); ?><span><?php the_title(); ?></span></a>
-			<?php
-				}
-				?>
-				</div>
-				<?php
-			// echo "<pre>";
-			// 	print_r($query);
-			// 	echo "</pre>";
-			}
-		}
-		?>
 
+			$query = new WP_Query($args);
+
+			while ( $query->have_posts() ) {
+				$query->the_post();
+				?>	
+
+				<a href="<?php the_permalink(); ?>" class="beltconveyors__link"><?php the_post_thumbnail(); ?><span>Горизонтальные ленточные конвейеры</span></a>
+
+				<?php }?>
 	</div>
 
 		<div class="container">
