@@ -3572,8 +3572,33 @@ body, html{
 	margin-bottom: 35px;	
 	@media only screen and (min-width : 780px) {
 		margin-bottom: 60px;
+	}	
+}
+.fancybox-next {
+	span{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: #016491 url(./img/right.png) no-repeat center;	
+		visibility: visible;	
+	}
+	&:hover span{
+		background-color: #ffcd72;
 	}
 }
+.fancybox-prev {
+	span{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: #016491 url(./img/left.png) no-repeat center;	
+		visibility: visible;
+	}
+	&:hover span{
+		background-color: #ffcd72;
+	}
+}
+
 .examples__height{
 	max-height: 1950px;
 	overflow: hidden;
@@ -3591,6 +3616,7 @@ body, html{
 	@media only screen and (min-width : 780px) {
 		margin-bottom: 30px;
 	}
+	
 }
 .examples__block_caption{
 	color: #1d2122;	
@@ -3730,16 +3756,23 @@ body, html{
 		padding: 16px 0 20px 0px;
 		@media only screen and (min-width : 770px) {
 			padding: 16px 0 37px 5px;
-		}
+		}		
 		strong{
 			font-weight: 500;
 			font-family: "GothamProMedium";
 		}	
 	}
+	img{
+		width: 100%;
+		height: auto;
+	}
 }
 
 .beltconveyors__img_box{
 	text-align: center;
+	@media only screen and (min-width : 750px) {
+		text-align: left;
+	}
 }
 .beltconveyors__img_box_marginbot{
 	margin-bottom: 25px;
@@ -3765,7 +3798,7 @@ body, html{
 	@media only screen and (min-width : 1200px) {
 		max-width: 272px;
 		width: 100%;
-	 margin-right: 16px;
+	 	margin-right: 20px;//16
 	}
 	img{max-width:100%; height: auto; }
 	span{

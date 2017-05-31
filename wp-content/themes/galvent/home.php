@@ -36,7 +36,7 @@ $dop6 = get_field('дополнительная_услуга_6');
 		<div class="product__items clearfix">
 			<div class="product__items-wrap">
 				<div class="product__item product__item_first">
-					<a href="#" class="item__inner">
+					<a href="http://galvent2.loc/category/produktsiya/lentochnye-konvejery/" class="item__inner">
 						<span class="item__title item__title_first">Ленточные конвейеры</span>
 						<div class="item__image item__image_first">
 							<img class="item__img item__img-des" src="<?php echo get_template_directory_uri(); ?>/img/item__img-1.png" alt="">
@@ -58,7 +58,7 @@ $dop6 = get_field('дополнительная_услуга_6');
 			</div>
 			<div class="product__items-wrap">
 				<div class="product__item product__item_third product__item_big">
-					<a href="#" class="item__inner">
+					<a href="http://galvent2.loc/category/produktsiya/rolgangi/" class="item__inner">
 						<span class="item__title item__title_third">Роликовые конвейеры — рольганги</span>
 						<div class="item__image item__image_third">
 							<img class="item__img item__img-des" src="<?php echo get_template_directory_uri(); ?>/img/item__img-3.png" alt="">

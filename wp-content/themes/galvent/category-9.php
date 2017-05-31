@@ -27,11 +27,13 @@ $query = new WP_Query($args);
 			?>
 			<div class="col-md-4 col-sm-6">
 				<div class="box-width">
+				<a href="<?php the_permalink(); ?>">
 					<?php the_post_thumbnail() ?>
 					<div class="zagolovok">
 						<span class="direction_item__circle"></span>
 						<p class="direction_item__p"><?php the_title();?></p>
 					</div>
+					</a>
 				</div>
 			</div>
 			<?php } ?>
