@@ -46,7 +46,7 @@ $dop6 = get_field('дополнительная_услуга_6');
 					</a>
 				</div>
 				<div class="product__item product__item_second">
-					<a href="#" class="item__inner">
+					<a href="/category/produktsiya/komplektuyushhie-produktsiya/" class="item__inner">
 						<span class="item__title item__title_second">Комплектующие</span>
 						<div class="item__image item__image_second">
 							<img class="item__img item__img-des" src="<?php echo get_template_directory_uri(); ?>/img/item__img-2.png" alt="">
