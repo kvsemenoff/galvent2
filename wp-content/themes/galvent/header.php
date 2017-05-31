@@ -22,7 +22,9 @@ while ( $query->have_posts() ) {
 	$soc = get_field('блок_соцсетей');
 }
 wp_reset_query();
+
 ?>
+
 <div class="menu_xs">
 
 	<div class="menu_xs__wrap">
