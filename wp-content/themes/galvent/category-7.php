@@ -33,7 +33,7 @@
 				$query->the_post();
 				?>	
 
-				<a href="<?php the_permalink(); ?>" class="beltconveyors__link"><?php the_post_thumbnail(); ?><span>Горизонтальные ленточные конвейеры</span></a>
+				<a href="<?php the_permalink(); ?>" class="beltconveyors__link"><?php the_post_thumbnail(); ?><span><?php the_title(); ?></span></a>
 
 				<?php }?>
 	</div>
