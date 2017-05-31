@@ -3189,6 +3189,9 @@ body, html {
   .beltconveyors__txt p strong {
     font-weight: 500;
     font-family: "GothamProMedium"; }
+.beltconveyors__txt img {
+  width: 100%;
+  height: auto; }
 
 .beltconveyors__img_box {
   text-align: center; }
