@@ -3798,6 +3798,10 @@ body, html{
 	display: inline-block;
 	position: relative;
 	text-align: left;
+	vertical-align: top;
+    border-radius: 8px;
+    height: 190px;
+    overflow: hidden;
 	@media only screen and (min-width : 768px) {
 		max-width: 171px;
 		width: 	100%;
