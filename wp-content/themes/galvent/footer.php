@@ -5,8 +5,10 @@ while ( $query->have_posts() ) {
 	$phone = get_field('телефон');
 	$email = get_field('email');
 	$address = get_field('адрес');
+	$pometka = get_field('пометка');
 	$soc = get_field('блок_соцсетей');
 }
+wp_reset_query();
 ?>
 <div class="footer-top footer-top_view footer-top_padding">
 	<div class="container">
@@ -52,7 +54,7 @@ while ( $query->have_posts() ) {
 				<div class="address address__footer address_padding">
 					<span class="address__info"><?php echo $address; ?></span>
 					<div class="address__mail">
-						<span class="address__mail-title address_footer">C пометкой Конвейер</span>
+						<span class="address__mail-title address_footer"><?php echo $pometka; ?></span>
 						<a href="mailto:<?php echo $email; ?>" class="address__mail-link"><?php echo $email; ?></a>
 					</div>
 				</div>	
@@ -75,7 +77,7 @@ while ( $query->have_posts() ) {
 				<div class="address address__footer address_padding">
 					<span class="address__info"><?php echo $address; ?></span>
 					<div class="address__mail">
-						<span class="address__mail-title address_footer">C пометкой Конвейер</span>
+						<span class="address__mail-title address_footer"><?php echo $pometka; ?></span>
 						<a href="mailti:<?php echo $email; ?>" class="address__mail-link"><?php echo $email; ?></a>
 					</div>
 				</div>	
@@ -89,7 +91,28 @@ while ( $query->have_posts() ) {
 			<p class="footer-bottom__copyright">&copy;2017 ГАЛВЕНТ - Все права защищены</p>
 		</div>				
 		<div class="col-md-6 col-sm-12 col-xs-12">
-			<p class="footer-bottom__site"><a href="http://www.utex.ru/" target="_blank" class="footer-bottom__link"><span>Разработка сайта "ЮТЕКС Проект"</span></a><a href="http://www.utex.ru/" target="_blank" ><img src="<?php echo get_template_directory_uri(); ?>/img/db-ex.png" alt="ЮТЕКС Проект"></a></p>
+			<?php $post_id = get_the_ID();  echo $post_id;?>
+
+			
+
+			<p class="footer-bottom__site">
+				<?php if ($post_id == 68){ ?>
+					<a href="http://www.utex.ru/" target="_blank" class="footer-bottom__link">
+						<span>Разработка сайта "ЮТЕКС Проект"</span>
+					</a>
+					<a href="http://www.utex.ru/" target="_blank" >
+						<img src="<?php echo get_template_directory_uri(); ?>/img/db-ex.png" alt="ЮТЕКС Проект">
+					</a>
+				<?php } else { ?>
+					<span class="footer-bottom__link">
+						<span>Разработка сайта "ЮТЕКС Проект"</span>
+					</span>
+					<span>
+						<img src="<?php echo get_template_directory_uri(); ?>/img/db-ex.png" alt="ЮТЕКС Проект">
+					</span>
+				
+				<?php } ?>
+			</p>
 		</div>
 	</div>
 </div>

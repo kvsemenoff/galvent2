@@ -18,6 +18,7 @@ while ( $query->have_posts() ) {
 	$phone = get_field('телефон');
 	$email = get_field('email');
 	$address = get_field('адрес');
+	$pometka = get_field('пометка');
 	$soc = get_field('блок_соцсетей');
 }
 wp_reset_query();
@@ -96,7 +97,7 @@ wp_reset_query();
 					<div class="address">
 						<span class="address__info"><?php echo $address; ?></span>
 						<div class="address__mail">
-							<span class="address__mail-title">C пометкой Конвейер</span>
+							<span class="address__mail-title"><?php echo $pometka; ?></span>
 							<a href="mailto:<?php echo $email; ?>" class="address__mail-link"><?php echo $email; ?></a>
 						</div>
 					</div>
@@ -163,7 +164,7 @@ wp_reset_query();
 					<div class="address">
 						<span class="address__info"><?php echo $address; ?></span>
 						<div class="address__mail">
-							<span class="address__mail-title">C пометкой Конвейер</span>
+							<span class="address__mail-title"><?php echo $pometka; ?></span>
 							<a href="mailto:<?php echo $email; ?>" class="address__mail-link"><?php echo $email; ?></a>
 						</div>
 					</div>
