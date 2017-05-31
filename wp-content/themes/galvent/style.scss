@@ -4456,3 +4456,12 @@ $t-c-lb-m : #1e91bc;
 a{
 	outline: none !important;
 }
+
+#toTop {
+	padding:5px;
+	position:fixed;
+	bottom:10px; 
+	right:20px;
+	cursor:pointer;
+	display:none;
+}

@@ -3780,4 +3780,12 @@ body, html {
 a {
   outline: none !important; }
 
+#toTop {
+  padding: 5px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  cursor: pointer;
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */

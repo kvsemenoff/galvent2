@@ -249,8 +249,19 @@ $(function() {
 
 });
 
-
-
- (function($) {
+(function($) {
   $('.current-menu-item').find('a').removeAttr('href');
 }(jQuery));
+
+ $(function() {
+    $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+    $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+    });
+});

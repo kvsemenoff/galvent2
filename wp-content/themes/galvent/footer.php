@@ -117,6 +117,9 @@ wp_reset_query();
 	</div>
 </div>
 
+<div id="toTop" >
+	<img src="<?php echo get_template_directory_uri(); ?>/img/top.png" alt="">
+</div>
 
 <div class="modal modal__form" id="modal__form">
   <div class="modal__inner clearfix">
