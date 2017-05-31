@@ -48,7 +48,7 @@ Template name: Примеры работ
 				<?php } ?>
 				
 			</div>
-			<p class="examples__block_text"><?php the_content(); ?></p>
+			<p class="examples__block_text"><?php echo get_the_content(); ?></p>
 		</div>	
 
 				<?php }?>		
