@@ -41,9 +41,9 @@
 
 						</div>
 						<div class="article__content">
-							<?php the_excerpt(); ?>
+							<?php  do_excerpt(get_the_excerpt(), 7); ?>
 							<div class="article__info clearfix">
-								<div class="article__date">10.04.2017</div>
+								<div class="article__date"><?php the_time('d.m.Y'); ?></div>
 								<div class="article__button">
 									<a href="<?php the_permalink(); ?>" class="button button__view" title="<?php the_title(); ?>"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
 								</div>
