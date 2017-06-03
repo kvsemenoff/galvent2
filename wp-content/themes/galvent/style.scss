@@ -380,7 +380,7 @@ h2{
 		}
 	}
 }
-strong{
+strong, .strongtxt{
 	font-family: "GothamProBold", arial, sans-serif ;
 }
 .telefone-wrap {
@@ -4464,4 +4464,10 @@ a{
 	right:20px;
 	cursor:pointer;
 	display:none;
+}
+.sitemap{
+	ul{
+		display: block;
+		margin-left: 25px;
+	}
 }

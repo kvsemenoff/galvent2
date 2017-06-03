@@ -308,7 +308,7 @@ h2 {
     .link_header span {
       display: none; } }
 
-strong {
+strong, .strongtxt {
   font-family: "GothamProBold", arial, sans-serif; }
 
 @media only screen and (max-width: 700px) {
@@ -3787,5 +3787,9 @@ a {
   right: 20px;
   cursor: pointer;
   display: none; }
+
+.sitemap ul {
+  display: block;
+  margin-left: 25px; }
 
 /*# sourceMappingURL=style.css.map */
