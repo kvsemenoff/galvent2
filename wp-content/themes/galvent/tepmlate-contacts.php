@@ -84,3 +84,27 @@ Template name: Наши контакты
 </div>
 			
 <?php get_footer(); ?>	
+<script>
+$(document).ready(function(){
+	ymaps.ready(init);
+var myMap, 
+myPlacemark;
+
+function init(){ 
+	myMap = new ymaps.Map("map", {
+		center: [55.75430171942093,37.762623379623356],
+		zoom: 16,
+		controls: []
+	},
+	{suppressMapOpenBlock: true}); 
+	
+	myPlacemark = new ymaps.Placemark([55.75430171942093,37.762623379623356], {
+		hintContent: '',
+		balloonContent: ''
+	}
+  );
+	myMap.behaviors.disable('scrollZoom');
+	myMap.geoObjects.add(myPlacemark);
+}
+});
+</script>
