@@ -22,31 +22,35 @@ Template name: Наши контакты
 		<h1>Наши контакты</h1>
 		<div class="contacts__inner">
 			<div class="contacts__items clearfix">
-				<div class="contacts__item">
-					<div class="item item_mape">
-						<?php the_field('контакты_ардес'); ?>
+				<div itemscope="" itemtype="http://schema.org/Organization">
+					<span itemprop="name" class="hidden">Галвент</span>
+					<div class="contacts__item">
+						<div class="item item_mape">
+							<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+								<?php the_field('контакты_ардес'); ?>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="contacts__item">
-					<div class="item item_massage">
-						<?php the_field('контакты_элекстронная_почта'); ?>
-						
+					<div class="contacts__item">
+						<div class="item item_massage">
+							<?php the_field('контакты_элекстронная_почта'); ?>
+							
+						</div>
 					</div>
-				</div>
-				<div class="contacts__item">
-					<div class="item item_time">
-						<?php the_field('контакты_режим_работы'); ?>
-						
+					<div class="contacts__item">
+						<div class="item item_time">
+							<?php the_field('контакты_режим_работы'); ?>
+							
+						</div>
 					</div>
-				</div>
-				<div class="contacts__item">
-					<div class="item item_number">
-						<?php the_field('контакты_телефоны'); ?>
-						<a class="item__link fancybox" href="#modal__form_call">заказть обратный звонок</a>
+					<div class="contacts__item">
+						<div class="item item_number">
+							<?php the_field('контакты_телефоны'); ?>
+							<a class="item__link fancybox" href="#modal__form_call">заказть обратный звонок</a>
+						</div>
 					</div>
 				</div>
 			</div>
-
 
 			<div class="mape">
 				<div class="map-img" id="map">
