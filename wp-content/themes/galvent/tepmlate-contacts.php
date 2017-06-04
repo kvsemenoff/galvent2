@@ -19,7 +19,7 @@ Template name: Наши контакты
 
 <div class="contacts">
 	<div class="container">
-		<h2 class="h2 h2_dark">Наши контакты</h2>
+		<h1>Наши контакты</h1>
 		<div class="contacts__inner">
 			<div class="contacts__items clearfix">
 				<div class="contacts__item">

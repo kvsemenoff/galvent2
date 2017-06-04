@@ -205,7 +205,7 @@ div[class^="col-md"]{
 	margin-top: -52px;
 	}
 }
-.h1, h1 {
+.h1 {
 	font-family: "GothamProRegular", arial, sans-serif ;
 	color: #fff;
 	font-size: 46px;
@@ -220,6 +220,22 @@ div[class^="col-md"]{
 		line-height: 31px;
 	}
 }
+h1{
+	font-family: "GothamProRegular", arial, sans-serif ;
+	color: #393f41;
+	font-size: 39px;
+	line-height: 1.3;
+	font-weight: 400;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	@media only screen and (max-width : 1000px) {
+		font-size: 35px;
+	}
+	@media only screen and (max-width : 700px) {
+		font-size: 25px;
+	}
+}
+
 .h2 {
 	font-family: "GothamProRegular", arial, sans-serif ;
 	color: #393f41;
@@ -2286,6 +2302,16 @@ body, html{
 	.ol_theme_rosa__li_last{
 		position: relative;
 		padding-top: 14px;
+	}
+}
+.content-part ul{
+	display: block;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	li{
+		display: block;
+		background:url(./img/yellow-circle.png) no-repeat left top 9px;
+		padding-left: 24px;	
 	}
 }
 .konveer__item{
@@ -4470,4 +4496,9 @@ a{
 		display: block;
 		margin-left: 25px;
 	}
+}
+
+.modal__thanks{
+	padding: 25px;
+	box-sizing: border-box;
 }

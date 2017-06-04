@@ -12,7 +12,7 @@
 
 <div class="last-article">
 	<div class="container">
-		<h2 class="h2 h2_dark">Последние статьи</h2>
+		<h1>Последние статьи</h1>
 		<div class="row">
 
 			<?php 

@@ -19,7 +19,7 @@ $query = new WP_Query($args);
 <div class="direction_content">       
 	<div class="container">
 		<div class="col-sm-12 col-md-12">
-			<h2 class="h2 h2_dark direction_header"><?php single_cat_title();?></h2>
+			<h1><?php single_cat_title();?></h1>
 		</div>
 		<?php			
 		while ( $query->have_posts() ) {

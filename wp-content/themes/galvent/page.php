@@ -13,18 +13,19 @@
 </div>
 
 
-<div class="container container_padding_top beltconveyors__txt">
-	<h1 class="h2 h2_dark ourindustry__caption"><?php the_title(); ?></h1>
+<div class="container container_padding_top beltconveyors__txt content-part">
+	<div class="row">
+		<div class="col-md-12">
+			<h1><?php the_title(); ?></h1>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
-
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	
-	<?php the_content(); ?>	
-	
-	<?php endwhile; ?>
-	<?php else: ?>
-	<?php endif; ?> 	
-
+			<?php the_content(); ?>	
+			
+			<?php endwhile; ?>
+			<?php else: ?>
+			<?php endif; ?> 	
+		</div>
+	</div>
 </div>
 
 

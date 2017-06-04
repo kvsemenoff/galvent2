@@ -69,7 +69,7 @@ $(document).ready(function(){
 			var form_data = $(this).serialize(); 
 			$.ajax({
 				type: "POST", 
-				url: "sendmessage.php", 
+				url: "/sendmessage.php", 
 				data: form_data,
 				success: function(form) {
 					$('.js-window').hide();
@@ -96,7 +96,7 @@ $(document).ready(function(){
 		else{
 			
 			var form_data = $(this).serialize(); 
-			alert(form_data);
+			
 			$.ajax({
 				type: "POST", 
 				url: "/sendmessage.php", 

@@ -1,12 +1,9 @@
 <?php
 
-//define('WP_USE_THEMES', true);
+require( dirname(__FILE__) . '/wp-load.php' );
 
-/** Loads the WordPress Environment and Template */
-//require( dirname( __FILE__ ) . '/wp-blog-header.php' );
-
-//$to = get_option( 'admin_email' ); 
-$to = "test@yandex.ru";
+$to = get_option( 'admin_email' ); 
+//$to = "test@yandex.ru";
 $phone = $_POST['phone'];
 $uname = $_POST['uname'];
 $text = $_POST['message'];

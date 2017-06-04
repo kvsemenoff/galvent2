@@ -16,9 +16,7 @@
 		$categories = get_the_category();
 		$category_id = $categories[0]->cat_ID;
 	?>
-	<h2 class="h2 h2_dark beltconveyors__caption">
-		<?php echo $category_id = $categories[0]->name; ?>			
-	</h2>
+	<h1><?php echo $category_id = $categories[0]->name; ?></h2>
 	
 	<p class="beltconveyors__text">
 		<?php echo $category_id = $categories[0]->description; ?>		

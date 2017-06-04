@@ -12,7 +12,7 @@
 
 <div class="last__wrap">
 	<div class="container">
-		<h2 class="h2 h2_dark"><?php single_cat_title(); ?></h2>
+		<h1><?php single_cat_title(); ?></h1>
 		<div class="row">
 			<?php 
 			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
