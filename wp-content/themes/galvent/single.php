@@ -12,7 +12,6 @@
 
 </div>
 
-
 <div class="container container_padding_top beltconveyors__txt content-part">
 	<div class="row">
 		<div class="col-md-12">

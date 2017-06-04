@@ -16,7 +16,7 @@ $args = array(
 	);
 $query = new WP_Query($args);
 ?>
-<div class="direction_content">       
+<div class="direction_content content-part">       
 	<div class="container">
 		<div class="col-sm-12 col-md-12">
 			<h1><?php single_cat_title();?></h1>

@@ -10,61 +10,59 @@
 	</div>
 </div>
 
-<div class="last__wrap">
-	<div class="container">
-		<h1><?php single_cat_title(); ?></h1>
-		<div class="row">
-			<?php 
-			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+<div class="container container_padding_top beltconveyors__txt content-part">
+	<div class="row">
+		<div class="col-md-12">
+			<h1><?php single_cat_title(); ?></h1>
+		</div>
+		<div class="clearfix"></div>
+		<?php 
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+		$query = new WP_Query('cat=4' , 'paged=$paged');
+		$args = array(
+			'cat' => 4,
+			'paged' => $paged
+			);
+		$query = new WP_Query($args);
+		while ( $query->have_posts() ) {
+		$query->the_post();
+		?>
+		<div class="col-md-4">
+			<div class="article">
+				<div class="article__img">
+					<?php the_post_thumbnail(); ?>
 
-			$query = new WP_Query('cat=4' , 'paged=$paged');
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><span class="article__img-descr"><?php the_title(); ?></span></a>
 
+					<a href="<?php the_permalink(); ?>" class="article__img-descr" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 
-			$args = array(
-				'cat' => 4,
-				'paged' => $paged
-				);
-
-			$query = new WP_Query($args);
-
-			while ( $query->have_posts() ) {
-				$query->the_post();
-				?>
-				<div class="col-md-4">
-					<div class="article">
-						<div class="article__img">
-							<?php the_post_thumbnail(); ?>
-
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><span class="article__img-descr"><?php the_title(); ?></span></a>
-
-							<a href="<?php the_permalink(); ?>" class="article__img-descr" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-
+				</div>
+				<div class="article__content">
+					<?php  do_excerpt(get_the_excerpt(), 7); ?>
+					<div class="article__info clearfix">
+						<div class="article__date"><?php the_time('d.m.Y'); ?></div>
+						<div class="article__button">
+							<a href="<?php the_permalink(); ?>" class="button button__view" title="<?php the_title(); ?>"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
 						</div>
-						<div class="article__content">
-							<?php  do_excerpt(get_the_excerpt(), 7); ?>
-							<div class="article__info clearfix">
-								<div class="article__date"><?php the_time('d.m.Y'); ?></div>
-								<div class="article__button">
-									<a href="<?php the_permalink(); ?>" class="button button__view" title="<?php the_title(); ?>"><span class="button__view_txt button__view_txt2">читать подробнее</span></a>
-								</div>
-							</div>
-						</div>
-
 					</div>
 				</div>
-				<?php }?>
-				
+
 			</div>
 		</div>
+		<?php }?>
+		<div class="clearfix"></div>
 	</div>
+</div>
 
-	<div class="wppagination">
-		<div class="container">
-			<?php 
-				$nav = get_the_posts_pagination();
-				$nav = preg_replace('~<h2.*?h2>~', '', $nav);
-				echo $nav;	
-			?>	
-		</div>
+<div class="wppagination">
+	<div class="container">
+		<?php 
+		$nav = get_the_posts_pagination();
+		$nav = preg_replace('~<h2.*?h2>~', '', $nav);
+		echo $nav;	
+		?>	
 	</div>
-	<?php get_footer(); ?>
+</div>
+
+
+<?php get_footer(); ?>

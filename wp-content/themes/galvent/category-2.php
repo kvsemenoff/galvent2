@@ -9,47 +9,44 @@
 		</a>
 	</div>
 </div>
-
-<div class="last-article">
-	<div class="container">
-		<h1>Последние статьи</h1>
-		<div class="row">
-
-			<?php 
-			$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-			$args = array(
-				'cat' => 2,
-				'paged' => $paged
-			);
-
-			$query = new WP_Query($args);
-			while ( $query->have_posts() ) {
-				$query->the_post();
-			?>
-			<div class="col-md-4">
-				<div class="article">
-					<div class="article__img">
-						<?php the_post_thumbnail(); ?>
-						<a href="<?php the_permalink(); ?>"><span class="article__img-descr"><?php the_title(); ?></span></a>
-					</div>
-					<div class="article__content">
-						<p class="article__txt"><?php  do_excerpt(get_the_excerpt(), 7); ?></p>
-						<div class="article__info clearfix">
-							<div class="article__date"><?php the_time('d.m.Y'); ?></div>
-							<div class="article__button">
-								<a href="<?php the_permalink(); ?>" class="button button__view" title="<?php the_title(); ?>">
-									<span class="button__view_txt button__view_txt2">читать подробнее</span>
-								</a>
-							</div>
+<div class="container container_padding_top beltconveyors__txt content-part">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Последние статьи</h1>
+		</div>
+		<div class="clearfix"></div>
+		<?php 
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+		$args = array(
+			'cat' => 2,
+			'paged' => $paged
+		);
+		$query = new WP_Query($args);
+		while ( $query->have_posts() ) {
+			$query->the_post();
+		?>
+		<div class="col-md-4">
+			<div class="article">
+				<div class="article__img">
+					<?php the_post_thumbnail(); ?>
+					<a href="<?php the_permalink(); ?>"><span class="article__img-descr"><?php the_title(); ?></span></a>
+				</div>
+				<div class="article__content">
+					<p class="article__txt"><?php  do_excerpt(get_the_excerpt(), 7); ?></p>
+					<div class="article__info clearfix">
+						<div class="article__date"><?php the_time('d.m.Y'); ?></div>
+						<div class="article__button">
+							<a href="<?php the_permalink(); ?>" class="button button__view" title="<?php the_title(); ?>">
+								<span class="button__view_txt button__view_txt2">читать подробнее</span>
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
-
-<?php }?>
-		
+		</div>
+		<?php }?>
+		<div class="clearfix"></div>
 	</div>
-</div>
 </div>
 
 <div class="wppagination">
@@ -61,4 +58,5 @@
 		?>	
 	</div>
 </div>
+		
 <?php get_footer(); ?>

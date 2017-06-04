@@ -157,7 +157,9 @@ body {
 
 .box-width {
   max-width: 370px;
-  margin: 0 auto; }
+  padding: 0px 10px;
+  margin: 0 auto;
+  margin-bottom: 25px; }
   @media only screen and (min-width: 992px) {
     .box-width {
       max-width: unset; } }
@@ -1958,15 +1960,6 @@ body, html {
   .ol_theme_rosa__li_last {
     position: relative;
     padding-top: 14px; } }
-.content-part ul {
-  display: block;
-  padding-top: 30px;
-  padding-bottom: 30px; }
-  .content-part ul li {
-    display: block;
-    background: url(./img/yellow-circle.png) no-repeat left top 9px;
-    padding-left: 24px; }
-
 .konveer__item_right {
   border: 3px solid rgba(0, 0, 0, 0.07);
   border-radius: 8px;
@@ -3819,5 +3812,18 @@ a {
 .modal__thanks {
   padding: 25px;
   box-sizing: border-box; }
+
+.content-part ul {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .content-part ul li {
+    display: block;
+    background: url(./img/yellow-circle.png) no-repeat left top 9px;
+    padding-left: 24px; }
+.content-part img {
+  display: block;
+  width: 100%;
+  height: auto; }
 
 /*# sourceMappingURL=style.css.map */

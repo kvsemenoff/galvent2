@@ -52,6 +52,26 @@ Template name: Наши контакты
 				</div>
 			</div>
 
+
+
+<div itemscope="" itemtype="http://schema.org/Organization">
+ 	<span itemprop="name">Наименование организации</span>
+ 	Контактная информация:
+ 
+	<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+ 		Почтовый адрес:
+ 		<span itemprop="streetAddress">номер дома, улица</span>
+ 		<span itemprop="postalCode">почтовый индекс</span>
+ 		<span itemprop="addressLocality">город, страна</span>
+ 	</div>
+ 
+ 	Телефон:<span itemprop="telephone">контактный телефон</span>,
+ 	Факс:<span itemprop="faxNumber">факс</span>,
+ 	E-mail: <span itemprop="email">корпоративный e-mail</span>
+</div>
+
+
+
 			<div class="mape">
 				<div class="map-img" id="map">
 				</div>
