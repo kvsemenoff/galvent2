@@ -48,10 +48,9 @@ Template name: Гарантия
 				<div class="service-box service-box__view service-box__view_garant_2">
 					<span class="service-box__view_span service-box__view_span_3">Правила выполнения гарантийных обязательств</span>
 
-					<div class="service-box__inner">
+					<div class="service-box__inner">					
 						
-					
-						<?php echo get_post_meta($post->ID, 'гарантии', true); ?>
+						<?php the_field('гарантии'); ?>
 
 					</div>
 
