@@ -16,7 +16,7 @@ Template name: Примеры работ
 </div>
 
 
-<div class="container center container_margin">	
+<div class="container center container_margin content-part">	
 	<div class="examples__height">
 		<h2 class="h2 h2_dark examples__caption">Примеры наших рaбот</h2>
 		

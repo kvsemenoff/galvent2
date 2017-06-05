@@ -16,8 +16,8 @@ Template name: О компании
 </div>
 
 <div class="about">
-	<div class="container">		
-		<h1 class="h2 h2_dark"><?php the_title(); ?></h1>
+	<div class="container content-part">		
+		<h1><?php the_title(); ?></h1>
 		
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
