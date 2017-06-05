@@ -2141,6 +2141,8 @@ body, html{
 		margin-bottom: 50px;
 		li{
 			margin-bottom: 10px;
+			background: none !important;
+			padding-left: 0 !important;
 		}
 	}
 	&_garant{
@@ -4494,8 +4496,7 @@ $t-c-lb-m : #1e91bc;
 .menu_footer{
 	height: 95px;
 	li{
-		display: inline-block;
-		min-width: 130px;
+		display: block;		
 		a{
 			color: #fff;
 			font-size: 15px;

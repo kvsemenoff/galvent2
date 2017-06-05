@@ -1814,7 +1814,9 @@ body, html {
   .service-box__view_ul {
     margin-bottom: 50px; }
     .service-box__view_ul li {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      background: none !important;
+      padding-left: 0 !important; }
   .service-box__view_garant {
     position: relative;
     margin-bottom: 45px; }
@@ -3805,8 +3807,7 @@ body, html {
 .menu_footer {
   height: 95px; }
   .menu_footer li {
-    display: inline-block;
-    min-width: 130px; }
+    display: block; }
     .menu_footer li a {
       color: #fff;
       font-size: 15px;
