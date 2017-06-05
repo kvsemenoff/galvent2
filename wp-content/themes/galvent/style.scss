@@ -597,7 +597,7 @@ strong, .strongtxt{
 		}
 	}
 	&_txt3{
-		width: unset;
+		width: auto;
 		padding-right: 30px;
 	}
 	&_ico{
@@ -1525,7 +1525,7 @@ body, html{
 	width: 278px;
 	margin: 0 auto;
 	@media only screen and (min-width : 992px) {
-		width: unset;
+		width: auto;
 		float:right;
 	}
 }
@@ -1561,7 +1561,7 @@ body, html{
 		margin: 0 auto;
 		width:200px;
 		@media only screen and (min-width : 992px) {
-			width:unset;
+			width:auto;
 		}
 	}
 	&__info{
@@ -1643,7 +1643,7 @@ body, html{
 	width: 120px;
 	margin: 0 auto;
 	@media only screen and (min-width : 992px) {
-		width: unset;
+		width: auto;
 	}
 }
 .footer-phone{
@@ -1730,7 +1730,7 @@ body, html{
 
 		}
 		@media only screen and (min-width : 992px) {
-			width: unset;
+			width: auto;
 			padding-top: unset;
 			padding-left: 40px;
 		}
@@ -4493,8 +4493,7 @@ $t-c-lb-m : #1e91bc;
 }
 
 
-.menu_footer{
-	height: 95px;
+.menu_footer{	
 	li{
 		display: block;		
 		a{

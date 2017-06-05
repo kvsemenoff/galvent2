@@ -487,7 +487,7 @@ strong, .strongtxt {
     .button__view_txt2:hover {
       background: #006887; }
   .button__view_txt3 {
-    width: unset;
+    width: auto;
     padding-right: 30px; }
   .button__view_ico {
     display: inline-block;
@@ -1312,7 +1312,7 @@ body, html {
   margin: 0 auto; }
   @media only screen and (min-width: 992px) {
     .footer-bottom__site {
-      width: unset;
+      width: auto;
       float: right; } }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -1340,7 +1340,7 @@ body, html {
     width: 200px; }
     @media only screen and (min-width: 992px) {
       .address_padding {
-        width: unset; } }
+        width: auto; } }
   .address__info {
     font-size: 16px;
     color: #2f4c5b;
@@ -1407,7 +1407,7 @@ body, html {
   margin: 0 auto; }
   @media only screen and (min-width: 992px) {
     .footer-social_center {
-      width: unset; } }
+      width: auto; } }
 
 .footer-phone_center {
   width: 260px;
@@ -1480,7 +1480,7 @@ body, html {
       padding-top: 10px; } }
   @media only screen and (min-width: 992px) {
     .footer-menu_view {
-      width: unset;
+      width: auto;
       padding-top: unset;
       padding-left: 40px; } }
 .footer-menu__link {
@@ -3804,18 +3804,16 @@ body, html {
       float: right; }
     .header-d .first-block__search {
       float: right; } }
-.menu_footer {
-  height: 95px; }
-  .menu_footer li {
-    display: block; }
-    .menu_footer li a {
-      color: #fff;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 28px;
-      text-decoration: underline; }
-      .menu_footer li a:hover {
-        color: #f2b600; }
+.menu_footer li {
+  display: block; }
+  .menu_footer li a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: underline; }
+    .menu_footer li a:hover {
+      color: #f2b600; }
 
 a {
   outline: none !important; }
