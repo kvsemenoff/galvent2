@@ -16,7 +16,7 @@ Template name: Наше производство
 </div>
 
 
-<div class="container container_padding_top">
+<div class="container container_padding_top content-part">
 	<h1 class="h2 h2_dark ourindustry__caption"><?php the_title(); ?></h1>
 
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -38,29 +38,7 @@ Template name: Наше производство
 
 	</div>
 
-	<span class="konveer__tth_span">Технические характеристики</span>
-	<table class="content-part">
-		<tr>
-			<td>Угол поворота</td>
-			<td>45гр, 90гр, 180 гр.</td>
-		</tr>
-		<tr>
-			<td>Нагрузка</td>
-			<td>100 кг/м.п.</td>
-		</tr>
-		<tr>
-			<td>Длина роликов</td>
-			<td>От 200 до 1000 мм</td>
-		</tr>
-		<tr>
-			<td>Внутренний радиус</td>
-			<td>800-850 мм</td>
-		</tr>
-		<tr>
-			<td>Тип роликов</td>
-			<td>конические</td>
-		</tr>
-	</table>
+	
 	
 </div>
 

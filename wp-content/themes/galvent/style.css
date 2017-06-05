@@ -3832,27 +3832,28 @@ a {
   width: 100%;
   height: auto; }
 
-.content-part {
+.content-part table {
   width: 100%;
-  background-color: #fff; }
-  .content-part tr td {
+  background-color: #fff;
+  margin-bottom: 40px; }
+  .content-part table tr td {
     color: #393f41;
     font-size: 16px;
     font-family: "GothamProMedium";
     padding: 14px 5px; }
     @media only screen and (min-width: 768px) {
-      .content-part tr td {
+      .content-part table tr td {
         padding: 14px 27px; } }
-  .content-part tr td:first-child {
+  .content-part table tr td:first-child {
     float: left;
     text-align: left;
     display: inline-block; }
-  .content-part tr td:last-child {
+  .content-part table tr td:last-child {
     float: right;
     text-align: right;
     display: inline-block;
     font-family: "GothamProRegular"; }
-  .content-part tr:nth-child(2n+1) {
+  .content-part table tr:nth-child(2n+1) {
     background-color: #F0F0F0; }
 
 /*# sourceMappingURL=style.css.map */

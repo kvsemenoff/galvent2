@@ -4529,12 +4529,11 @@ a{
 
 // table 
 
-.content-part{
+.content-part table{
 	width: 100%;
 	background-color: #fff;
-	tr{		
-		// padding: 14px 27px;
-		// display: block;
+	margin-bottom: 40px;
+	tr{			
 		td{
 			color: #393f41;
 			font-size: 16px;
@@ -4544,14 +4543,12 @@ a{
 				padding: 14px 27px;
 			}
 		}
-		td:first-child{
-			// width: 80%;
+		td:first-child{			
 			float: left;
 			text-align: left;
 			display: inline-block;
 		}
-		td:last-child{
-			// width: 20%;
+		td:last-child{			
 			float: right;			
 			text-align: right;
 			display: inline-block;
