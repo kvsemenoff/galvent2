@@ -20,7 +20,8 @@
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
 		$args = array(
-			'cat' => 2,
+			'cat' => 3,
+			'posts_per_page' => '9',
 			'paged' => $paged
 			);
 

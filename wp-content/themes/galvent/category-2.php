@@ -15,10 +15,12 @@
 			<h1>Последние статьи</h1>
 		</div>
 		<div class="clearfix"></div>
+		<?php wp_reset_query(); ?> 
 		<?php 
 		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		$args = array(
 			'cat' => 2,
+			'posts_per_page' => '9',
 			'paged' => $paged
 		);
 		$query = new WP_Query($args);
@@ -45,6 +47,7 @@
 			</div>
 		</div>
 		<?php }?>
+		<?php wp_reset_query(); ?> 
 		<div class="clearfix"></div>
 	</div>
 </div>
