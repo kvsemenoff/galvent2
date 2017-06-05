@@ -17,7 +17,7 @@ Template name: Гарантия
 </div>
 
 <div class="service-wrap">
-	<div class="container relative">	
+	<div class="container relative content-part">	
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
 				<h1>Гарантия</h1>

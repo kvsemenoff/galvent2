@@ -15,9 +15,9 @@ Template name: Клиенты
 </div>
 
 <div class="clients_content">
-	<div class="container">
+	<div class="container content-part">
 		<div class="clients_header">
-			<h2 class="h2 h2_dark clients_header__h2">Наши клиенты</h2>
+			<h1>Наши клиенты</h1>
 		</div>
 		<div class="clients_block">
 			<?php $args = array(

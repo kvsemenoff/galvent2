@@ -7,7 +7,7 @@ Template Name: Карта сайта
 <?php get_header(); ?>
 
 <div class="news-page">
-	<div class="container">				
+	<div class="container content-part">				
 		<div class="box">
 			<h1>Карта сайта</h1>
 			<div class="content clearfix">						
