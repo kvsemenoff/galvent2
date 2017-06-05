@@ -3313,6 +3313,9 @@ body, html {
 
 .ourindustry__img_box {
   text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .ourindustry__img_box {
+      text-align: left; } }
 
 .ourindustry__link {
   border: 5px solid rgba(0, 0, 0, 0.1);
@@ -3327,17 +3330,17 @@ body, html {
     height: 100%; }
   @media only screen and (min-width: 768px) {
     .ourindustry__link {
-      margin-right: 11px;
+      margin-right: 30px;
       width: 30%;
       height: 170px; } }
   @media only screen and (min-width: 990px) {
     .ourindustry__link {
-      margin-right: 20px;
+      margin-right: 40px;
       height: 265px; } }
   @media only screen and (min-width: 1200px) {
     .ourindustry__link {
       width: 360px;
-      margin-right: 25px; } }
+      margin-right: 38px; } }
   .ourindustry__link:hover {
     border: 5px solid #006887;
     background-image: url("./img/zoom.png");
@@ -3352,6 +3355,9 @@ body, html {
     width: 33px;
     height: 33px;
     background: url("./img/zoom.png") no-repeat center center; }
+
+.ourindustry__link:nth-child(3n) {
+  margin-right: 0; }
 
 /* ╨Э╨░╨┐╤А╨░╨▓╨╗╨╡╨╜╨╕╤П */
 .my_circle {
@@ -3825,5 +3831,28 @@ a {
   display: block;
   width: 100%;
   height: auto; }
+
+.content-part {
+  width: 100%;
+  background-color: #fff; }
+  .content-part tr td {
+    color: #393f41;
+    font-size: 16px;
+    font-family: "GothamProMedium";
+    padding: 14px 5px; }
+    @media only screen and (min-width: 768px) {
+      .content-part tr td {
+        padding: 14px 27px; } }
+  .content-part tr td:first-child {
+    float: left;
+    text-align: left;
+    display: inline-block; }
+  .content-part tr td:last-child {
+    float: right;
+    text-align: right;
+    display: inline-block;
+    font-family: "GothamProRegular"; }
+  .content-part tr:nth-child(2n+1) {
+    background-color: #F0F0F0; }
 
 /*# sourceMappingURL=style.css.map */

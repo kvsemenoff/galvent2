@@ -34,9 +34,33 @@ Template name: Наше производство
 			<?php foreach( $featured_images as $image ) { ?>			
 				<a href="<?php echo $image['full'] ?>" class="ourindustry__link" data-fancybox-group="group"><img src="<?php echo $image['full'] ?>" alt=""></a>
 			<?php } ?>
-		<?php } ?>			
+		<?php } ?>	
+
 	</div>
 
+	<span class="konveer__tth_span">Технические характеристики</span>
+	<table class="content-part">
+		<tr>
+			<td>Угол поворота</td>
+			<td>45гр, 90гр, 180 гр.</td>
+		</tr>
+		<tr>
+			<td>Нагрузка</td>
+			<td>100 кг/м.п.</td>
+		</tr>
+		<tr>
+			<td>Длина роликов</td>
+			<td>От 200 до 1000 мм</td>
+		</tr>
+		<tr>
+			<td>Внутренний радиус</td>
+			<td>800-850 мм</td>
+		</tr>
+		<tr>
+			<td>Тип роликов</td>
+			<td>конические</td>
+		</tr>
+	</table>
 	
 </div>
 
