@@ -4259,15 +4259,16 @@ body, html{
 	height:375px;
 	position: relative;
 	margin-top: 40px;
-	margin-bottom: 40px;
-	&:after {
-		content: '';
+	margin-bottom: 40px;	
+	.conv_bg-date{
 		width:141px;
 		height: 45px;
 		background-image: url('./img/conv-calendar.png');
 		position: absolute;
 		right: 20px;
 		top: 20px;
+		border-radius: 25px;
+		background-color: #006087;
 	}
 }
 .conv_h3 {
