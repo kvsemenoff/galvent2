@@ -3497,19 +3497,19 @@ body, html{
 		height: auto;
 	}
 }
-.conveyors__img_desk{
-	display: none;
-	@media only screen and (min-width : 780px) {
-		display: block;
-	}
-}
-.conveyors__img_mob{
-	display: block;
-	text-align: center;
-	@media only screen and (min-width : 780px) {
-		display: none;
-	}
-}
+// .conveyors__img_desk{
+// 	display: none;
+// 	@media only screen and (min-width : 780px) {
+// 		display: block;
+// 	}
+// }
+// .conveyors__img_mob{
+// 	display: block;
+// 	text-align: center;
+// 	@media only screen and (min-width : 780px) {
+// 		display: none;
+// 	}
+// }
 
 .conveyors__list{
 	padding: 20px 15px;
@@ -3545,7 +3545,7 @@ body, html{
 	}
 }
 
-.conveyors__text{
+.conveyors__text p{
 	color: #484e4c;	
 	font-size: 15px;
 	font-weight: 400;
