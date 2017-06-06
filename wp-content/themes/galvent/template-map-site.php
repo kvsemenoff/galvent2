@@ -12,8 +12,7 @@ Template Name: Карта сайта
 			<h1>Карта сайта</h1>
 			<div class="content clearfix">						
 				<ul class="sitemap">
-					<li><a href="/">Главная</a></li>
-					<li><a href="/cat=2">Статьи</a>
+					<li><a href="/?cat=2">Статьи</a>
 						<ul>
 						<?php $wp_query = new WP_Query(array('cat' => '2', 'order' => 'ASC')); ?>
 						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
@@ -21,7 +20,7 @@ Template Name: Карта сайта
 						<?php endwhile; // end of the loop. ?>
 						</ul>
 					</li>
-					<li><a href="/cat=3">Новости</a>
+					<li><a href="/?cat=3">Новости</a>
 						<ul>
 						<?php $wp_query = new WP_Query(array('cat' => '3', 'order' => 'ASC')); ?>
 						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
@@ -38,12 +37,33 @@ Template Name: Карта сайта
 						</ul>
 					</li>
 					<li><a href="/?cat=6">Продукция</a>
-						<ul>
-						<?php $wp_query = new WP_Query(array('cat' => '6', 'order' => 'ASC')); ?>
-						<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-						<?php endwhile; // end of the loop. ?>
-						</ul>
+
+						
+						<?php $parent_id = 6; ?> 
+						<?php $sub_cats = get_categories( array(
+							'child_of' => $parent_id,
+							'hide_empty' => 0,
+							'order' => 'ASC'
+							) );
+						?>
+						<?php if( $sub_cats ){ ?>
+						<?php foreach( $sub_cats as $cat ){ ?>
+							<li><a href="/<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></a></li>
+							<?php	
+							$args = array(
+								'cat' => $cat->term_id,
+							); ?>
+							<?php  $query = new WP_Query($args); ?>
+							<ul>
+							<?php wp_reset_query(); ?>
+							<?php while ( $query->have_posts() ) { ?>
+							<?php $query->the_post(); ?>
+								<li><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a><li>
+							<?php } ?>
+							<?php wp_reset_query(); ?>
+							</ul>
+						<?php }	?>
+						<?php } ?>
 					</li>
 					<li><a href="/?cat=9">Направления</a>
 						<ul>
