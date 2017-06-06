@@ -3625,6 +3625,8 @@ body, html {
   display: inline-block; }
 
 .conv_bg {
+  max-height: 375px;
+  overflow: hidden;
   position: relative;
   margin-top: 40px;
   margin-bottom: 40px; }
@@ -3657,7 +3659,8 @@ body, html {
   font-size: 23px;
   font-weight: 400;
   line-height: 29px;
-  margin-bottom: 25px; }
+  margin-bottom: 23px;
+  display: inline-block; }
   @media screen and (min-width: 992px) {
     .conv_h3 {
       font-size: 28px; } }
@@ -3690,6 +3693,9 @@ body, html {
   padding-top: 10px;
   padding-bottom: 10px;
   margin: auto; }
+  @media only screen and (min-width: 990px) {
+    .conv_list {
+      margin: 0; } }
 
 .conv_list__p {
   color: #393f41;
