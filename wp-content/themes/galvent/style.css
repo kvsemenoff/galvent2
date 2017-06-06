@@ -3609,14 +3609,21 @@ body, html {
       padding: 60px 0 60px 0; } }
 
 .conv_header {
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 990px) {
+    .conv_header {
+      margin-bottom: 0px; } }
 
 .conv_bg {
   max-height: 375px;
   overflow: hidden;
   position: relative;
   margin-top: 40px;
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 990px) {
+    .conv_bg {
+      margin-bottom: 40px; } }
   .conv_bg img {
     max-width: 100%;
     height: auto;
@@ -3679,10 +3686,16 @@ body, html {
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 20px; }
   @media only screen and (min-width: 990px) {
     .conv_list {
       margin: 0; } }
+
+@media only screen and (max-width: 990px) {
+  .paddingoff {
+    padding-right: 0;
+    padding-left: 0; } }
 
 .conv_list__p {
   color: #393f41;

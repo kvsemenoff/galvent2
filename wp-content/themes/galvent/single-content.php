@@ -32,9 +32,9 @@
             </div>
         </div>
     </div>
-    <div class="hidden-sm hidden-md hidden-lg conv_bg_m"></div>
+    
     <div class="container">
-        <div class="col-md-12 hidden-xs">
+        <div class="col-md-12 paddingoff">
             <div class="conv_bg">
             	<?php 
             	$image = get_field('картинка_внутренняя');
@@ -46,28 +46,7 @@
         </div>
 		<div class="clearfix"></div>
 
-        <div class="hidden-md hidden-lg conv_m_list">
-            <div class="conv_list">
-                <ul class="conv_list__ul">
-                    <li class="conv_list__item">
-                        <a href="#" class="conv_list__p">Как выбрать конвейер</a>
-                    </li>
-                    <li class="conv_list__item">
-                        <a href="#" class="conv_list__p">Какой конвейер лучше</a>
-                    </li>
-                    <li class="conv_list__item">
-                        <a href="#" class="conv_list__p">Почему стоит заказывать у нас</a>
-                    </li>
-                    <li class="conv_list__item">
-                        <a href="#" class="conv_list__p">Гарантийное обслуживание</a>
-                    </li>
-                    <li class="conv_list__item">
-                        <a href="#" class="conv_list__p">Пост гарантийное обслуживание</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-5 col-lg-4 hidden-xs hidden-sm">
+        <div class="col-md-5 col-lg-4 paddingoff">
             <div class="conv_list">
                 <ul class="conv_list__ul">
                     <li class="conv_list__item">
