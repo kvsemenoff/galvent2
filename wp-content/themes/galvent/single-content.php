@@ -1,17 +1,7 @@
 <?php get_header(); ?>
 
 
-<?php
 
-if (in_category('2') or in_category('3')  or in_category('4')) {
-	get_template_part('single-content');
-} 
-else {
-	get_template_part('single-default.php');
-}
-
-  
-?>
 
 <div class="bread_menu bread_menu_bg_img conveyors_page">	
 	<div class="container pos-relative">
