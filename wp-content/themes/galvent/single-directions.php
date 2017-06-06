@@ -36,25 +36,9 @@
             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
         <?php endif; ?>
     </div>
-  
-
-    <div class="conveyors__list">
-        <ul class="conveyors__list_txt">
-            <li>Электроэнергетика</li>
-            <li>Топливная промышленность</li>
-            <li>Чёрная металлургия</li>
-            <li>Цветная металлургия</li>
-        </ul>
-        <ul class="conveyors__list_txt">
-            <li>Химическая и нефтехимическая промышленность</li>
-            <li>Машиностроение и металлообработка</li>
-            <li>Лесная, деревообрабатывающая и целлюлозно-бумажная промышленность</li>
-            <li>Промышленность строительных материалов</li>
-        </ul>
-    </div>  
+   
     <div class="conveyors__text">
-        <?php the_content(); ?>
-       
+        <?php the_content(); ?>       
     </div>
 </div>
 
