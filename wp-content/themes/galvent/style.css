@@ -2956,19 +2956,6 @@ body, html {
       margin-top: 0px;
       height: auto; } }
 
-.conveyors__img_desk {
-  display: none; }
-  @media only screen and (min-width: 780px) {
-    .conveyors__img_desk {
-      display: block; } }
-
-.conveyors__img_mob {
-  display: block;
-  text-align: center; }
-  @media only screen and (min-width: 780px) {
-    .conveyors__img_mob {
-      display: none; } }
-
 .conveyors__list {
   padding: 20px 15px;
   background-color: #eeeeef;
@@ -2999,13 +2986,13 @@ body, html {
   .conveyors__list_txt:first-child {
     margin-right: 107px; } }
 
-.conveyors__text {
+.conveyors__text p {
   color: #484e4c;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px; }
   @media only screen and (min-width: 780px) {
-    .conveyors__text {
+    .conveyors__text p {
       margin-bottom: 27px;
       line-height: 30px;
       font-size: 16px;
