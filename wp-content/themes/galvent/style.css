@@ -3625,20 +3625,31 @@ body, html {
   display: inline-block; }
 
 .conv_bg {
-  background: url("./img/conv-headerbg.png") 0 0 no-repeat;
-  height: 375px;
   position: relative;
   margin-top: 40px;
   margin-bottom: 40px; }
+  .conv_bg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; }
   .conv_bg .conv_bg-date {
     width: 141px;
     height: 45px;
-    background-image: url("./img/conv-calendar.png");
     position: absolute;
     right: 20px;
     top: 20px;
     border-radius: 25px;
-    background-color: #006087; }
+    background-color: #006087;
+    text-align: center;
+    line-height: 48px;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "GothamProRegular";
+    background-image: url("./img/kal2.png");
+    background-repeat: no-repeat;
+    background-position: left 19px center;
+    padding-left: 30px; }
 
 .conv_h3 {
   color: #484e4c;
