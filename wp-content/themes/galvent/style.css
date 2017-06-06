@@ -3653,7 +3653,7 @@ body, html {
     background-position: left 19px center;
     padding-left: 30px; }
 
-.conv_h3 {
+.conv__txtbox h3 {
   color: #484e4c;
   font-family: 'GothamProRegular', sans-serif;
   font-size: 23px;
@@ -3662,9 +3662,9 @@ body, html {
   margin-bottom: 23px;
   display: inline-block; }
   @media screen and (min-width: 992px) {
-    .conv_h3 {
+    .conv__txtbox h3 {
       font-size: 28px; } }
-  .conv_h3:after {
+  .conv__txtbox h3:after {
     content: '';
     display: block;
     width: 66px;
@@ -3672,17 +3672,17 @@ body, html {
     margin-top: 15px;
     background-color: #ffcd72; }
 
-.conv_p {
+.conv__txtbox p {
   color: #484e4c;
   font-family: 'GothamProRegular', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px; }
   @media screen and (min-width: 992px) {
-    .conv_p_1 {
+    .conv__txtbox p_1 {
       margin-bottom: 40px; } }
   @media screen and (min-width: 992px) {
-    .conv_p {
+    .conv__txtbox p {
       font-size: 16px;
       line-height: 29px; } }
 
