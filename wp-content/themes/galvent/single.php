@@ -1,5 +1,5 @@
 <?php
-$post = $wp_query->post;
+
 if (in_category('2')) {
 	get_template_part('single-content');
 } else if (in_category('3')){
