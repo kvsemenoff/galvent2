@@ -46,9 +46,11 @@ Template Name: Карта сайта
 							'order' => 'ASC'
 							) );
 						?>
+						<?php $parent = get_category($parent_id); ?>
 						<?php if( $sub_cats ){ ?>
 						<?php foreach( $sub_cats as $cat ){ ?>
-							<li><a href="/<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></a></li>
+							<?php $child = get_category($cat->term_id); ?>
+							<li><a href="/<?php echo $parent->slug.'/'.$child->slug; ?>"><?php echo $cat->name; ?></a></li>
 							<?php	
 							$args = array(
 								'cat' => $cat->term_id,
