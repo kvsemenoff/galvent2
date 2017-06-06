@@ -1256,15 +1256,15 @@ strong, .strongtxt{
 }
 .clear{clear:both;}
 
-#reviewStars-input input:checked ~ label, #reviewStars-input label,
-#reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+.reviewStars-input input:checked ~ label, .reviewStars-input label,
+.reviewStars-input label:hover, .reviewStars-input label:hover ~ label {
 	background: url('./img/star2.png') no-repeat;
 	background-position: top center;
 	outline: none;
 	border: none;
 }
 
-#reviewStars-input {
+.reviewStars-input {
 	overflow: hidden;
 	zoom:0;  
 	position: relative;
@@ -1277,7 +1277,7 @@ strong, .strongtxt{
 	}
 }
 
-#reviewStars-input input {
+.reviewStars-input input {
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
 	opacity: 0;  
 	width: 21px;
@@ -1291,7 +1291,7 @@ strong, .strongtxt{
 	}
 }
 
-#reviewStars-input input:checked ~ label {
+.reviewStars-input input:checked ~ label {
 	height: 25px;
 	width: 21px;
 	background: url('./img/star1.png') no-repeat;
@@ -1301,7 +1301,7 @@ strong, .strongtxt{
 	}
 }
 
-#reviewStars-input label {
+.reviewStars-input label {
 	height: 25px;
 	width: 21px;
 	float: right;
@@ -1314,7 +1314,7 @@ strong, .strongtxt{
 		height: 25px;  
 	}
 }
-#reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+.reviewStars-input label:hover, .reviewStars-input label:hover ~ label {
 	height: 25px;
 	width: 21px;
 	background: url('./img/star1.png') no-repeat;

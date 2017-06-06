@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
 
+
+
+
 <div class="bread_menu bread_menu_bg_img conveyors_page">	
 	<div class="container pos-relative">
 		<?php if( function_exists('kama_breadcrumbs') ) kama_breadcrumbs(' '); ?>		

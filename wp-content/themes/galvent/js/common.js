@@ -3,6 +3,12 @@
 
 $(document).ready(function(){
 
+	$('.reviewStars-input label').on('click', function () {
+        var x = $(this).attr('for');
+        x = parseInt(x.match(/\d/g)) + 1;
+        $('.rate_block__nums i').text(x);
+    });
+
 	$(".menu-button").click(function(){
 		$(".toggle__menu").slideToggle(500);
 	});
