@@ -3257,14 +3257,21 @@ body, html{
 		border-radius: 5px;
 		background: #233944;
 		overflow: hidden;
+		height: 275px;
 		@media only screen and (max-width : 700px) {
 			max-width: 375px;
-			margin: 0 auto;
+			margin: 0 auto;			
+		}
+		@media only screen and (min-width : 700px) {
+			height: 200px;
+		}
+		@media only screen and (min-width : 990px) {
+			height: 275px;
 		}
 		img{
 			display: block;
 			width: 100%;
-			height: auto;
+			height: 100%;
 			// min-height: 100%;
 		}
 		&:hover{
@@ -4607,9 +4614,12 @@ a{
 }
 
 .fancybox-desktop{
-	max-width: 1024px;
+	max-width: 1024px;	
+	width: auto !important;
 	height: auto;
 	margin-top: 30px;
+	padding-bottom: 100px;
+	padding-right: 20px;
 	.fancybox-inner{
 		width: auto !important;
 		height: auto !important;

@@ -2741,15 +2741,22 @@ body, html {
     border: 5px solid #e5e5e5;
     border-radius: 5px;
     background: #233944;
-    overflow: hidden; }
+    overflow: hidden;
+    height: 275px; }
     @media only screen and (max-width: 700px) {
       .about .photo {
         max-width: 375px;
         margin: 0 auto; } }
+    @media only screen and (min-width: 700px) {
+      .about .photo {
+        height: 200px; } }
+    @media only screen and (min-width: 990px) {
+      .about .photo {
+        height: 275px; } }
     .about .photo img {
       display: block;
       width: 100%;
-      height: auto; }
+      height: 100%; }
     .about .photo:hover {
       border-color: #006887; }
       .about .photo:hover img {
@@ -3874,8 +3881,11 @@ a {
 
 .fancybox-desktop {
   max-width: 1024px;
+  width: auto !important;
   height: auto;
-  margin-top: 30px; }
+  margin-top: 30px;
+  padding-bottom: 100px;
+  padding-right: 20px; }
   .fancybox-desktop .fancybox-inner {
     width: auto !important;
     height: auto !important; }
