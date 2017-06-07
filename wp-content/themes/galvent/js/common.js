@@ -44,7 +44,7 @@ $(document).ready(function(){
 		
 	}
 	$('.conv_list__ul li a').each(function(index) {
-		$(this).attr('href', 'jsAnchor' + index);					
+		$(this).attr('href', 'jsAnchor' + index);						
 	});
 	$('.jsAnchor').each(function(i) {
 		$(this).attr('class', 'jsAnchor' + i);	
@@ -55,7 +55,13 @@ $(document).ready(function(){
 		thisAttr = '.' + thisAttr;
 		var destination = $(thisAttr).offset().top;
 		$('html,body').animate( { scrollTop: destination - 70 }, 300 );
-	})
+	});
+
+	if ( !$('.conv_list__ul li').size()){
+		$('.conv_list__ul').parent('.col-md-5').hide();
+	}	
+	
+
 	
 	///////////////////////
 

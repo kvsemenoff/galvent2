@@ -47,11 +47,11 @@
 		<div class="clearfix"></div>
 
         <div class="col-md-5 col-lg-4 paddingoff">
-            <div class="conv_list">
-                <ul class="conv_list__ul">
+            
+                <ul class="conv_list conv_list__ul">
                     <!-- this area for js -->
                 </ul>
-            </div>
+            
         </div>
 		
 
