@@ -1080,13 +1080,8 @@ strong, .strongtxt {
   overflow: hidden;
   zoom: 0;
   position: relative;
-  width: 130px;
   display: inline-block;
-  vertical-align: bottom; }
-  @media only screen and (min-width: 650px) {
-    .reviewStars-input {
-      width: 155px;
-      padding-top: 5px; } }
+  vertical-align: middle; }
 
 .reviewStars-input input {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
