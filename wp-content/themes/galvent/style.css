@@ -3883,11 +3883,12 @@ a {
   max-width: 1024px;
   width: auto !important;
   height: auto;
-  margin-top: 30px;
-  padding-bottom: 100px;
+  margin-top: 20px;
   padding-right: 20px; }
   .fancybox-desktop .fancybox-inner {
     width: auto !important;
-    height: auto !important; }
+    height: auto !important;
+    max-height: 550px;
+    overflow: hidden !important; }
 
 /*# sourceMappingURL=style.css.map */

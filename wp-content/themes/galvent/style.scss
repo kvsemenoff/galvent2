@@ -3258,6 +3258,7 @@ body, html{
 		background: #233944;
 		overflow: hidden;
 		height: 275px;
+
 		@media only screen and (max-width : 700px) {
 			max-width: 375px;
 			margin: 0 auto;			
@@ -4617,12 +4618,13 @@ a{
 	max-width: 1024px;	
 	width: auto !important;
 	height: auto;
-	margin-top: 30px;
-	padding-bottom: 100px;
+	margin-top: 20px;	
 	padding-right: 20px;
 	.fancybox-inner{
 		width: auto !important;
 		height: auto !important;
+		max-height: 550px;
+		overflow: hidden !important;
 	}
 }
 
