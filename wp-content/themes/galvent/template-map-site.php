@@ -75,7 +75,7 @@ Template Name: Карта сайта
 						<?php endwhile; // end of the loop. ?>
 						</ul>
 					</li>
-					<?php wp_list_pages('title_li='); ?>
+					<?php wp_list_pages('title_li=&exclude=68,281,321'); ?>
 					
 				</ul>
 				<br>
