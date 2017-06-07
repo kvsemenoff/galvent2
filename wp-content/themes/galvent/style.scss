@@ -1268,12 +1268,12 @@ blockquote, q {
 	overflow: hidden;
 	zoom:0;  
 	position: relative;
-	width: 130px;
+	//width: 130px;
 	display: inline-block;   
-	vertical-align: bottom;
+	vertical-align: middle;
 	@media only screen and (min-width : 650px) {
-		width: 155px;
-		padding-top: 5px;
+		//width: 155px;
+		//padding-top: 5px;
 	}
 }
 

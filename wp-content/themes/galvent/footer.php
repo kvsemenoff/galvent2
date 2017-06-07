@@ -230,6 +230,15 @@ wp_reset_query();
 <script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/libs.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
+<script>
+	$(document).ready(function(){
+		var star=$('.rw-rating-table').html();
+		$('.rw-rating-table').remove();
+
+		$('.reviewStars-input').append(star);
+
+	});
+</script>
 <?php wp_footer(); ?>
 
 </body>
