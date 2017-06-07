@@ -22,13 +22,47 @@ $(document).ready(function(){
 	});
 
 
+	// Находим все заголовки, вытаскиваем из них текст, вставляем текст в ссылку на якоря, 
+	// добавляем класс и функцию якоря 
+
+	var convArray = [
+		'.conv__txtbox h2',
+		'.conv__txtbox h3',
+		'.conv__txtbox h4',
+		'.conv__txtbox h5',
+		'.conv__txtbox h6',
+	];
+	for (var i = 0; i < convArray.length; i++) {
+		$(convArray[i]).each(function(index) {
+			var thisTxt = $(this).text();		
+			var itemForUl = '<li class="conv_list__item">' +
+			'<a href="#" class="conv_list__p">' + thisTxt + '</a>' + '</li>';			
+			$('.conv_list__ul').append(itemForUl);
+				
+			$(this).addClass('jsAnchor');
+		});
+		
+	}
+	$('.conv_list__ul li a').each(function(index) {
+		$(this).attr('href', 'jsAnchor' + index);					
+	});
+	$('.jsAnchor').each(function(i) {
+		$(this).attr('class', 'jsAnchor' + i);	
+	});
+	$('.conv_list__ul li a').on('click', function(e) {
+		e.preventDefault();
+		var thisAttr = $(this).attr('href');
+		thisAttr = '.' + thisAttr;
+		var destination = $(thisAttr).offset().top;
+		$('html,body').animate( { scrollTop: destination - 70 }, 300 );
+	})
+	
+	///////////////////////
+
 	$(".menu-ico").click(function(){
 		$('.main-menu').slideToggle(0);
-
 	});
-	$(".main-menu li a").click(function(){
-        //$('.main-menu').slideToggle(0);
-        
+	$(".main-menu li a").click(function(){        
     });
 
 	$('.js-phone').mask("+7(999)999-99-99?");

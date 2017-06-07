@@ -49,21 +49,7 @@
         <div class="col-md-5 col-lg-4 paddingoff">
             <div class="conv_list">
                 <ul class="conv_list__ul">
-                    <li class="conv_list__item">
-                        <a href="#" class="conv_list__p">Как выбрать конвейер</a>
-                    </li>
-                    <li class="conv_list__item">
-                        <a href="#" class="conv_list__p">Какой конвейер лучше</a>
-                    </li>
-                    <li class="conv_list__item">
-                        <a href="#" class="conv_list__p">Почему стоит заказывать у нас</a>
-                    </li>
-                    <li class="conv_list__item">
-                        <a href="#" class="conv_list__p">Гарантийное обслуживание</a>
-                    </li>
-                    <li class="conv_list__item">
-                        <a href="#" class="conv_list__p">Пост гарантийное обслуживание</a>
-                    </li>
+                    <!-- this area for js -->
                 </ul>
             </div>
         </div>
