@@ -3622,7 +3622,8 @@ body, html {
   overflow: hidden;
   position: relative;
   margin-top: 40px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  min-height: 90px; }
   @media only screen and (min-width: 990px) {
     .conv_bg {
       margin-bottom: 40px; } }
