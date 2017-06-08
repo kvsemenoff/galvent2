@@ -3891,4 +3891,10 @@ a {
     max-height: 550px;
     overflow: hidden !important; }
 
+.rw-report-link {
+  display: none !important; }
+
+.rw-ui-info-container {
+  display: none !important; }
+
 /*# sourceMappingURL=style.css.map */
