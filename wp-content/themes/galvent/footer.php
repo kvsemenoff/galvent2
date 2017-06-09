@@ -236,7 +236,7 @@ wp_reset_query();
 		$('.rw-rating-table').remove();
 
 		$('.reviewStars-input').append(star);
-		$('.rw-report-link').css('display', 'none');
+		$('.rw-report-link').css('display', 'none !important');
 		$('.rw-ui-info-container').css('display', 'none !important');
 		
 	});

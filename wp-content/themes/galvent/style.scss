@@ -4272,8 +4272,6 @@ body, html{
 	position: relative;
 	margin-top: 40px;
 	margin-bottom: 20px;
-	min-height: 90px;
-	background-color: #eeeeef;
 	@media only screen and (min-width : 990px) {
 		margin-bottom: 40px;
 	}
@@ -4329,10 +4327,6 @@ body, html{
 	font-weight: 400;
 	line-height: 24px;
 	margin-bottom: 25px;
-	img{
-		max-width: 100%;
-		height: auto;
-	}
 	&_1 {
 		@media screen and (min-width: 992px) {
 			margin-bottom: 40px;
@@ -4635,9 +4629,3 @@ a{
 }
 
 
-.rw-report-link{
-	display: none !important;
-}
-.rw-ui-info-container{
-	display: none !important;
-}
