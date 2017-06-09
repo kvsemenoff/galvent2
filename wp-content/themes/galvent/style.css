@@ -3623,8 +3623,6 @@ body, html {
       margin-bottom: 0px; } }
 
 .conv_bg {
-  max-height: 375px;
-  overflow: hidden;
   position: relative;
   margin-top: 40px;
   margin-bottom: 20px; }
@@ -3632,9 +3630,13 @@ body, html {
     .conv_bg {
       margin-bottom: 40px; } }
   .conv_bg img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 8px; }
+  .conv_bg .conv_bg-imgbox {
+    max-height: 375px;
+    overflow: hidden;
+    outline: 5px solid red !important; }
   .conv_bg .conv_bg-date {
     width: 141px;
     height: 45px;

@@ -36,11 +36,11 @@
     <div class="container">
         <div class="col-md-12 paddingoff">
             <div class="conv_bg">
-            	<?php 
-            	$image = get_field('картинка_внутренняя');
-            	if( !empty($image) ): ?>
-            		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-            	<?php endif; ?>
+                <?php $image = get_field('картинка_внутренняя'); ?>
+                <?php if( !empty($image) ): ?>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                <?php endif; ?>
+                
 				<span class="conv_bg-date"><?php the_time('d.m.Y'); ?></span>
             </div>
         </div>
