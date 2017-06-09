@@ -26,7 +26,7 @@ Template name: Гарантия
 
 			<div class="col-xs-12 col-sm-12 col-md-12">
 				<div class="service-box service-box__view service-box__view_garant">
-					<span class="service-box__view_span service-box__view_span_2">«ПТО Галвент» обеспечивает гарантии высокого качества:</span>
+					<span class="service-box__view_span service-box__view_span_2"><?php the_field('гарантии_подзаголовок_1'); ?></span>
 
 					<div class="service-box__inner">
 
@@ -46,7 +46,7 @@ Template name: Гарантия
 				</div>
 
 				<div class="service-box service-box__view service-box__view_garant_2">
-					<span class="service-box__view_span service-box__view_span_3">Правила выполнения гарантийных обязательств</span>
+					<span class="service-box__view_span service-box__view_span_3"><?php the_field('гарантии_подзаголовок_1'); ?></span>
 
 					<div class="service-box__inner">					
 						
