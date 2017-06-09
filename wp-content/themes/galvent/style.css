@@ -1801,11 +1801,9 @@ body, html {
     right: 0;
     top: -56px; }
 
-.about ul {
-  margin-bottom: 50px; }
-  .about ul li {
-    margin-bottom: 10px;
-    background: none !important; }
+.about ul li {
+  margin-bottom: 10px;
+  background: none !important; }
 
 .service-box__view {
   border: 4px solid #efefef;
@@ -2696,6 +2694,9 @@ body, html {
         padding: 15px 0; } }
   .about .ul {
     margin-bottom: 25px; }
+    @media only screen and (min-width: 990px) {
+      .about .ul {
+        padding-left: 43px; } }
   .about .q {
     margin-bottom: 22px; }
   .about__text {

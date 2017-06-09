@@ -2133,8 +2133,7 @@ body, html{
 	}
 }
 .about{
-	ul{
-		margin-bottom: 50px;
+	ul{		
 		li{
 			margin-bottom: 10px;
 			background: none !important;
@@ -3205,7 +3204,10 @@ body, html{
 		}
 	}
 	.ul{
-		margin-bottom: 25px;
+		margin-bottom: 25px;		
+		@media only screen and (min-width : 990px) {
+			padding-left: 43px;	
+		}
 	}
 	.q{
 		margin-bottom: 22px;
