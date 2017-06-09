@@ -2132,6 +2132,15 @@ body, html{
 		top:-56px;
 	}
 }
+.about{
+	ul{
+		margin-bottom: 50px;
+		li{
+			margin-bottom: 10px;
+			background: none !important;
+		}
+	}
+}
 .service-box__view{
 	border: 4px solid #efefef;
 	border-radius: 8px;
@@ -2140,9 +2149,7 @@ body, html{
 	&_ul{
 		margin-bottom: 50px;
 		li{
-			margin-bottom: 10px;
-			background: none !important;
-			padding-left: 0 !important;
+			margin-bottom: 10px;			
 		}
 	}
 	&_garant{
