@@ -4572,12 +4572,7 @@ a{
 	cursor:pointer;
 	display:none;
 }
-.sitemap{
-	ul{
-		display: block;
-		// margin-left: 25px;
-	}
-}
+
 
 .modal__thanks{
 	padding: 25px;
@@ -4640,4 +4635,11 @@ a{
 
 ol{
 	padding-left: 20px;	
+}
+
+.sitemap{
+	ul{
+		display: block;
+		margin-left: 25px;
+	}
 }
