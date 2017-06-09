@@ -3210,7 +3210,7 @@ body, html{
 		}
 	}
 	.q{
-		margin-bottom: 22px;
+		margin: 22px 0;
 	}
 	&__text{
 		color: #5f5f5f;
@@ -4602,6 +4602,7 @@ a{
 			font-size: 16px;
 			font-family: "GothamProMedium";	
 			padding: 14px 5px;
+			vertical-align: top;
 			@media only screen and (min-width : 768px) {
 				padding: 14px 27px;
 			}
@@ -4637,4 +4638,9 @@ a{
 	}
 }
 
-
+ol{
+	padding-left: 10px;
+	@media only screen and (min-width : 990px) {
+		padding-left: 20px;
+	}
+}
