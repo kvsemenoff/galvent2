@@ -46,7 +46,7 @@ Template name: Гарантия
 				</div>
 
 				<div class="service-box service-box__view service-box__view_garant_2">
-					<span class="service-box__view_span service-box__view_span_3"><?php the_field('гарантии_подзаголовок_1'); ?></span>
+					<span class="service-box__view_span service-box__view_span_3"><?php the_field('гарантии_подзаголовок_2'); ?></span>
 
 					<div class="service-box__inner">					
 						

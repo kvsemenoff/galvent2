@@ -48,6 +48,7 @@ Template Name: Карта сайта
 						?>
 						<?php $parent = get_category($parent_id); ?>
 						<?php if( $sub_cats ){ ?>
+						<ul>
 						<?php foreach( $sub_cats as $cat ){ ?>
 							<?php $child = get_category($cat->term_id); ?>
 							<li><a href="/<?php echo $parent->slug.'/'.$child->slug; ?>"><?php echo $cat->name; ?></a></li>
@@ -65,6 +66,7 @@ Template Name: Карта сайта
 							<?php wp_reset_query(); ?>
 							</ul>
 						<?php }	?>
+						</ul>
 						<?php } ?>
 					</li>
 					<li><a href="/?cat=9">Направления</a>

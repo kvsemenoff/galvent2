@@ -3900,6 +3900,8 @@ ol {
 
 .sitemap ul {
   display: block;
-  margin-left: 25px; }
+  margin-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */
