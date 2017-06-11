@@ -21,7 +21,10 @@
 			<h1><?php echo $category_id = $categories[0]->name; ?></h1>
 			
 			<p class="beltconveyors__text">
-				<?php echo $category_id = $categories[0]->description; ?>		
+				<?php $cat_page_title = get_field('полное_описание_категории', "category_".get_query_var('cat')); ?>
+      			<?php  if (!empty($cat_page_title)) { ?>
+          		<?php echo $cat_page_title; ?>	 
+            	<?php } ?> 	
 			</p>	
 			
 			<div class="beltconveyors__img_box beltconveyors__img_box_marginbot">
