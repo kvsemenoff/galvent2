@@ -3328,10 +3328,12 @@ body, html{
 		background: url(./img/yellow-circle.png) 0 1px no-repeat;
 	}
 	&__txt{
+		height: 48px;
 		color: #484e4c;
-		font-size: 15px;
+		font-size: 14px;
 		line-height: 23px;
-		padding-bottom: 2px;
+		margin-bottom: 25px;
+		overflow: hidden;
 	}
 	&__info{
 		position: relative;
@@ -3729,6 +3731,9 @@ body, html{
 		background-image: url("./img/zoom.png");
 		background-repeat: no-repeat;
 		background-position: center center;
+		@media only screen and (min-width : 992px) {
+			top: 320px !important;
+		}
 	}
 	
 	img{		
@@ -4659,3 +4664,8 @@ ol{
 		padding-bottom: 5px;
 	}
 }
+.owl-carousel .owl-item{
+    height: 400px;
+    width:100%;
+}
+

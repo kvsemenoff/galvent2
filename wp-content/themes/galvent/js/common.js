@@ -176,15 +176,136 @@ $(document).ready(function(){
 
 
 
-			var owl2 = $(".examples__slider");
-			owl2.owlCarousel({
-				loop:true,
-				nav:true, 
-				autoplay:false,
-				smartSpeed:1000,
-				margin:0,
-				mouseDrag:false,
-				touchDrag: false,
+	var examples__slider1 = $(".examples__slider1");
+	examples__slider1.owlCarousel({
+		loop:true,
+		nav:true, 
+		autoplay:false,
+		smartSpeed:1000,
+		margin:0,
+		mouseDrag:false,
+		touchDrag: false,
+        center:false,     //если нужны обрезаные края
+        navText:['<span class="df-left"></span>','<span class="df-right"></span>'],
+        responsive:{
+        	0:{
+        		items:1
+        	},      
+        	990:{
+        		items:1
+        	},  
+        	1248:{
+        		items:1
+        	}
+        }
+    });
+
+    var examples__slider2 = $(".examples__slider2");
+	examples__slider2.owlCarousel({
+		loop:true,
+		nav:true, 
+		autoplay:false,
+		smartSpeed:1000,
+		margin:0,
+		mouseDrag:false,
+		touchDrag: false,
+        center:false,     //если нужны обрезаные края
+        navText:['<span class="df-left"></span>','<span class="df-right"></span>'],
+        responsive:{
+        	0:{
+        		items:1
+        	},      
+        	990:{
+        		items:1
+        	},  
+        	1248:{
+        		items:1
+        	}
+        }
+    });
+
+var examples__slider3 = $(".examples__slider3");
+	examples__slider3.owlCarousel({
+		loop:true,
+		nav:true, 
+		autoplay:false,
+		smartSpeed:1000,
+		margin:0,
+		mouseDrag:false,
+		touchDrag: false,
+        center:false,     //если нужны обрезаные края
+        navText:['<span class="df-left"></span>','<span class="df-right"></span>'],
+        responsive:{
+        	0:{
+        		items:1
+        	},      
+        	990:{
+        		items:1
+        	},  
+        	1248:{
+        		items:1
+        	}
+        }
+    });
+
+var examples__slider4 = $(".examples__slider4");
+	examples__slider4.owlCarousel({
+		loop:true,
+		nav:true, 
+		autoplay:false,
+		smartSpeed:1000,
+		margin:0,
+		mouseDrag:false,
+		touchDrag: false,
+        center:false,     //если нужны обрезаные края
+        navText:['<span class="df-left"></span>','<span class="df-right"></span>'],
+        responsive:{
+        	0:{
+        		items:1
+        	},      
+        	990:{
+        		items:1
+        	},  
+        	1248:{
+        		items:1
+        	}
+        }
+    });
+
+
+    var examples__slider5 = $(".examples__slider5");
+	examples__slider5.owlCarousel({
+		loop:true,
+		nav:true, 
+		autoplay:false,
+		smartSpeed:1000,
+		margin:0,
+		mouseDrag:false,
+		touchDrag: false,
+        center:false,     //если нужны обрезаные края
+        navText:['<span class="df-left"></span>','<span class="df-right"></span>'],
+        responsive:{
+        	0:{
+        		items:1
+        	},      
+        	990:{
+        		items:1
+        	},  
+        	1248:{
+        		items:1
+        	}
+        }
+    });
+
+    var examples__slider6 = $(".examples__slider6");
+	examples__slider6.owlCarousel({
+		loop:true,
+		nav:true, 
+		autoplay:false,
+		smartSpeed:1000,
+		margin:0,
+		mouseDrag:false,
+		touchDrag: false,
         center:false,     //если нужны обрезаные края
         navText:['<span class="df-left"></span>','<span class="df-right"></span>'],
         responsive:{
