@@ -28,7 +28,7 @@ Template name: Примеры работ
 			$query->the_post(); ?>
 			<div class="examples__block">
 				<h4 class="examples__block_caption"><?php the_title(); ?></h4>
-				<div class="examples__slider-coommon examples__slider<?php echo $i; ?>">
+				<div class="examples__slider<?php echo $i; ?>">
 					<?php if( class_exists('Dynamic_Featured_Image') ) { ?>
 						<?php global $dynamic_featured_image; ?>
 						<?php $featured_images = $dynamic_featured_image->get_featured_images( get_the_ID() ); ?>
