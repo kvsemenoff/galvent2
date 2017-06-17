@@ -79,7 +79,7 @@ gulp.task('del_temp', function () {
 // });
 
 
-gulp.task('default', gulpSequence('sass', 'concatOurSS', 'concatLibCSS', 'compressJSAll', 'imagemin'));
+gulp.task('default', gulpSequence('sass', 'concatOurSS', 'concatLibCSS', 'compressJSOur', 'imagemin'));
 
 //Объединяем все наши scss в один и переносим в папку /temp для обработки
 gulp.task('concatAllSCSS', function() {
@@ -125,8 +125,9 @@ gulp.task('compressJSLibs', function(){
 });
 gulp.task('compressJSOur', function(){
     return gulp.src(js_our)
-        .pipe(concat('common.js'))
-        .pipe(gulp.dest('product/js/'));
+        .pipe(concat('common.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('wp-content/themes/galvent/js/'));
 });
 
 

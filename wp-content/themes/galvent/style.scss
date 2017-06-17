@@ -3328,10 +3328,12 @@ body, html{
 		background: url(./img/yellow-circle.png) 0 1px no-repeat;
 	}
 	&__txt{
+		height: 52px;
 		color: #484e4c;
 		font-size: 15px;
 		line-height: 23px;
-		padding-bottom: 2px;
+		margin-bottom: 25px;
+		overflow: hidden;
 	}
 	&__info{
 		position: relative;
@@ -3682,8 +3684,7 @@ body, html{
 }
 
 .examples__height{
-	max-height: 1950px;
-	overflow: hidden;
+	
 }
 .examples__caption{
 	padding: 15px 0 15px 0;
@@ -3729,6 +3730,9 @@ body, html{
 		background-image: url("./img/zoom.png");
 		background-repeat: no-repeat;
 		background-position: center center;
+		@media only screen and (min-width : 780px) {
+			top: 310px;
+		}
 	}
 	
 	img{		
@@ -3808,7 +3812,9 @@ body, html{
 		background: #006887;		
 	}
 }   
-
+.examples__look_more-hover{
+	background: #006887;
+}
 
 
 /*========beltconveyors======*/
@@ -4658,4 +4664,119 @@ ol{
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
+}
+.owl-carousel .owl-item{
+    height: 385px;
+    width:100%;
+}
+
+.imgfloat{
+	width: 300px;
+	//height: 250px;
+	border: 3px solid rgba(0, 0, 0, 0.07);
+	border-radius: 8px;
+	position: relative;
+	float: right;
+	margin-bottom: 25px;
+	z-index: 50;
+	
+	@media only screen and (min-width : 770px) {
+		width: 396px;
+		//height: 279px;
+	}
+	@media only screen and (min-width : 770px) {
+		margin-bottom: 0px;
+	}
+	img{
+		display: block;
+		z-index: 60;
+		width: 100% !important;
+		height: auto !important;
+		
+		
+	}
+}
+.product-img-inner{
+	display:none;
+}
+
+.sample-row{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	align-items: center;
+	margin-bottom: 25px;
+}
+.sample-box{
+	display: block;
+	width: 281px;
+	height: 205px;
+	border: 3px solid rgba(0, 0, 0, 0.07);
+	border-radius: 8px;
+	position: relative;
+	overflow: hidden;
+	z-index: 50;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	&:hover{
+		position: relative;
+	}
+	&:hover:before{
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		background: rgba(#000, 0.6);
+		z-index: 41;
+	}
+	img{
+		display: block;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,0);
+		top: 0px;
+		border-radius: 8px;
+		z-index: 40;
+		width: 100%;
+		height: auto;
+	}
+	.sample-box-title{
+		display: none;
+		position: absolute;
+		width: 95%;
+		top: 15%;
+		left: 50%;
+		transform: translate(-50%, 0);
+		line-height: 24px;
+		z-index: 45;
+		color: #fff;
+		transition: 0.3s all ease;
+
+	}
+	.sample-box-description{
+		display: none;
+	}
+	&:hover{
+		.plus{
+			display: block;
+		}
+		.sample-box-title{
+			display: block;
+
+		}
+	}
+}
+.plus{
+	display: none;
+	position: absolute;
+	width: 41px;
+	height: 41px;
+	background: url(./img/plus.png) no-repeat top center;
+	bottom: 10px;
+	right: 10px;
+	transition: 0.3s all ease;
+	z-index: 48;
 }

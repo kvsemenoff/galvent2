@@ -1,9 +1,14 @@
+
 <!doctype html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php bloginfo('name'); ?> - <?php wp_title(); ?></title>
+	<?php if ( is_front_page() ) { ?>
+		<title><?php bloginfo('name'); ?></title>
+	<?php  }else { ?>
+		<title><?php bloginfo('name'); ?> - <?php wp_title(); ?></title>
+	<?php } ?>
 
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/libs.min.css">

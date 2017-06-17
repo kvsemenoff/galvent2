@@ -2,6 +2,8 @@
 
 
 $(document).ready(function(){
+	$('.konveer').prepend('<div class="imgfloat"></div>');
+	$('.imgfloat').html($('.product-img-inner').html());
 
 	$('.reviewStars-input label').on('click', function () {
         var x = $(this).attr('for');
@@ -322,50 +324,52 @@ var examples__slider4 = $(".examples__slider4");
     });
 
 
-			$('#reviewStars-input label').on('click', function(){
-				var x = $(this).attr('for');		
-				x = parseInt(x.match( /\d/g))+1;
-				$('.rate_block__nums i').text(x);		
-			});
+	$('#reviewStars-input label').on('click', function(){
+		var x = $(this).attr('for');		
+		x = parseInt(x.match( /\d/g))+1;
+		$('.rate_block__nums i').text(x);		
+	});
 
 
 
-			$('.menu-button').click(function(){
-				if (!$(this).hasClass('menu-active')){
-					$(this).addClass('menu-active');
-					$('.main-menu').slideDown(300)
-				} else {
-					$(this).removeClass('menu-active');
-					$('.main-menu').slideUp(300)
-				}
-			});
+	$('.menu-button').click(function(){
+		if (!$(this).hasClass('menu-active')){
+			$(this).addClass('menu-active');
+			$('.main-menu').slideDown(300)
+		} else {
+			$(this).removeClass('menu-active');
+			$('.main-menu').slideUp(300)
+		}
+	});
 
-			$(".fancybox").fancybox({
-				fitToView	: false,
-				closeClick	: false,
-				openEffect	: 'true',
-				closeEffect	: 'true'
-			});
+	$(".fancybox").fancybox({
+		fitToView	: false,
+		closeClick	: false,
+		openEffect	: 'true',
+		closeEffect	: 'true'
+	});
 
-			$("a[data-fancybox-group=group]").fancybox({
-				'transitionIn' : 'none',
-				'transitionOut' : 'none',
-				'titlePosition' : 'over',
-				'titleFormat' : function(title, currentArray, currentIndex, currentOpts) {
-					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-				}
-			});
+	$("a[data-fancybox-group=group]").fancybox({
+		
+	    autoDimensions: true,
+	    fitToView   : false,
+		autoSize    : false,
+	    width: 150,
+	    height: 'auto',
+	    afterShow: function(){
+	        $.fancybox.update()
+	    }
+		
+	});
 
-			$('.examples__look_more').on('click', function(){				
-				if ($(this).text() == 'скрыть') {
-					$(this).text('смотреть еще работы');
-					$('.examples__height').css('max-height', '1950px');
-				}else{
-					$(this).text('скрыть');
-					$('.examples__height').css('max-height', 'unset');
-				}
-			});
-		});
+	
+
+	$("img").each(function() {
+		var cur_alt = $(this).attr('alt');
+	    $(this).attr('title', cur_alt);
+	});
+
+});
 
 
 

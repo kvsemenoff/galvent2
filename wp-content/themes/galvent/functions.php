@@ -1,5 +1,51 @@
 <?php 	
 
+function true_loadmore_scripts() {
+    wp_enqueue_script('jquery'); // скорее всего он уже будет подключен, это на всякий случай
+    wp_enqueue_script( 'true_loadmore', get_stylesheet_directory_uri() . '/loadmore.js', array('jquery') );
+}
+ 
+add_action( 'wp_enqueue_scripts', 'true_loadmore_scripts' );
+
+function true_load_posts(){
+    $args = unserialize(stripslashes($_POST['query']));
+    $args['paged'] = $_POST['page'] + 1; // следующая страница
+    $args['post_status'] = 'publish';
+    $q = new WP_Query($args);
+    if( $q->have_posts() ):
+        
+        $i=1;
+        while($q->have_posts()): $q->the_post();
+            /*
+             * Со строчки 13 по 27 идет HTML шаблон поста, максимально приближенный к теме TwentyTen.
+             * Для своей темы вы конечно же можете использовать другой код HTML.
+             */
+            ?>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="sample-box">
+                    <?php $image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full'); ?>
+                    <a href="<?php echo $image_url[0]; ?>" alt="sss" data-fancybox-group="group"><img src="<?php echo $image_url[0]; ?>" alt="<?php the_title(); ?>"></a>
+                    <div class="sample-box-title"><?php the_title(); ?></div>
+                    <div class="sample-box-description">
+                        Установка конвееров для ООО «Хлебо Пром» Установка конвееров для ООО «Хлебо Пром»Установка конвееров для ООО «Хлебо Пром»
+                    </div>
+                    <a href="<?php echo $image_url[0]; ?>" alt="sss" data-fancybox-group="group" class="plus"></a>
+                </div>
+            </div>
+            <?php if($i%4 == 0){ ?>
+                <div class="clearfix"></div>
+            <?php } ?>
+
+            <?php
+            $i++;
+        endwhile;
+    endif;
+    wp_reset_postdata();
+    die();
+}
+  
+add_action('wp_ajax_loadmore', 'true_load_posts');
+add_action('wp_ajax_nopriv_loadmore', 'true_load_posts');
 
 add_filter('term_description', 'clear_term_description');
 function clear_term_description($value){
@@ -125,7 +171,7 @@ function job_register() {
 
 
 
-
+add_filter( 'wpseo_canonical', '__return_false' );
 
 function my_function_admin_bar(){
 return false;
@@ -158,7 +204,7 @@ remove_action('wp_head','wp_generator');  // убирает версию wordpre
 // убираем разные ссылки при отображении поста - следующая, предыдущая запись, оригинальный url и т.п.
 remove_action('wp_head','start_post_rel_link',10,0);
 remove_action('wp_head','index_rel_link');
-remove_action('wp_head','rel_canonical');
+remove_action('wp_head', 'rel_canonical', 47);
 remove_action( 'wp_head','adjacent_posts_rel_link_wp_head', 10, 0 );
 remove_action( 'wp_head','wp_shortlink_wp_head', 10, 0 );
 }

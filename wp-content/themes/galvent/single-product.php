@@ -20,7 +20,15 @@
 			<div class="clearfix"></div>
 			<div class="col-xs-12 col-sm-12 col-md-12">
 				<div class="konveer">
-					<div class="konveer__item konveer__item_right">
+							<?php 
+							$image = get_field('продукция_внутренная_картинка');
+							if( !empty($image) ){ ?>
+								<div class="product-img-inner"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></div>
+							<?php }else{ ?>
+								<div class="product-img-inner"><img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/konv.jpg" alt=""></div>
+							<?php } ?>
+
+					<!-- <div class="konveer__item konveer__item_right">
 						<div class="konveer__item_img">
 							<?php 
 							$image = get_field('продукция_внутренная_картинка');
@@ -30,14 +38,14 @@
 								<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/konv.jpg" alt="">
 							<?php } ?>
 						</div>
-					</div>
-					<div class="konveer__item konveer__item_left">
+					</div> -->
+					
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						<?php the_content(); ?>	
 						<?php endwhile; ?>
 						<?php else: ?>
 						<?php endif; ?> 
-					</div>
+					
 				</div>
 			</div>
 		</div>

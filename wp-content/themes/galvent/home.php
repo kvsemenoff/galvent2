@@ -123,17 +123,19 @@ $dop6 = get_field('дополнительная_услуга_6');
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-5">
 				<h2 class="h2 h2_light">Последние новости</h2>
+				<?php wp_reset_query(); ?>
 				<?php 
 				$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
 				$args = array(
-					'cat' => 2,
+					'cat' => 3,
 					'paged' => $paged
 					);
 
 				$query = new WP_Query($args);
 				$i=0;
 				while ( $query->have_posts() ) {
+
 				$query->the_post();
 				if ($i>=2) {
 					break;
